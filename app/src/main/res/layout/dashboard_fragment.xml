@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fbfbfb">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fbfbfb">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constr"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="#cae8fc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:text="Hi, Alok Kumar"
+                android:textColor="#525252"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/descrip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:text="let's start learning "
+                android:textColor="#525252"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/name" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/dash_image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/user"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/text12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:text="Today's Activity"
+            android:textColor="@color/textHeading"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/constr" />
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3.1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text12">
+
+            <LinearLayout
+                android:id="@+id/attendance_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/attendence"
+                    android:tint="#08C8FA" />
+
+
+                <TextView
+                    android:id="@+id/attendence_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Attendance"
+                    android:textAlignment="center"
+                    android:textColor="#525252"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/total_attendance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="30%"
+                    android:textAlignment="center"
+                    android:textColor="#0B3676"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="#cae8fc" />
+
+            <LinearLayout
+                android:id="@+id/homework_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/homework"
+                    android:tint="#FCBE0A"  />
+
+
+                <TextView
+                    android:id="@+id/homework_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Homework"
+                    android:textAlignment="center"
+                    android:textColor="#525252"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/homework_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="#0B3676"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="#cae8fc" />
+
+            <LinearLayout
+                android:id="@+id/pending_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/pendin"
+                    android:tint="#F8135C"  />
+
+
+                <TextView
+                    android:id="@+id/pending_task"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pending Task"
+                    android:textAlignment="center"
+                    android:textColor="#525252"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/pendin_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="#0B3676"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1.1dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            android:background="#cae8fc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linear_layout" />
+        
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Related"
+            android:textSize="20dp"
+            android:textColor="@color/textHeading"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider"/>
+
+        <GridView
+            android:id="@+id/my_grid"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="10dp"
+            android:horizontalSpacing="10dp"
+            android:numColumns="3"
+            android:verticalSpacing="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
