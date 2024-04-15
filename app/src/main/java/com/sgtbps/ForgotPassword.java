@@ -112,7 +112,6 @@ public class ForgotPassword extends AppCompatActivity {
         });
     }
     private void getDataFromApi(String bodyParams) {
-
         final ProgressDialog pd = new ProgressDialog(this);
         pd.setMessage("Loading");
         pd.setCancelable(false);
@@ -130,7 +129,6 @@ public class ForgotPassword extends AppCompatActivity {
                     try {
                         Log.e("Result", result);
                         JSONObject object = new JSONObject(result);
-
                         String success = object.getString("status");
                         if (success.equals("200")) {
                             Toast.makeText(getApplicationContext(),object.getString("message"),Toast.LENGTH_SHORT).show();

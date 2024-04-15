@@ -91,7 +91,7 @@ public class BaseActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 finish();
-                overridePendingTransition(R.anim.no_animation,  R.anim.slide_rightleft);
+               // overridePendingTransition(R.anim.no_animation,  R.anim.slide_rightleft);
             }
         });
 

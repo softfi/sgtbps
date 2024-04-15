@@ -153,6 +153,7 @@ public class StudentDashboard extends AppCompatActivity {
         params.put("site_url", Utility.getSharedPreferences(getApplicationContext(), Constants.imagesUrl));
         JSONObject obj = new JSONObject(params);
         Log.e("params", obj.toString());
+
         // getDataFromApi(obj.toString());
 
         if (Utility.getSharedPreferences(getApplicationContext(), "role").equals("parent")) {
@@ -271,8 +272,9 @@ public class StudentDashboard extends AppCompatActivity {
         });
         if (Utility.isConnectingToInternet(getApplicationContext())) {
             params.put("parent_id", Utility.getSharedPreferences(getApplicationContext(), "userId"));
+            Log.d("TAG", "jhghjghjghj: "+params);
             JSONObject obj = new JSONObject(params);
-            Log.e("params ", obj.toString());
+           // Log.d("TAG", "jhghjghjghj: "+params);
             getStudentsListFromApi(obj.toString());
         } else {
             makeText(getApplicationContext(), R.string.noInternetMsg, Toast.LENGTH_SHORT).show();
@@ -291,17 +293,21 @@ public class StudentDashboard extends AppCompatActivity {
         pd.setMessage("Loading");
         pd.setCancelable(false);
         pd.show();
-
+        Log.d("bodyParams", "getStudentsListFromApi: "+bodyParams.toString());
         final String requestBody = bodyParams;
 
+
+
         String url = Utility.getSharedPreferences(getApplicationContext(), "apiUrl") + Constants.parent_getStudentList;
+        Log.d("URL",url+"RequestBody"+requestBody);
+
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String result) {
                 if (result != null) {
                     pd.dismiss();
                     try {
-                        Log.e("Result", result);
+                        Log.e("Resu3453456lt", result);
                         JSONObject object = new JSONObject(result);
 
                         JSONArray dataArray = object.getJSONArray("childs");
@@ -316,6 +322,7 @@ public class StudentDashboard extends AppCompatActivity {
                             studentListAdapter.notifyDataSetChanged();
                         } else {
                             Toast.makeText(getApplicationContext(), object.getString("errorMsg"), Toast.LENGTH_SHORT).show();
+
                         }
                     } catch (JSONException e) {
                         e.printStackTrace();
@@ -367,7 +374,7 @@ public class StudentDashboard extends AppCompatActivity {
         requestQueue.add(stringRequest);
     }
 
-    private void getModulesFromApi(String bodyParams) {
+/*    private void getModulesFromApi(String bodyParams) {
 
         final ProgressDialog pd = new ProgressDialog(this);
         pd.setMessage("Loading");
@@ -378,6 +385,8 @@ public class StudentDashboard extends AppCompatActivity {
 
         String url = Utility.getSharedPreferences(getApplicationContext(), "apiUrl") + Constants.getModuleUrl;
         Log.e("URL", url);
+
+        Log.d("URL",url+"RequestBody"+requestBody);
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String result) {
@@ -385,6 +394,7 @@ public class StudentDashboard extends AppCompatActivity {
                     pd.dismiss();
                     try {
                         Log.e("Modules Result", result);
+                        Log.d("Tag","responseOnDashboard"+result);
                         JSONObject object = new JSONObject(result);
                         System.out.println("Modules Result" + result);
 
@@ -442,7 +452,7 @@ public class StudentDashboard extends AppCompatActivity {
         };
         RequestQueue requestQueue = Volley.newRequestQueue(StudentDashboard.this);//Creating a Request Queue
         requestQueue.add(stringRequest); //Adding request to the queue
-    }
+    }*/
 
     private void setUpPermission() {
         if (ActivityCompat.checkSelfPermission(StudentDashboard.this, permissionsRequired[0]) != PackageManager.PERMISSION_GRANTED
@@ -546,8 +556,9 @@ public class StudentDashboard extends AppCompatActivity {
         if (Utility.isConnectingToInternet(getApplicationContext())) {
             params.put("user", Utility.getSharedPreferences(getApplicationContext(), Constants.loginType));
             JSONObject obj = new JSONObject(params);
-            Log.e("params ", obj.toString());
-            getModulesFromApi(obj.toString());
+            Log.d("TAG", "resposeuuthy: "+obj);
+          //  Log.e("params ", obj.toString());
+          //  getModulesFromApi(obj.toString());
         } else {
             makeText(getApplicationContext(), R.string.noInternetMsg, Toast.LENGTH_SHORT).show();
         }
@@ -556,7 +567,7 @@ public class StudentDashboard extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
 
-                int id = menuItem.getItemId();
+               // int id = menuItem.getItemId();
 
                 switch (menuItem.getItemId()) {
 
@@ -644,8 +655,8 @@ public class StudentDashboard extends AppCompatActivity {
                         break;
 
                     case R.id.nav_applyleave:
-                        Intent applyleave = new Intent(StudentDashboard.this, StudentAppyLeave.class);
-                        startActivity(applyleave);
+                        Intent applyLeave = new Intent(StudentDashboard.this, StudentAppyLeave.class);
+                        startActivity(applyLeave);
                         overridePendingTransition(R.anim.slide_leftright, R.anim.no_animation);
                         drawer.closeDrawer(GravityCompat.START);
                         break;
@@ -699,7 +710,6 @@ public class StudentDashboard extends AppCompatActivity {
                         drawer.closeDrawer(GravityCompat.START);
                         break;
 
-
                     case R.id.nav_library:
                         Intent booksIssued = new Intent(StudentDashboard.this, com.sgtbps.students.StudentLibraryBookIssued.class);
                         startActivity(booksIssued);
@@ -720,7 +730,6 @@ public class StudentDashboard extends AppCompatActivity {
                         overridePendingTransition(R.anim.slide_leftright, R.anim.no_animation);
                         drawer.closeDrawer(GravityCompat.START);
                         break;
-
 
                     case R.id.nav_about:
                         Intent about = new Intent(StudentDashboard.this, AboutSchool.class);
@@ -961,13 +970,13 @@ public class StudentDashboard extends AppCompatActivity {
         }, 2000);
     }
 
-    private void goToSettings() {
+    /*private void goToSettings() {
         sentToSettings = true;
         Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
         Uri uri = Uri.fromParts("package", getPackageName(), null);
         intent.setData(uri);
         startActivityForResult(intent, REQUEST_PERMISSION_SETTING);
-    }
+    }*/
 
     private void loginOutApi(String bodyParams) {
         DatabaseHelper dataBaseHelpers = new DatabaseHelper(StudentDashboard.this);
@@ -1057,7 +1066,7 @@ public class StudentDashboard extends AppCompatActivity {
         requestQueue.add(stringRequest);
     }
 
-    private void getDataFromApi(String bodyParams) {
+   /* private void getDataFromApi(String bodyParams) {
         final ProgressDialog pd = new ProgressDialog(this);
         pd.setMessage("Loading");
         pd.setCancelable(false);
@@ -1151,7 +1160,7 @@ public class StudentDashboard extends AppCompatActivity {
                 IllegalBlockSizeException | BadPaddingException | UnsupportedEncodingException | InvalidAlgorithmParameterException exp) {
             Log.e("ENCRYPTION", exp.toString());
         }
-    }
+    }*/
 
     private void CheckAddon(String bodyParams, final String type) {
         final ProgressDialog pd = new ProgressDialog(this);

@@ -44,6 +44,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.iid.InstanceIdResult;
 import com.sgtbps.adapters.LoginChildListAdapter;
+import com.sgtbps.retrofit.apiInterface;
 import com.sgtbps.students.StudentDashboard;
 import com.sgtbps.utils.Constants;
 import com.sgtbps.utils.MyApp;
@@ -60,6 +61,13 @@ import java.util.Hashtable;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Random;
+
+import okhttp3.MediaType;
+import okhttp3.RequestBody;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 public class Login extends Activity {
 
@@ -84,11 +92,13 @@ public class Login extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
 //        requestWindowFeature(Window.FEATURE_NO_TITLE);
 //        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         setContentView(R.layout.login_page);
 
-        getUrl("https://www.vkssvnic.com/");
+        getUrl("https://sgtbps.in/");
         //getUrl("https://schoolingpro.in/admin/");
 
         FirebaseInstanceId.getInstance().getInstanceId().addOnSuccessListener(Login.this, new OnSuccessListener<InstanceIdResult>() {
@@ -194,9 +204,8 @@ public class Login extends Activity {
                         params.put("deviceToken", device_token);
                         JSONObject obj = new JSONObject(params);
                         Log.e("params ", obj.toString());
-                        System.out.println("Login Details==" + obj.toString());
-                        // getDataFromApi(obj.toString());
-                        loginData();
+                        postData(obj.toString());
+                        //postData1(obj);
                     } else {
                         makeText(getApplicationContext(), R.string.noInternetMsg, Toast.LENGTH_SHORT).show();
                     }
@@ -301,125 +310,39 @@ public class Login extends Activity {
         // queue.add(request);
     }
 
-
-    private void getDataFromApi(String bodyParams) {
-        Log.d("TAG000000", "getDataFromApi: " + bodyParams.toString());
-
+    private void postData(String bodyParams) {
         final ProgressDialog pd = new ProgressDialog(this);
         pd.setMessage("Loading");
         pd.setCancelable(false);
         pd.show();
-
         final String requestBody = bodyParams;
         String url = Utility.getSharedPreferences(getApplicationContext(), "apiUrl") + Constants.loginUrl;
-        Log.d("loginURL", "getDataFromApi: " + url.toString());
-
-
-
-        /*
-
-
-
-
-
- JSONObject jsonBody = new JSONObject();
-        jsonBody.put("first_name", firstname);
-        jsonBody.put("last_name", lastName);
-        jsonBody.put("email", Email);
-        jsonBody.put("phone", number);
-
-        final String mRequestBody = jsonBody.toString();
-
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
-
+        Log.d("URL===>", url + "===Request Body" + requestBody);
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                Log.i("VOLLEY", response);
-                Log.d("****", "FETCHING IN VOLLEY REQ" + response.toString());
-
-
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                Log.e("VOLLEY", error.toString());
-            }
-        }) {
-            @Override
-            public String getBodyContentType() {
-                return "application/json; charset=utf-8";
-            }
-
-
-            @Override
-            public byte[] getBody() throws AuthFailureError {
-                try {
-                    return mRequestBody == null ? null : mRequestBody.getBytes("utf-8");
-                } catch (UnsupportedEncodingException uee) {
-                    VolleyLog.wtf("Unsupported Encoding while trying to get the bytes of %s using %s", mRequestBody, "utf-8");
-                    return null;
-                }
-            }
-
-
-            @Override
-            public Map<String, String> getHeaders() throws AuthFailureError
-            {
-                Map<String, String> headers = new HashMap<String, String>();
-                headers.put("Content-Type", "multipart/form-data");
-                return headers;
-            }
-            @Override
-            protected Response<String> parseNetworkResponse(NetworkResponse response) {
-                String responseString = "";
+                Log.d("TAG", "LoginReponse: " + response);
                 if (response != null) {
-                    responseString = String.valueOf(response.statusCode);
-                    // can get more details such as response.headers
-                }
-                return Response.success(responseString, HttpHeaderParser.parseCacheHeaders(response));
-            }
-        };
-
-        getRequestOtpPage().addToRequestQueue(stringRequest);*/
-
-
-        StringRequest request = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
-            @Override
-            public void onResponse(String response) {
-                if (response != null) {
-                    Log.d("response", "onResponse: " + response.toString());
-
                     pd.dismiss();
-
+                    JSONObject object = null;
                     try {
-                        JSONObject jsonBody = new JSONObject();
-                        jsonBody.put("username", et_userName.getText().toString());
-                        jsonBody.put("password", et_password.getText().toString());
-                        jsonBody.put("deviceToken", device_token);
-                        formData = jsonBody.toString();
-                        Log.d("formData", "onResponse: " + formData.toString());
-                        JSONObject object = new JSONObject(response);
+                        object = new JSONObject(String.valueOf(response));
                         String success = object.getString("status");
                         String message = object.getString("message");
-                        //  Utility.setSharedPreference(getApplicationContext(), Constants.loginType, object.getString("role"));
                         if (success.equals("1")) {
                             Utility.setSharedPreference(getApplicationContext(), Constants.loginType, object.getString("role"));
                             JSONObject data = object.getJSONObject("record");
-
                             Utility.setSharedPreference(getApplicationContext(), Constants.userId, object.getString("id"));
                             Utility.setSharedPreference(getApplicationContext(), "accessToken", object.getString("token"));
-
                             Utility.setSharedPreference(getApplicationContext(), "schoolName", data.getString("sch_name"));
                             Utility.setSharedPreference(getApplicationContext(), Constants.currency, data.getString("currency_symbol"));
                             Utility.setSharedPreference(getApplicationContext(), "startWeek", data.getString("start_week"));
-
                             String dateFormat = data.getString("date_format");
                             dateFormat = dateFormat.replace("m", "MM");
                             dateFormat = dateFormat.replace("d", "dd");
                             dateFormat = dateFormat.replace("Y", "yyyy");
                             System.out.println("dateFormat===" + dateFormat);
                             Utility.setSharedPreference(getApplicationContext(), "dateFormat", dateFormat);
-
                             String datesFormat = data.getString("date_format");
                             datesFormat = datesFormat.replace("m", "MM");
                             datesFormat = datesFormat.replace("d", "dd");
@@ -427,13 +350,11 @@ public class Login extends Activity {
                             String datetimeFormat = datesFormat + " " + "hh:mm aa";
                             System.out.println("datetimeFormat===" + datetimeFormat);
                             Utility.setSharedPreference(getApplicationContext(), "datetimeFormat", datetimeFormat);
-
                             Utility.setSharedPreference(getApplicationContext(), "language", data.getString("language"));
                             String imgUrl = Utility.getSharedPreferences(getApplicationContext(), "imagesUrl") + data.getString("image");
                             Utility.setSharedPreference(getApplicationContext(), Constants.userImage, imgUrl);
                             Utility.setSharedPreference(getApplicationContext(), Constants.userName, data.getString("username"));
                             Utility.setSharedPreference(getApplicationContext(), "schoolName", data.getString("sch_name"));
-
                             if (data.getString("role").equals("parent")) {
                                 JSONArray childArray = data.getJSONArray("parent_childs");
                                 if (childArray.length() == 1) {
@@ -446,7 +367,6 @@ public class Login extends Activity {
                                     startActivity(asd);
                                     finish();
                                 } else {
-
                                     Utility.setSharedPreferenceBoolean(getApplicationContext(), "hasMultipleChild", true);
                                     childNameList.clear();
                                     childIdList.clear();
@@ -468,42 +388,39 @@ public class Login extends Activity {
                                 Log.e("CHILD ARRAY LENGTH", childArray.length() + "..");
 
                             } else if (data.getString("role").equals("student")) {
-
                                 Utility.setSharedPreferenceBoolean(getApplicationContext(), "isLoggegIn", true);
                                 Utility.setSharedPreference(getApplicationContext(), Constants.classSection, data.getString("class") + " (" + data.getString("section") + ")");
                                 Utility.setSharedPreference(getApplicationContext(), Constants.studentId, data.getString("student_id"));
                                 Intent asd = new Intent(getApplicationContext(), StudentDashboard.class);
                                 startActivity(asd);
                                 finish();
-
                             }
 
                         } else {
+                            pd.dismiss();
                             Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
                             Utility.setSharedPreferenceBoolean(getApplicationContext(), "isLoggegIn", false);
                         }
-
-                    } catch (Exception ex) {
-                        ex.printStackTrace();
+                    } catch (JSONException e) {
+                        pd.dismiss();
+                        e.printStackTrace();
                     }
 
                 }
             }
         }, new Response.ErrorListener() {
             @Override
-            public void onErrorResponse(VolleyError error) {
+            public void onErrorResponse(VolleyError volleyError) {
                 pd.dismiss();
-                Log.e("Volley Error", error.toString());
-                Toast.makeText(Login.this, R.string.apiErrorMsg, Toast.LENGTH_LONG).show();
+                Log.e("Volley Error 1", volleyError.toString());
+                Toast.makeText(Login.this, R.string.invalidUsername, Toast.LENGTH_LONG).show();
             }
         }) {
-
             @Override
-            public Map<String, String> getHeaders() throws AuthFailureError {
-                headers.put("Client-Service", "smartschool");
-                headers.put("Auth-Key", "schoolAdmin@");
-                headers.put("Content-Type", "application/json");
-                Log.d("headers", "getHeaders: " + headers.toString());
+            public Map<String, String> getHeaders() {
+                headers.put("Client-Service", Constants.clientService);
+                headers.put("Auth-Key", Constants.authKey);
+                headers.put("Content-Type", Constants.contentType);
                 return headers;
             }
 
@@ -515,27 +432,120 @@ public class Login extends Activity {
             @Override
             public byte[] getBody() throws AuthFailureError {
                 try {
-                    return formData == null ? null : formData.getBytes("utf-8");
+                    return requestBody == null ? null : requestBody.getBytes("utf-8");
                 } catch (UnsupportedEncodingException uee) {
-                    VolleyLog.wtf("Unsupported Encoding while trying to get the bytes of %s using %s", formData, "utf-8");
+                    VolleyLog.wtf("Unsupported Encoding while trying to get the bytes of %s using %s", requestBody, "utf-8");
                     return null;
                 }
             }
         };
-        request.setRetryPolicy(new DefaultRetryPolicy(
-                50000,
-                DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
-                DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
-
+        //SETTING RETRY Policy
+        stringRequest.setRetryPolicy(new DefaultRetryPolicy(5000, 1, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
         //Creating a Request Queue
         RequestQueue requestQueue = Volley.newRequestQueue(Login.this);
-
         //Adding request to the queue
-        requestQueue.add(request);
-        //queue.add(request);
+        requestQueue.add(stringRequest);
     }
 
-    public void loginData() {
+    private void showChildList() {
+        View view = getLayoutInflater().inflate(R.layout.fragment_login_bottom_sheet, null);
+        view.setMinimumHeight(500);
+
+        TextView headerTV = view.findViewById(R.id.login_bottomSheet_header);
+        ImageView crossBtn = view.findViewById(R.id.login_bottomSheet_crossBtn);
+        RecyclerView childListView = view.findViewById(R.id.login_bottomSheet_listview);
+
+        headerTV.setBackgroundColor(Color.parseColor(Utility.getSharedPreferences(getApplicationContext(), Constants.secondaryColour)));
+        headerTV.setText(getString(R.string.childList));
+
+        Log.e("ImageList", childImageList.toString());
+        Log.e("Class List", childClassList.toString());
+        Log.e("ID List", childIdList.toString());
+
+        LoginChildListAdapter adapter = new LoginChildListAdapter(Login.this, childIdList, childNameList, childClassList, childImageList);
+        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
+        childListView.setLayoutManager(mLayoutManager);
+        childListView.setItemAnimator(new DefaultItemAnimator());
+        childListView.setAdapter(adapter);
+
+        final BottomSheetDialog dialog = new BottomSheetDialog(Login.this);
+
+        dialog.setContentView(view);
+        dialog.show();
+
+        crossBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.dismiss();
+
+            }
+        });
+    }
+
+    public void setLocale(String localeName) {
+        myLocale = new Locale(localeName);
+        Resources res = getResources();
+        DisplayMetrics dm = res.getDisplayMetrics();
+        Configuration conf = res.getConfiguration();
+        conf.locale = myLocale;
+        res.updateConfiguration(conf, dm);
+        Intent refresh = new Intent(this, Login.class);
+        refresh.putExtra("currentLang", localeName);
+        startActivity(refresh);
+    }
+
+      /*  private void postData1(JSONObject bodyParams) {
+        final ProgressDialog pd = new ProgressDialog(Login.this);
+        pd.setMessage("Loading");
+        pd.setCancelable(false);
+        pd.show();
+        String url = Utility.getSharedPreferences(getApplicationContext(), "apiUrl") + Constants.loginUrl;
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest
+                (Request.Method.POST, url, bodyParams, new com.android.volley.Response.Listener<JSONObject>() {
+
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        Log.d("LOGINRESPONSE", "onResponse: "+response.toString());
+
+                        try {
+
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                        System.out.print(response);
+
+                    }
+                }, new com.android.volley.Response.ErrorListener() {
+
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        // TODO: Handle error
+                        error.printStackTrace();
+
+                    }
+
+
+                }) {
+
+            @Override
+            public String getBodyContentType() {
+                return "application/json; charset=utf-8";
+            }
+
+
+            @Override
+            public Map<String, String> getHeaders() {
+                headers.put("Client-Service", Constants.clientService);
+                headers.put("Auth-Key", Constants.authKey);
+                headers.put("Content-Type", Constants.contentType);
+                return headers;
+            }
+        };
+        RequestQueue requestQueue = Volley.newRequestQueue(Login.this);
+        requestQueue.add(jsonObjectRequest);
+    }*/
+
+     /*   public void loginData1() {
         final ProgressDialog pd = new ProgressDialog(this);
         pd.setMessage("Loading");
         pd.setCancelable(false);
@@ -565,21 +575,17 @@ public class Login extends Activity {
                                 if (success.equals("1")) {
                                     Utility.setSharedPreference(getApplicationContext(), Constants.loginType, object.getString("role"));
                                     JSONObject data = object.getJSONObject("record");
-
                                     Utility.setSharedPreference(getApplicationContext(), Constants.userId, object.getString("id"));
                                     Utility.setSharedPreference(getApplicationContext(), "accessToken", object.getString("token"));
-
                                     Utility.setSharedPreference(getApplicationContext(), "schoolName", data.getString("sch_name"));
                                     Utility.setSharedPreference(getApplicationContext(), Constants.currency, data.getString("currency_symbol"));
                                     Utility.setSharedPreference(getApplicationContext(), "startWeek", data.getString("start_week"));
-
                                     String dateFormat = data.getString("date_format");
                                     dateFormat = dateFormat.replace("m", "MM");
                                     dateFormat = dateFormat.replace("d", "dd");
                                     dateFormat = dateFormat.replace("Y", "yyyy");
                                     System.out.println("dateFormat===" + dateFormat);
                                     Utility.setSharedPreference(getApplicationContext(), "dateFormat", dateFormat);
-
                                     String datesFormat = data.getString("date_format");
                                     datesFormat = datesFormat.replace("m", "MM");
                                     datesFormat = datesFormat.replace("d", "dd");
@@ -587,13 +593,11 @@ public class Login extends Activity {
                                     String datetimeFormat = datesFormat + " " + "hh:mm aa";
                                     System.out.println("datetimeFormat===" + datetimeFormat);
                                     Utility.setSharedPreference(getApplicationContext(), "datetimeFormat", datetimeFormat);
-
                                     Utility.setSharedPreference(getApplicationContext(), "language", data.getString("language"));
                                     String imgUrl = Utility.getSharedPreferences(getApplicationContext(), "imagesUrl") + data.getString("image");
                                     Utility.setSharedPreference(getApplicationContext(), Constants.userImage, imgUrl);
                                     Utility.setSharedPreference(getApplicationContext(), Constants.userName, data.getString("username"));
                                     Utility.setSharedPreference(getApplicationContext(), "schoolName", data.getString("sch_name"));
-
                                     if (data.getString("role").equals("parent")) {
                                         JSONArray childArray = data.getJSONArray("parent_childs");
                                         if (childArray.length() == 1) {
@@ -685,11 +689,55 @@ public class Login extends Activity {
                 DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
                 DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
         requestQueue.add(jsonObjectRequest);
-    }
+    }*/
 
+  /*  private void postData() {
+        final ProgressDialog pd = new ProgressDialog(this);
+        pd.setMessage("Loading");
+        pd.setCancelable(false);
+        pd.show();
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl(Utility.getSharedPreferences(getApplicationContext(), "apiUrl"))
+                // .client(getHeaders())
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+        apiInterface retrofitAPI = retrofit.create(apiInterface.class);
 
+        // passing data from our text fields to our modal class.
+        final JSONObject jsonObject = new JSONObject();
+        try {
+            jsonObject.put("username", et_userName.getText().toString());
+            jsonObject.put("password", et_password.getText().toString());
+            jsonObject.put("deviceToken", device_token);
+            System.out.println("Login Details==" + jsonObject.toString());
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        RequestBody requestBody = RequestBody.create(MediaType.parse("application/json; charset=utf-8"), jsonObject.toString());
 
+        Call<RequestBody> call = retrofitAPI.loginData(requestBody);
 
+        call.enqueue(new Callback<RequestBody>() {
+            @Override
+            public void onResponse(Call<RequestBody> call, retrofit2.Response<RequestBody> response) {
+                try {
+                    Log.d("response", "onResponse: " + response.toString());
+                    Toast.makeText(Login.this, "Data added to API", Toast.LENGTH_SHORT).show();
+                } catch (Exception e) {
+                    Log.d("response", "onResponse: " + e.toString());
+                    e.printStackTrace();
+                }
+
+            }
+
+            @Override
+            public void onFailure(Call<RequestBody> call, Throwable t) {
+                Log.d("response", "onResponse: " + t.toString());
+                Toast.makeText(Login.this, t.toString(), Toast.LENGTH_SHORT).show();
+
+            }
+        });
+    }*/
 
  /*   private void getDataFromApi(String bodyParams) {
 
@@ -846,52 +894,5 @@ public class Login extends Activity {
         //Adding request to the queue
         requestQueue.add(stringRequest);
     }*/
-
-    private void showChildList() {
-        View view = getLayoutInflater().inflate(R.layout.fragment_login_bottom_sheet, null);
-        view.setMinimumHeight(500);
-
-        TextView headerTV = view.findViewById(R.id.login_bottomSheet_header);
-        ImageView crossBtn = view.findViewById(R.id.login_bottomSheet_crossBtn);
-        RecyclerView childListView = view.findViewById(R.id.login_bottomSheet_listview);
-
-        headerTV.setBackgroundColor(Color.parseColor(Utility.getSharedPreferences(getApplicationContext(), Constants.secondaryColour)));
-        headerTV.setText(getString(R.string.childList));
-
-        Log.e("ImageList", childImageList.toString());
-        Log.e("Class List", childClassList.toString());
-        Log.e("ID List", childIdList.toString());
-
-        LoginChildListAdapter adapter = new LoginChildListAdapter(Login.this, childIdList, childNameList, childClassList, childImageList);
-        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
-        childListView.setLayoutManager(mLayoutManager);
-        childListView.setItemAnimator(new DefaultItemAnimator());
-        childListView.setAdapter(adapter);
-
-        final BottomSheetDialog dialog = new BottomSheetDialog(Login.this);
-
-        dialog.setContentView(view);
-        dialog.show();
-
-        crossBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                dialog.dismiss();
-
-            }
-        });
-    }
-
-    public void setLocale(String localeName) {
-        myLocale = new Locale(localeName);
-        Resources res = getResources();
-        DisplayMetrics dm = res.getDisplayMetrics();
-        Configuration conf = res.getConfiguration();
-        conf.locale = myLocale;
-        res.updateConfiguration(conf, dm);
-        Intent refresh = new Intent(this, Login.class);
-        refresh.putExtra("currentLang", localeName);
-        startActivity(refresh);
-    }
 
 }

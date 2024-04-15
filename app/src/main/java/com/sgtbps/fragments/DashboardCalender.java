@@ -88,6 +88,8 @@ public class DashboardCalender extends Fragment implements CustomCalendar.Roboto
         calendar.set(Calendar.DAY_OF_MONTH, calendar.getActualMaximum(Calendar.DAY_OF_MONTH));
         Date end = calendar.getTime();
 
+        Log.d("TAG32589", "onCreateView: "+Utility.getSharedPreferences(getActivity(), Constants.loginType).equals("parent"));
+
         if(Utility.getSharedPreferences(getActivity(), Constants.loginType).equals("parent")){
             if (Utility.isConnectingToInternet(getActivity())) {
                 params.put("date_from", dateFormatter.format(begining));
@@ -96,7 +98,7 @@ public class DashboardCalender extends Fragment implements CustomCalendar.Roboto
                 params.put("role", Utility.getSharedPreferences(getActivity(), Constants.loginType));
                 params.put("user_id", Utility.getSharedPreferences(getActivity(), Constants.userId));
                 JSONObject obj=new JSONObject(params);
-                Log.e("params ", obj.toString());
+                Log.e("params3422352345 ", obj.toString());
                 getDataFromApi(obj.toString());
             } else {
                 makeText(getActivity(),R.string.noInternetMsg, Toast.LENGTH_SHORT).show();
@@ -109,7 +111,8 @@ public class DashboardCalender extends Fragment implements CustomCalendar.Roboto
                 params.put("student_id", Utility.getSharedPreferences(getActivity().getApplicationContext(), "studentId"));
                 params.put("role", Utility.getSharedPreferences(getActivity(), Constants.loginType));
                 JSONObject obj=new JSONObject(params);
-                Log.e("params ", obj.toString());
+                Log.d("paramriueytirueytiuers ", obj.toString());
+                Log.d("paramriueytirueytiuers ", params.toString());
                 getDataFromApi(obj.toString());
             } else {
                 makeText(getActivity(),R.string.noInternetMsg, Toast.LENGTH_SHORT).show();

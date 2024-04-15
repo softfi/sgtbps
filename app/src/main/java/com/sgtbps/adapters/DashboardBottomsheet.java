@@ -2,6 +2,7 @@ package com.sgtbps.adapters;
 
 import static android.widget.Toast.makeText;
 
+import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.graphics.Paint;
 import android.util.Log;
@@ -96,7 +97,7 @@ public class DashboardBottomsheet extends RecyclerView.Adapter<DashboardBottomsh
     }
 
     @Override
-    public void onBindViewHolder(final MyViewHolder holder, final int position) {
+    public void onBindViewHolder(final MyViewHolder holder, @SuppressLint("RecyclerView") final int position) {
 
 
         if(eventTypeList.get(position).equals("task")) {
@@ -182,14 +183,11 @@ public class DashboardBottomsheet extends RecyclerView.Adapter<DashboardBottomsh
     }
 
     private void deleteTaskApi (String bodyParams) {
-
         final ProgressDialog pd = new ProgressDialog(context);
         pd.setMessage("Loading");
         pd.setCancelable(false);
         pd.show();
-
         final String requestBody = bodyParams;
-
         String url = Utility.getSharedPreferences(context.getApplicationContext(), "apiUrl") + Constants.deleteTaskUrl;
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override

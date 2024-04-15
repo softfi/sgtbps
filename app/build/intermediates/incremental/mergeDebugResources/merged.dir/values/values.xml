@@ -662,7 +662,7 @@
     <string name="amt">Amount</string>
     <string name="answer">Answer</string>
     <string name="apiErrorMsg">Unable to get response from API</string>
-    <string name="app_name">SVNIC</string>
+    <string name="app_name">SGTBPS</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
     <string name="applyDateError">The Apply Date field is required </string>
     <string name="applyleave">Apply Leave</string>
@@ -922,6 +922,7 @@
     <string name="selectDateError"> Please select task date </string>
     <string name="selectTitleError"> Please enter task title </string>
     <string name="sessionStartMonth">Session Start Month</string>
+    <string name="sgtbps">SGTBPS</string>
     <string name="staff">Staff</string>
     <string name="startEndTime">Start Time / End Time</string>
     <string name="startexam">Start Exam</string>
@@ -980,6 +981,7 @@
     <string name="view">View</string>
     <string name="wednesday">Wednesday</string>
     <string name="weight">Weight</string>
+    <string name="welcome">Welcome,</string>
     <string name="wrong">Wrong</string>
     <string name="wronganswer">Wrong Answer</string>
     <string name="yes">Yes</string>

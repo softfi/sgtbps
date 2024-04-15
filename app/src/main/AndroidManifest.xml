@@ -22,18 +22,23 @@
     <uses-feature
         android:name="android.hardware.camera.autofocus"
         android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
 
     <application
         android:name=".utils.MyApp"
-        android:icon="@drawable/app_icon"
+        android:icon="@drawable/splash"
         android:label="@string/app_name"
         android:launchMode="singleInstance"
         android:requestLegacyExternalStorage="true"
-        android:roundIcon="@drawable/app_icon"
+        android:roundIcon="@drawable/splash"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-
+        <!--        <activity-->
+        <!--            android:name=".DemoActivity"-->
+        <!--            android:exported="false" />-->
         <activity
             android:name=".students.StudentCoursePerformance"
             android:exported="true" />

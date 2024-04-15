@@ -22,7 +22,7 @@ import java.util.Locale;
 public class SplashActivity extends AppCompatActivity {
 
     private static final int SPLASH_TIME_OUT = 1000;
-    ImageView logoIV;
+  //  ImageView logoIV;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +31,7 @@ public class SplashActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_splash);
 
-        logoIV = findViewById(R.id.splash_logo);
+      //  logoIV = findViewById(R.id.splash_logo);
 
         Boolean isLocaleSet;
 
@@ -41,14 +41,14 @@ public class SplashActivity extends AppCompatActivity {
             isLocaleSet = false;
         }
 
-        if(isLocaleSet) {
+        if (isLocaleSet) {
             setLocale(Utility.getSharedPreferences(getApplicationContext(), Constants.langCode));
         }
         splash();
 
     }
-    private void splash() {
 
+    private void splash() {
         new Handler().postDelayed(new Runnable() {
             public void run() {
                 Boolean isLoggegIn;
@@ -57,7 +57,7 @@ public class SplashActivity extends AppCompatActivity {
                 try {
                     isLoggegIn = Utility.getSharedPreferencesBoolean(getApplicationContext(), Constants.isLoggegIn);
                     isUrlTaken = Utility.getSharedPreferencesBoolean(getApplicationContext(), "isUrlTaken");
-                    Log.d("TAG123", "run: "+ isUrlTaken.toString());
+                    Log.d("TAG123", "run: " + isUrlTaken.toString());
                 } catch (NullPointerException NPE) {
                     isLoggegIn = false;
                     isUrlTaken = false;
@@ -66,12 +66,12 @@ public class SplashActivity extends AppCompatActivity {
                 Log.e("loggeg", isLoggegIn.toString());
                 Log.e("isUrlTaken", isUrlTaken.toString());
 
-                if(Constants.askUrlFromUser) {
-                    if(isLoggegIn){
+                if (Constants.askUrlFromUser) {
+                    if (isLoggegIn) {
                         Intent i = new Intent(getApplicationContext(), StudentDashboard.class);
                         startActivity(i);
                         finish();
-                    }else {
+                    } else {
                         Intent i = new Intent(getApplicationContext(), Login.class);
                         startActivity(i);
                         finish();
@@ -92,11 +92,11 @@ public class SplashActivity extends AppCompatActivity {
 //                        finish();
 //                    }
                 } else {
-                    if(isLoggegIn){
+                    if (isLoggegIn) {
                         Intent i = new Intent(getApplicationContext(), StudentDashboard.class);
                         startActivity(i);
                         finish();
-                    }else {
+                    } else {
                         Intent i = new Intent(getApplicationContext(), Login.class);
                         startActivity(i);
                         finish();

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SVNIC</string>
+    <string name="app_name">SGTBPS</string>
     <string name="empty"></string>
     <string name="submit_success">Submit Successfully</string>
     <string name="upload">Upload File</string>
@@ -367,6 +367,8 @@
     <string name="switchStudent">Switch Child</string>
     <string name="title"> Title </string>
     <string name="Documents">Documents</string>
+    <string name="sgtbps">SGTBPS</string>
+    <string name="welcome">Welcome,</string>
     <!--OTHERS-->
 
 </resources>

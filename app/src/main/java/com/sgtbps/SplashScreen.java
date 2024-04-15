@@ -23,7 +23,6 @@ public class SplashScreen extends AppCompatActivity {
     private static final int SPLASH_TIME_OUT = 1000;
     ImageView logoIV;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,15 +66,14 @@ public class SplashScreen extends AppCompatActivity {
                 Log.e("isUrlTaken", isUrlTaken.toString());
 
                 if(Constants.askUrlFromUser) {
+                    Intent i;
                     if(isLoggegIn){
-                        Intent i = new Intent(getApplicationContext(), StudentDashboard.class);
-                        startActivity(i);
-                        finish();
+                        i = new Intent(getApplicationContext(), StudentDashboard.class);
                     }else {
-                        Intent i = new Intent(getApplicationContext(), Login.class);
-                        startActivity(i);
-                        finish();
+                        i = new Intent(getApplicationContext(), Login.class);
                     }
+                    startActivity(i);
+                    finish();
 //                    if(isUrlTaken) {
 //                        if(isLoggegIn){
 //                            Intent i = new Intent(getApplicationContext(), StudentDashboard.class);
@@ -92,15 +90,14 @@ public class SplashScreen extends AppCompatActivity {
 //                        finish();
 //                    }
                 } else {
+                    Intent i;
                     if(isLoggegIn){
-                        Intent i = new Intent(getApplicationContext(), StudentDashboard.class);
-                        startActivity(i);
-                        finish();
+                        i = new Intent(getApplicationContext(), StudentDashboard.class);
                     }else {
-                        Intent i = new Intent(getApplicationContext(), Login.class);
-                        startActivity(i);
-                        finish();
+                        i = new Intent(getApplicationContext(), Login.class);
                     }
+                    startActivity(i);
+                    finish();
                 }
             }
         }, SPLASH_TIME_OUT);

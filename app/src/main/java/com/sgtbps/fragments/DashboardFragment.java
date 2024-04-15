@@ -115,7 +115,7 @@ public class DashboardFragment extends Fragment {
         courseModelArrayList.add(new CourseModel("Lesson Plan", R.drawable.lesson));
         courseModelArrayList.add(new CourseModel("Fees", R.drawable.fees22));
         courseModelArrayList.add(new CourseModel("Syllabus", R.drawable.syllabus));
-        courseModelArrayList.add(new CourseModel("Dashboard center", R.drawable.file));
+        courseModelArrayList.add(new CourseModel("Download center", R.drawable.file));
         courseModelArrayList.add(new CourseModel("Notice Board", R.drawable.notice));
         courseModelArrayList.add(new CourseModel("Online Exam", R.drawable.online_exam));
         courseModelArrayList.add(new CourseModel("Library", R.drawable.library));
@@ -138,7 +138,7 @@ public class DashboardFragment extends Fragment {
                 params.put("role", Utility.getSharedPreferences(getActivity(), Constants.loginType));
                 params.put("user_id", Utility.getSharedPreferences(getActivity(), Constants.userId));
                 JSONObject obj = new JSONObject(params);
-                Log.e("params ", obj.toString());
+                Log.e("params958678934576 ", obj.toString());
                 getDataFromApi(obj.toString());
             } else {
                 makeText(getActivity(), R.string.noInternetMsg, Toast.LENGTH_SHORT).show();
@@ -151,7 +151,7 @@ public class DashboardFragment extends Fragment {
                 params.put("date_to", getDateOfMonth(new Date(), "last"));
                 params.put("role", Utility.getSharedPreferences(getActivity(), Constants.loginType));
                 JSONObject obj = new JSONObject(params);
-                Log.e("params ", obj.toString());
+                Log.e("params4356", obj.toString());
                 getDataFromApi(obj.toString());
             } else {
                 makeText(getActivity(), R.string.noInternetMsg, Toast.LENGTH_SHORT).show();
@@ -242,12 +242,12 @@ public class DashboardFragment extends Fragment {
         }) {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
-
                 headers.put("Client-Service", Constants.clientService);
                 headers.put("Auth-Key", Constants.authKey);
                 headers.put("Content-Type", Constants.contentType);
                 headers.put("User-ID", Utility.getSharedPreferences(getActivity().getApplicationContext(), "userId"));
                 headers.put("Authorization", Utility.getSharedPreferences(getActivity().getApplicationContext(), "accessToken"));
+               Log.e("tasdffsaf",headers.toString());
                 return headers;
             }
 

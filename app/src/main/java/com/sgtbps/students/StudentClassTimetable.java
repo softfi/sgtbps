@@ -306,13 +306,16 @@ public class StudentClassTimetable extends BaseActivity {
         final String requestBody = bodyParams;
 
         String url = Utility.getSharedPreferences(getApplicationContext(), "apiUrl")+Constants.getClassScheduleUrl;
+
+        Log.d("URL",url+"RequestBody"+requestBody);
+
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String result) {
                 if (result != null) {
                     pd.dismiss();
                     try {
-                        Log.e("Result", result);
+                        Log.d("URL",result+"RequestBody");
                         JSONObject object = new JSONObject(result);
 
                         String success = object.getString("status");

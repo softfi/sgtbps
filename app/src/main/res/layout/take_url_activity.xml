@@ -9,11 +9,11 @@
 
     <ImageView
         android:id="@+id/takeurl_logo"
-        android:layout_width="300dp"
+        android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_above="@+id/dataLay_takeUrl"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/logo_small"
+        android:src="@drawable/splash"
         android:scaleType="fitXY"
         />
 

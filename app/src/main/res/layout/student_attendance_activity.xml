@@ -15,111 +15,113 @@
             android:id="@+id/heading_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="10dp">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/primaryText"
                 android:gravity="start|center"
                 android:paddingLeft="10dp"
                 android:text="@string/date"
-                android:textStyle="bold"
-                android:textColor="@color/textHeading" />
+                android:textColor="@color/textHeading"
+                android:textSize="@dimen/primaryText"
+                android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/attendence_date"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="40dp"
-            android:textSize="@dimen/primaryText"
-            android:gravity="start|center"
-            android:padding="10dp"
-            android:text="@string/date"
-            android:textStyle="bold"
-            android:textColor="@color/textHeading" />
-        </LinearLayout>
-    <LinearLayout
-        android:id="@+id/linear_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:visibility="visible">
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0.4sp"
-            android:background="@color/seperator"
-           />
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="40dp">
-
-            <LinearLayout
+            <TextView
+                android:id="@+id/attendence_date"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_gravity="center"
-                android:weightSum="3">
+                android:layout_height="wrap_content"
+                android:gravity="start|center"
+                android:minHeight="40dp"
+                android:padding="10dp"
+                android:text="@string/date"
+                android:textColor="@color/textHeading"
+                android:textSize="@dimen/primaryText"
+                android:textStyle="bold" />
+        </LinearLayout>
 
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="left"
-                    android:text="@string/subject"
-                    android:textStyle="bold"
-                    android:paddingStart="10sp"
-                    android:textColor="@color/textHeading"/>
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/time"
-                    android:textStyle="bold"
-                    android:gravity="center"
-                    android:textColor="@color/textHeading"/>
-             <!--   <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.7"
-                    android:text="@string/room"
-                    android:textStyle="bold"
-                    android:gravity="center"
-                    android:textColor="@color/textHeading"/>-->
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.9"
-                    android:text="@string/attendance"
-                    android:textStyle="bold"
-                    android:paddingRight="10dp"
-                    android:gravity="right"
-                    android:textColor="@color/textHeading"/>
-
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0.4sp"
-            android:background="@color/seperator"/>
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerview"
+        <LinearLayout
+            android:id="@+id/linear_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp"/>
+            android:orientation="vertical"
+            android:visibility="visible">
 
-        <View
-        android:layout_width="match_parent"
-        android:layout_height="0.4sp"
-        android:background="@color/seperator"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.4sp"
+                android:background="@color/seperator" />
 
-    </LinearLayout>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:paddingStart="10sp"
+                        android:text="@string/subject"
+                        android:textColor="@color/textHeading"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/time"
+                        android:textColor="@color/textHeading"
+                        android:textStyle="bold" />
+                    <!--   <TextView
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="0.7"
+                           android:text="@string/room"
+                           android:textStyle="bold"
+                           android:gravity="center"
+                           android:textColor="@color/textHeading"/>-->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:gravity="right"
+                        android:paddingRight="10dp"
+                        android:text="@string/attendance"
+                        android:textColor="@color/textHeading"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.4sp"
+                android:background="@color/seperator" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.4sp"
+                android:background="@color/seperator" />
+
+        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/nodata_layout"
@@ -132,13 +134,14 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:src="@drawable/no_data"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:src="@drawable/no_data" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/noData"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:text="@string/noData" />
 
         </LinearLayout>
 
@@ -305,7 +308,7 @@
 
         </LinearLayout>
 
-        <com.mks.cms.utils.CustomCalendar
+        <com.sgtbps.utils.CustomCalendar
             android:id="@+id/robotoCalendarPicker"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

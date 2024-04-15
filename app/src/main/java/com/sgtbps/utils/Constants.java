@@ -59,7 +59,7 @@ public class Constants {
     public static final String deleteTaskUrl = "webservice/deleteTask";
     public static final String markTaskUrl = "webservice/updateTask";
     public static final String getTaskUrl = "webservice/getTask";
-    public static final String getModuleUrl = "webservice/getModuleStatus";
+ //   public static final String getModuleUrl = "webservice/getModuleStatus";
     public static final String getOnlineExamUrl = "webservice/getOnlineExam";
     public static final String courselistUrl = "webservice/courselist";
     public static final String liveclassesUrl = "webservice/liveclasses";
