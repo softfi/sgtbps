@@ -75,6 +75,8 @@ public class Login extends Activity {
     //ImageView logoIV;
     TextView tv_forgotPass /*privacyTV*/;
     Button btn_login;
+
+    String langCode = "";
     EditText et_userName, et_password;
     //LinearLayout changeUrlBtn;
     ImageView btn_showPassword, usernameIcon, passwordIcon;
@@ -104,7 +106,7 @@ public class Login extends Activity {
         FirebaseInstanceId.getInstance().getInstanceId().addOnSuccessListener(Login.this, new OnSuccessListener<InstanceIdResult>() {
             @Override
             public void onSuccess(InstanceIdResult instanceIdResult) {
-                device_token = FirebaseInstanceId.getInstance().getToken() + "";
+                device_token = FirebaseInstanceId.getInstance().getToken();
                 Log.e("DEVICE TOKEN", device_token);
                 System.out.println("DEVICE TOKEN=" + device_token);
             }
@@ -294,7 +296,7 @@ public class Login extends Activity {
                     int statusCode = error.networkResponse.statusCode;
                     NetworkResponse response = error.networkResponse;
 
-                    Log.e("Volley Error", "" + statusCode + " " + response.data.toString());
+                    Log.e("Volley Error", statusCode + " " + response.data.toString());
                     if (error instanceof ClientError) {
                         Toast.makeText(getApplicationContext(), R.string.apiErrorMsg, Toast.LENGTH_SHORT).show();
                     } else {
@@ -482,6 +484,88 @@ public class Login extends Activity {
         });
     }
 
+
+    private void getDataFromApi () {
+        Log.d("domain", "getDataFromApi: ");
+        final ProgressDialog pd = new ProgressDialog(this);
+        pd.setMessage("Loading");
+        pd.setCancelable(false);
+        pd.show();
+
+
+        final String url = "https://sgtbps.in/app";
+        Log.d("url", "getDataFromApi: "+ url);
+
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String result) {
+                Log.d("Result", "getDataFromApi: "+ result);
+                if (result != null) {
+                    pd.dismiss();
+                    try {
+                        JSONObject object = new JSONObject(result);
+                        //object.getString("status");
+                        Utility.setSharedPreferenceBoolean(getApplicationContext(), "isUrlTaken", true);
+                        Utility.setSharedPreference(MyApp.getContext(), Constants.apiUrl, object.getString("url"));
+                        Utility.setSharedPreference(MyApp.getContext(), Constants.imagesUrl, object.getString("site_url"));
+                        String app_ver= object.getString("app_ver");
+                        Utility.setSharedPreference(getApplicationContext(), Constants.app_ver, app_ver);
+                        String appLogo = object.getString("site_url") + "uploads/school_content/logo/app_logo/" + object.getString("app_logo");
+                        Utility.setSharedPreference(MyApp.getContext(), Constants.appLogo, appLogo );
+
+                        String secColour = object.getString("app_secondary_color_code");
+                        String primaryColour = object.getString("app_primary_color_code");
+
+                        if(secColour.length() == 7 && primaryColour.length() == 7) {
+                            Utility.setSharedPreference(getApplicationContext(), Constants.secondaryColour, secColour);
+                            Utility.setSharedPreference(getApplicationContext(), Constants.primaryColour, primaryColour);
+                        }else {
+                            Utility.setSharedPreference(getApplicationContext(), Constants.secondaryColour, Constants.defaultSecondaryColour);
+                            Utility.setSharedPreference(getApplicationContext(), Constants.primaryColour, Constants.defaultPrimaryColour);
+                        }
+                        Log.e("apiUrl Utility", Utility.getSharedPreferences(getApplicationContext(), "apiUrl"));
+                        langCode = object.getString("lang_code");
+                        Utility.setSharedPreference(getApplicationContext(), Constants.langCode,langCode);
+
+                        if(!langCode.isEmpty()) {
+                            setLocales(langCode);
+                        }
+
+                        Intent asd = new Intent(getApplicationContext(), Login.class);
+                        startActivity(asd);
+                        finish();
+
+                    } catch (JSONException e) {
+                        langCode = "";
+                        e.printStackTrace();
+                    }
+                } else {
+                    pd.dismiss();
+                    Toast.makeText(getApplicationContext(), "Invalid Domain.", Toast.LENGTH_SHORT).show();
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                pd.dismiss();
+                System.out.println("not responding");
+                try {
+                    int  statusCode = error.networkResponse.statusCode;
+                    NetworkResponse response = error.networkResponse;
+                    Log.e("Volley Error", statusCode+" "+response.data.toString());
+                    if(error instanceof ClientError) {
+                        Toast.makeText(getApplicationContext(), R.string.apiErrorMsg, Toast.LENGTH_SHORT).show();
+                    } else {
+                        Toast.makeText(getApplicationContext(), R.string.apiErrorMsg, Toast.LENGTH_SHORT).show();
+                    }
+                } catch (NullPointerException npe) {
+                    Toast.makeText(getApplicationContext(), R.string.apiErrorMsg, Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+        RequestQueue requestQueue = Volley.newRequestQueue(Login.this); //Creating a Request Queue
+        requestQueue.add(stringRequest);//Adding request to the queue
+    }
     public void setLocale(String localeName) {
         myLocale = new Locale(localeName);
         Resources res = getResources();
@@ -492,6 +576,23 @@ public class Login extends Activity {
         Intent refresh = new Intent(this, Login.class);
         refresh.putExtra("currentLang", localeName);
         startActivity(refresh);
+    }
+
+    public void setLocales(String localeName) {
+
+        if(localeName.isEmpty() || localeName.equals("null")) {
+            localeName = "en";
+            Log.e("localName status", "empty");
+        }
+        Locale myLocale = new Locale(localeName);
+        Resources res = getResources();
+        DisplayMetrics dm = res.getDisplayMetrics();
+        Configuration conf = res.getConfiguration();
+        conf.locale = myLocale;
+        res.updateConfiguration(conf, dm);
+        Log.e("Status", "Locale updated!");
+        Utility.setSharedPreferenceBoolean(getApplicationContext(), Constants.isLocaleSet, true);
+        Utility.setSharedPreference(getApplicationContext(), Constants.currentLocale, localeName);
     }
 
       /*  private void postData1(JSONObject bodyParams) {

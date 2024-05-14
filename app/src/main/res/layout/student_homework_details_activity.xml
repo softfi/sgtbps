@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.mks.cms.students.StudentHomeworkDetails"
+    tools:context=".students.StudentHomeworkDetails"
     >
 
     <androidx.cardview.widget.CardView

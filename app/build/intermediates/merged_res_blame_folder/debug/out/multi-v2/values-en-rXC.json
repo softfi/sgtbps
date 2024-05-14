@@ -4,7 +4,7 @@
             "outputFile": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rXC\\values-en-rXC.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-3\\10877399e07c028cb2e5d7cca03c9ccf\\transformed\\appcompat-1.0.0\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-3\\1f23606f1b7e02ac0876a17e2164a5f7\\transformed\\appcompat-1.0.0\\res\\values-en-rXC\\values-en-rXC.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-3\\75904ea6a22c03f9eee14dcbdc06113a\\transformed\\core-1.0.0\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-3\\1d65dc1f9ea2a7ce820d3defbbd32291\\transformed\\core-1.0.0\\res\\values-en-rXC\\values-en-rXC.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

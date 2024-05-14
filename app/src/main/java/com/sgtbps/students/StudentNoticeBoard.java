@@ -78,11 +78,15 @@ public class StudentNoticeBoard extends BaseActivity {
         pd.show();
         final String requestBody = bodyParams;
         String url = Utility.getSharedPreferences(getApplicationContext(), "apiUrl")+Constants.getNotificationsUrl;
+        Log.d("TAG", requestBody+"getDataFromApi: "+url );
+
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String result) {
                 if (result != null) {
                     pd.dismiss();
+
+                    Log.d("TAG", "onResponse: "+result);
                     try {
                         Log.e("Result", result);
                         JSONObject object = new JSONObject(result);

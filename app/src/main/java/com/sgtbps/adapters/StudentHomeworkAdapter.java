@@ -8,6 +8,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.graphics.Color;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -162,6 +163,7 @@ public class StudentHomeworkAdapter extends RecyclerView.Adapter<StudentHomework
             holder.evaluationDateHeadTV.setVisibility(View.VISIBLE);
             holder.evaluatedByHeadTV.setVisibility(View.VISIBLE);
             int status=Integer.parseInt(homeworkStatusList.get(position));
+            Log.d("TAG", "onBindViewHolder: "+status);
             //STATUS
             if(status>0) {
                 holder.statusTV.setVisibility(View.VISIBLE);
@@ -226,7 +228,9 @@ public class StudentHomeworkAdapter extends RecyclerView.Adapter<StudentHomework
         public void onReceive(Context context, Intent intent) {
             //Fetching the download id received with the broadcast
             long id = intent.getLongExtra(DownloadManager.EXTRA_DOWNLOAD_ID, -1);
+
             //Checking if the received broadcast is for our enqueued download by matching download id
+
             if (downloadID == id) {
                 NotificationCompat.Builder mBuilder =
                         new NotificationCompat.Builder(context)

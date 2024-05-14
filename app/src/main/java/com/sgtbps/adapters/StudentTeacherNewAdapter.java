@@ -42,23 +42,24 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.UnsupportedEncodingException;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.Map;
 
 public class StudentTeacherNewAdapter extends RecyclerView.Adapter<StudentTeacherNewAdapter.MyViewHolder> {
-    private StudentTeachersList context;
+    private final StudentTeachersList context;
     StudentTeacherDetailsAdapter adapter;
-    private ArrayList<String> teacherContactList;
-    private ArrayList<String> teacherNameList;
-    private ArrayList<String> staff_idList;
+    private final ArrayList<String> teacherContactList;
+    private final ArrayList<String> teacherNameList;
+    private final ArrayList<String> staff_idList;
     ArrayList<String> idList = new ArrayList<String>();
     ArrayList<String> dayList = new ArrayList<String>();
     ArrayList<String> time_List = new ArrayList<String>();
     ArrayList<String> subject_nameList = new ArrayList<String>();
     ArrayList<String> room_noList = new ArrayList<String>();
-    ArrayList<String> teacheremailList = new ArrayList<String>();
+    ArrayList<String> teacherEmailList = new ArrayList<String>();
     private ArrayList<String> class_teacher_idList;
     private ArrayList<String> ratingList;
     public Map<String, String> params = new Hashtable<String, String>();
@@ -70,7 +71,7 @@ public class StudentTeacherNewAdapter extends RecyclerView.Adapter<StudentTeache
         this.teacherContactList = teacherContactList;
         this.teacherNameList = teacherNameList;
         this.class_teacher_idList = class_teacher_idList;
-        this.teacheremailList = teacheremailList;
+        this.teacherEmailList = teacheremailList;
         this.ratingList = ratingList;
         this.staff_idList = staff_idList;
     }
@@ -117,7 +118,7 @@ public class StudentTeacherNewAdapter extends RecyclerView.Adapter<StudentTeache
 
         holder.name.setText(teacherNameList.get(position));
         holder.contact.setText(teacherContactList.get(position));
-        holder.mail.setText(teacheremailList.get(position));
+        holder.mail.setText(teacherEmailList.get(position));
         if(Integer.valueOf(class_teacher_idList.get(position))>0){
             holder.classteacher.setVisibility(View.VISIBLE);
         }else{
@@ -138,12 +139,12 @@ public class StudentTeacherNewAdapter extends RecyclerView.Adapter<StudentTeache
             holder.rating.setVisibility(View.GONE);
         }
 
-        if(teacherContactList.get(position).equals("")){
+        if(teacherContactList.get(position).isEmpty()){
             holder.contact_layout.setVisibility(View.GONE);
         }else {
             holder.contact_layout.setVisibility(View.VISIBLE);
         }
-        if(teacheremailList.get(position).equals("")){
+        if(teacherEmailList.get(position).isEmpty()){
             holder.email_layout.setVisibility(View.GONE);
         }else {
             holder.email_layout.setVisibility(View.VISIBLE);
@@ -166,7 +167,7 @@ public class StudentTeacherNewAdapter extends RecyclerView.Adapter<StudentTeache
             public void onClick(View arg0) {
                 Intent intent = new Intent(Intent.ACTION_SEND);
                 intent.setType("text/plain");
-                intent.putExtra(Intent.EXTRA_EMAIL, teacheremailList.get(position));
+                intent.putExtra(Intent.EXTRA_EMAIL, teacherEmailList.get(position));
                 intent.putExtra(Intent.EXTRA_SUBJECT, "");
                 intent.putExtra(Intent.EXTRA_TEXT, "");
                 context.startActivity(Intent.createChooser(intent, "Send Email"));
@@ -193,8 +194,7 @@ public class StudentTeacherNewAdapter extends RecyclerView.Adapter<StudentTeache
             makeText(context.getApplicationContext(), R.string.noInternetMsg, Toast.LENGTH_SHORT).show();
         }
 
-        adapter = new StudentTeacherDetailsAdapter(context.getApplicationContext(), idList, dayList, room_noList,
-                subject_nameList, time_List);
+        adapter = new StudentTeacherDetailsAdapter(context.getApplicationContext(), idList, dayList, room_noList, subject_nameList, time_List);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(context.getApplicationContext());
         recyclerview.setLayoutManager(mLayoutManager);
         recyclerview.setItemAnimator(new DefaultItemAnimator());
@@ -283,7 +283,7 @@ public class StudentTeacherNewAdapter extends RecyclerView.Adapter<StudentTeache
                                 idList.add(dataArray.getJSONObject(i).getString("id"));
                                 dayList.add(dataArray.getJSONObject(i).getString("day"));
                                 time_List.add(dataArray.getJSONObject(i).getString("time_from")+"-"+dataArray.getJSONObject(i).getString("time_to"));
-                                if(dataArray.getJSONObject(i).getString("code").equals("")){
+                                if(dataArray.getJSONObject(i).getString("code").isEmpty()){
                                     subject_nameList.add(dataArray.getJSONObject(i).getString("subject_name")+" "+dataArray.getJSONObject(i).getString("type"));
                                 }else{
                                     subject_nameList.add(dataArray.getJSONObject(i).getString("subject_name")+" "+dataArray.getJSONObject(i).getString("type")+" ("+dataArray.getJSONObject(i).getString("code")+")");
@@ -296,8 +296,6 @@ public class StudentTeacherNewAdapter extends RecyclerView.Adapter<StudentTeache
                         } catch (JSONException e) {
                         e.printStackTrace();
                 }
-                } else {
-
                 }
             }
         }, new Response.ErrorListener() {
@@ -308,7 +306,7 @@ public class StudentTeacherNewAdapter extends RecyclerView.Adapter<StudentTeache
             }
         }) {
             @Override
-            public Map<String, String> getHeaders() throws AuthFailureError {
+            public Map<String, String> getHeaders() {
                 headers.put("Client-Service", Constants.clientService);
                 headers.put("Auth-Key", Constants.authKey);
                 headers.put("Content-Type", Constants.contentType);
@@ -325,12 +323,7 @@ public class StudentTeacherNewAdapter extends RecyclerView.Adapter<StudentTeache
 
             @Override
             public byte[] getBody() throws AuthFailureError {
-                try {
-                    return requestBody == null ? null : requestBody.getBytes("utf-8");
-                } catch (UnsupportedEncodingException uee) {
-                    VolleyLog.wtf("Unsupported Encoding while trying to get the bytes of %s using %s", requestBody, "utf-8");
-                    return null;
-                }
+                return requestBody == null ? null : requestBody.getBytes(StandardCharsets.UTF_8);
             }
         };
         RequestQueue requestQueue = Volley.newRequestQueue(context.getApplicationContext()); //Creating a Request Queue
@@ -349,14 +342,12 @@ public class StudentTeacherNewAdapter extends RecyclerView.Adapter<StudentTeache
                             JSONObject obj = new JSONObject(result);
                             String status = obj.getString("status");
                             if(status.equals("1")){
-                                Toast.makeText(context.getApplicationContext(),"Successfull", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(context.getApplicationContext(),"Successfully", Toast.LENGTH_SHORT).show();
                             }
 
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
-                    } else {
-
                     }
                 }
             }, new Response.ErrorListener() {
@@ -384,12 +375,7 @@ public class StudentTeacherNewAdapter extends RecyclerView.Adapter<StudentTeache
 
                 @Override
                 public byte[] getBody() throws AuthFailureError {
-                    try {
-                        return requestBody == null ? null : requestBody.getBytes("utf-8");
-                    } catch (UnsupportedEncodingException uee) {
-                        VolleyLog.wtf("Unsupported Encoding while trying to get the bytes of %s using %s", requestBody, "utf-8");
-                        return null;
-                    }
+                    return requestBody == null ? null : requestBody.getBytes(StandardCharsets.UTF_8);
                 }
             };
             RequestQueue requestQueue = Volley.newRequestQueue(context.getApplicationContext()); //Creating a Request Queue

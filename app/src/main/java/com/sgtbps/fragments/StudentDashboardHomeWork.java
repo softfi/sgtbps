@@ -162,8 +162,8 @@ public class StudentDashboardHomeWork extends Fragment {
                                 homeworkCreatedByList.add(dataArray.getJSONObject(i).getString("staff_created"));
                                 homeworkEvaluationByList.add(dataArray.getJSONObject(i).getString("staff_evaluated"));
                                 String fileName = "";
-                                String filePath = dataArray.getJSONObject(i).getString("document");
-                                if(!filePath.isEmpty()) {
+                                if(!dataArray.getJSONObject(i).getString("document").equals("null") && !dataArray.getJSONObject(i).getString("document").isEmpty()) {
+                                    String filePath = dataArray.getJSONObject(i).getString("document");
                                     String extension = filePath.substring(filePath.lastIndexOf("."));
                                     fileName = dataArray.getJSONObject(i).getString("id") + extension;
                                 }

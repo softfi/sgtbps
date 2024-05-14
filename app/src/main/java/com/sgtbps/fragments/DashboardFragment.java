@@ -4,6 +4,7 @@ import static android.widget.Toast.makeText;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.graphics.Paint;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -80,6 +81,7 @@ public class DashboardFragment extends Fragment {
         pendingValue = view.findViewById(R.id.pendin_value);
         nameText.setText("Hi, "+Utility.getSharedPreferences(getContext(), Constants.userName));
 
+
         Picasso.with(getContext()).load(Utility.getSharedPreferences(getContext(), "userImage")).placeholder(R.drawable.user).into(profileImage);
 
         attendanceLayout.setOnClickListener(new View.OnClickListener() {
@@ -107,7 +109,6 @@ public class DashboardFragment extends Fragment {
         });
 
         loadData();
-
 
         ArrayList<CourseModel> courseModelArrayList = new ArrayList<>();
         courseModelArrayList.add(new CourseModel("Examination", R.drawable.exam1));
@@ -163,8 +164,9 @@ public class DashboardFragment extends Fragment {
             JSONArray modulesArray = new JSONArray(Utility.getSharedPreferences(getActivity().getApplicationContext(), Constants.modulesArray));
 
             if (modulesArray.length() != 0) {
-                ArrayList<String> moduleCodeList = new ArrayList<String>();
-                ArrayList<String> moduleStatusList = new ArrayList<String>();
+
+               /* ArrayList<String> moduleCodeList = new ArrayList<String>();
+                ArrayList<String> moduleStatusList = new ArrayList<String>();*/
 
                 for (int i = 0; i < modulesArray.length(); i++) {
                     if (modulesArray.getJSONObject(i).getString("short_code").equals("student_attendance")

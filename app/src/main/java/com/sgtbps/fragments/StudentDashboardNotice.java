@@ -93,11 +93,14 @@ public class StudentDashboardNotice extends Fragment {
         pd.show();
         final String requestBody = bodyParams;
         String url = Utility.getSharedPreferences(getActivity(), "apiUrl")+Constants.getNotificationsUrl;
+
+        Log.d("TAG", requestBody+"getDataFromApi: "+url );
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String result) {
                 if (result != null) {
                     pd.dismiss();
+                    Log.d("TAG", "getDataFromApi: "+result );
                     try {
                         Log.e("Result", result);
                         JSONObject object = new JSONObject(result);

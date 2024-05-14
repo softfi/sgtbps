@@ -6,6 +6,11 @@
     tools:context="com.sgtbps.BaseActivity"
     android:orientation="vertical">
 
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:layout_width="match_parent"
         android:id="@+id/pullToRefresh"
@@ -17,7 +22,9 @@
             android:layout_height="match_parent">
         </androidx.recyclerview.widget.RecyclerView>
 
+
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
 
     <LinearLayout
         android:id="@+id/nodata_layout"
@@ -41,5 +48,8 @@
             android:textStyle="bold"/>
 
     </LinearLayout>
+
+</RelativeLayout>
+
 
 </LinearLayout>

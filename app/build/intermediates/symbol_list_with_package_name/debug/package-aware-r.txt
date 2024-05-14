@@ -2009,10 +2009,8 @@ id nav_home
 id nav_homework
 id nav_hostel
 id nav_library
-id nav_livegmeetclass
 id nav_logout
 id nav_noticeBoard
-id nav_online_course
 id nav_onlineexam
 id nav_profile
 id nav_syllabus
@@ -2022,7 +2020,6 @@ id nav_timeLine
 id nav_timetable
 id nav_transportRoute
 id nav_view
-id nav_zoomliveclasses
 id navigation
 id navigation_fees
 id navigation_header_container

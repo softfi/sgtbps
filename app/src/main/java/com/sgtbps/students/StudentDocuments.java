@@ -69,6 +69,7 @@ public class StudentDocuments extends BaseActivity {
                 startActivity(intent);
             }
         });
+
         documentListView = findViewById(R.id.studentDocument_listview);
 
         adapter = new StudentDocumentsAdapter(StudentDocuments.this, docTitleList, docUrlList);
@@ -97,7 +98,6 @@ public class StudentDocuments extends BaseActivity {
         } else {
             makeText(getApplicationContext(),R.string.noInternetMsg, Toast.LENGTH_SHORT).show();
         }
-
     }
 
     @Override
@@ -130,8 +130,12 @@ public class StudentDocuments extends BaseActivity {
                         docUrlList.clear();
                         if (dataArray.length() != 0) {
                             for(int i = 0; i < dataArray.length(); i++) {
+
                                 docTitleList.add(dataArray.getJSONObject(i).getString("title"));
                                 docUrlList.add(dataArray.getJSONObject(i).getString("doc"));
+
+                                Log.d("TAG", "onResponseg: "+docTitleList + docUrlList);
+
                             }
                             adapter.notifyDataSetChanged();
 
@@ -145,9 +149,9 @@ public class StudentDocuments extends BaseActivity {
                 } else {
                     pd.dismiss();
                     pullToRefresh.setVisibility(View.GONE);
-
                 }
             }
+
         }, new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError volleyError) {

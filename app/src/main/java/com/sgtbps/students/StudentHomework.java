@@ -57,7 +57,7 @@ public class StudentHomework extends BaseActivity {
     LinearLayout nodata_layout;
     SwipeRefreshLayout pullToRefresh;
     public Map<String, String> params = new Hashtable<String, String>();
-    public Map<String, String>  headers = new HashMap<String, String>();
+    public Map<String, String> headers = new HashMap<String, String>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,26 +82,26 @@ public class StudentHomework extends BaseActivity {
             @Override
             public void onRefresh() {
                 pullToRefresh.setRefreshing(true);
-                loaddata();
+                loadData();
             }
         });
-
-        loaddata();
+        loadData();
     }
-    public  void  loaddata(){
-        if(Utility.isConnectingToInternet(StudentHomework.this)){
+
+    public void loadData() {
+        if (Utility.isConnectingToInternet(StudentHomework.this)) {
             params.put("student_id", Utility.getSharedPreferences(getApplicationContext(), Constants.studentId));
-            JSONObject obj=new JSONObject(params);
+            JSONObject obj = new JSONObject(params);
             Log.e("params ", obj.toString());
             getDataFromApi(obj.toString());
 
-        }else{
-            makeText(getApplicationContext(),R.string.noInternetMsg, Toast.LENGTH_SHORT).show();
+        } else {
+            makeText(getApplicationContext(), R.string.noInternetMsg, Toast.LENGTH_SHORT).show();
         }
 
     }
 
-    private void getDataFromApi (String bodyParams) {
+    private void getDataFromApi(String bodyParams) {
 
         final ProgressDialog pd = new ProgressDialog(this);
         pd.setMessage("Loading");
@@ -110,7 +110,8 @@ public class StudentHomework extends BaseActivity {
 
         final String requestBody = bodyParams;
 
-        String url = Utility.getSharedPreferences(getApplicationContext(), "apiUrl")+Constants.getHomeworkUrl;
+        String url = Utility.getSharedPreferences(getApplicationContext(), "apiUrl") + Constants.getHomeworkUrl;
+        Log.d("TAG", requestBody+"getDataFromApi: "+url);
         Log.e("URL", url);
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
@@ -119,9 +120,11 @@ public class StudentHomework extends BaseActivity {
                 if (result != null) {
                     pd.dismiss();
                     try {
-                        Log.e("Result", result);
+
+                        Log.d("TAG", "Resultszx: " + result);
                         JSONObject obj = new JSONObject(result);
                         JSONArray dataArray = obj.getJSONArray("homeworklist");
+                        Log.d("TAG", "onResponse: " + dataArray);
 
                         homeworkIdList.clear();
                         homeworkTitleList.clear();
@@ -135,30 +138,34 @@ public class StudentHomework extends BaseActivity {
                         homeworkEvaluationDateList.clear();
                         homeworkStatusList.clear();
 
-                        if(dataArray.length() != 0) {
+                        if (dataArray.length() != 0) {
                             nodata_layout.setVisibility(View.GONE);
                             homeworkListView.setVisibility(View.VISIBLE);
-                            for(int i = 0; i < dataArray.length(); i++) {
+
+                            for (int i = 0; i < dataArray.length(); i++) {
+                                Log.d("Error", "fjrhjggry" + dataArray.getJSONObject(i).getString("id"));
                                 homeworkIdList.add(dataArray.getJSONObject(i).getString("id"));
-                                  homeworkTitleList.add(dataArray.getJSONObject(i).getString("description"));
+                                homeworkTitleList.add(dataArray.getJSONObject(i).getString("description"));
                                 homeworkSubjectNameList.add(dataArray.getJSONObject(i).getString("name"));
                                 homeworkHomeworkDateList.add(dataArray.getJSONObject(i).getString("homework_date"));
                                 homeworkSubmissionDateList.add(dataArray.getJSONObject(i).getString("submit_date"));
                                 homeworkCreatedByList.add(dataArray.getJSONObject(i).getString("staff_created"));
                                 homeworkEvaluationByList.add(dataArray.getJSONObject(i).getString("staff_evaluated"));
                                 String fileName = "";
-                                String filePath = dataArray.getJSONObject(i).getString("document");
-                                if(!filePath.isEmpty()) {
+
+                                if (!dataArray.getJSONObject(i).getString("document").equals("null") && !dataArray.getJSONObject(i).getString("document").isEmpty()) {
+                                    String filePath = dataArray.getJSONObject(i).getString("document");
                                     String extension = filePath.substring(filePath.lastIndexOf("."));
                                     fileName = dataArray.getJSONObject(i).getString("id") + extension;
+
                                 }
                                 homeworkDocumentList.add(fileName);
-                                homeworkClassList.add(dataArray.getJSONObject(i).getString("class") + " " + dataArray.getJSONObject(i).getString("section") );
+                                homeworkClassList.add(dataArray.getJSONObject(i).getString("class") + " " + dataArray.getJSONObject(i).getString("section"));
 
-                                if(dataArray.getJSONObject(i).getString("evaluation_date").equals("0000-00-00")){
+                                if (dataArray.getJSONObject(i).getString("evaluation_date").equals("0000-00-00")) {
                                     homeworkEvaluationDateList.add("");
-                                }else{
-                                    homeworkEvaluationDateList.add( Utility.parseDate("yyyy-MM-dd", defaultDateFormat,dataArray.getJSONObject(i).getString("evaluation_date")));
+                                } else {
+                                    homeworkEvaluationDateList.add(Utility.parseDate("yyyy-MM-dd", defaultDateFormat, dataArray.getJSONObject(i).getString("evaluation_date")));
                                 }
                                 homeworkStatusList.add(dataArray.getJSONObject(i).getString("homework_evaluation_id"));
                             }
@@ -185,7 +192,7 @@ public class StudentHomework extends BaseActivity {
         }) {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
-               //
+                //
                 headers.put("Client-Service", Constants.clientService);
                 headers.put("Auth-Key", Constants.authKey);
                 headers.put("Content-Type", Constants.contentType);
@@ -194,10 +201,12 @@ public class StudentHomework extends BaseActivity {
                 Log.e("Headers", headers.toString());
                 return headers;
             }
+
             @Override
             public String getBodyContentType() {
                 return "application/json; charset=utf-8";
             }
+
             @Override
             public byte[] getBody() throws AuthFailureError {
                 try {

@@ -8,6 +8,7 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -93,18 +94,18 @@ public class StudentTasks extends BaseActivity implements DatePickerDialog.OnDat
         taskListView.setLayoutManager(mLayoutManager);
         taskListView.setItemAnimator(new DefaultItemAnimator());
         taskListView.setAdapter(adapter);
-        loaddata();
+        loadData();
         pullToRefresh = findViewById(R.id.pullToRefresh);
         pullToRefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
                 pullToRefresh.setRefreshing(true);
-                loaddata();
+                loadData();
             }
         });
     }
 
-    public  void  loaddata(){
+    public  void loadData(){
         if (Utility.isConnectingToInternet(getApplicationContext())) {
             params.put("user_id", Utility.getSharedPreferences(getApplicationContext(), Constants.userId));
             JSONObject obj=new JSONObject(params);
@@ -135,22 +136,23 @@ public class StudentTasks extends BaseActivity implements DatePickerDialog.OnDat
         int startDay = c.get(Calendar.DAY_OF_MONTH);
 
         final DatePickerDialog datePickerDialog = new DatePickerDialog(context, StudentTasks.this, startYear, starthMonth, startDay);
-        if(startweek.equals("Monday")){
-            datePickerDialog.getDatePicker().setFirstDayOfWeek(Calendar.MONDAY);
-        }else if(startweek.equals("Tuesday")){
-            datePickerDialog.getDatePicker().setFirstDayOfWeek(Calendar.TUESDAY);
-        }else if(startweek.equals("Wednesday")){
-            datePickerDialog.getDatePicker().setFirstDayOfWeek(Calendar.WEDNESDAY);
-        }else if(startweek.equals("Thursday")){
-            datePickerDialog.getDatePicker().setFirstDayOfWeek(Calendar.THURSDAY);
-        }else if(startweek.equals("Friday")){
-            datePickerDialog.getDatePicker().setFirstDayOfWeek(Calendar.FRIDAY);
-        }else if(startweek.equals("Saturday")){
-            datePickerDialog.getDatePicker().setFirstDayOfWeek(Calendar.SATURDAY);
-        }else if(startweek.equals("Sunday")){
-            datePickerDialog.getDatePicker().setFirstDayOfWeek(Calendar.SUNDAY);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            if (startweek.equals("Monday")) {
+                datePickerDialog.getDatePicker().setFirstDayOfWeek(Calendar.MONDAY);
+            } else if (startweek.equals("Tuesday")) {
+                datePickerDialog.getDatePicker().setFirstDayOfWeek(Calendar.TUESDAY);
+            } else if (startweek.equals("Wednesday")) {
+                datePickerDialog.getDatePicker().setFirstDayOfWeek(Calendar.WEDNESDAY);
+            } else if (startweek.equals("Thursday")) {
+                datePickerDialog.getDatePicker().setFirstDayOfWeek(Calendar.THURSDAY);
+            } else if (startweek.equals("Friday")) {
+                datePickerDialog.getDatePicker().setFirstDayOfWeek(Calendar.FRIDAY);
+            } else if (startweek.equals("Saturday")) {
+                datePickerDialog.getDatePicker().setFirstDayOfWeek(Calendar.SATURDAY);
+            } else if (startweek.equals("Sunday")) {
+                datePickerDialog.getDatePicker().setFirstDayOfWeek(Calendar.SUNDAY);
+            }
         }
-
         dateBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -208,16 +210,20 @@ public class StudentTasks extends BaseActivity implements DatePickerDialog.OnDat
 
         String url = Utility.getSharedPreferences(getApplicationContext(), "apiUrl")+Constants.getTaskUrl;
         Log.e("URL", url);
+        Log.d("TAG", "getDataFromApi: "+url);
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String result) {
+                Log.d("TAG", requestBody+"onResponseasas: "+result);
                 pullToRefresh.setRefreshing(false);
                 if (result != null) {
                     pd.dismiss();
                     try {
                         Log.e("Result", result);
+                        Log.d("TAG", "onResponseasas: "+result);
                         JSONObject object = new JSONObject(result);
                         JSONArray dataArray = object.getJSONArray("tasks");
+                        Log.d("TAG", "onResponseasas: "+dataArray);
                         taskIdList.clear();
                         taskTitleList.clear();
                         taskStatusList.clear();
@@ -263,6 +269,7 @@ public class StudentTasks extends BaseActivity implements DatePickerDialog.OnDat
                 headers.put("User-ID", Utility.getSharedPreferences(getApplicationContext(), "userId"));
                 headers.put("Authorization", Utility.getSharedPreferences(getApplicationContext(), "accessToken"));
                 Log.e("Headers", headers.toString());
+                Log.d("TAG", "getHeaders: "+headers);
                 return headers;
             }
             @Override
@@ -294,11 +301,13 @@ public class StudentTasks extends BaseActivity implements DatePickerDialog.OnDat
 
         String url = Utility.getSharedPreferences(getApplicationContext(), "apiUrl")+Constants.createTaskUrl;
         Log.e("URL",url);
+        Log.d("TAG", requestBody+"createTaskApi: "+url);
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String result) {
                 if (result != null) {
                     pd.dismiss();
+                    Log.d("TAG", "onResponsert: "+result);
                     try {
                         Log.e("Result", result);
                         JSONObject object = new JSONObject(result);

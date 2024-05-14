@@ -62,7 +62,7 @@ public class StudentTeachersList extends BaseActivity implements  SwipeRefreshLa
         mDrawerLayout.addView(contentView, 0);
         titleTV.setText(getApplicationContext().getString(R.string.teachers));
         recyclerview = findViewById(R.id.recyclerview);
-        loaddata();
+        loadData();
         pullToRefresh =findViewById(R.id.pullToRefresh);
         pullToRefresh.setOnRefreshListener(this);
 
@@ -92,7 +92,7 @@ public class StudentTeachersList extends BaseActivity implements  SwipeRefreshLa
         recyclerview.setAdapter(adapter);
     }
 
-    public void  loaddata(){
+    public void loadData(){
 
         if(Utility.isConnectingToInternet(getApplicationContext())){
             params.put("class_id",  Utility.getSharedPreferences(getApplicationContext(), Constants.classId));
@@ -109,7 +109,7 @@ public class StudentTeachersList extends BaseActivity implements  SwipeRefreshLa
     @Override
     public void onRestart() {
         super.onRestart();
-        loaddata();
+        loadData();
     }
 
     public void getDataFromApi (String bodyParams) {

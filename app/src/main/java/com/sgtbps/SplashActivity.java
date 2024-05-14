@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.Resources;
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.DisplayMetrics;
@@ -27,13 +29,21 @@ public class SplashActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+       // requestWindowFeature(Window.FEATURE_NO_TITLE);
+       //getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_splash);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            getWindow().setStatusBarColor(Color.WHITE);
 
+        } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            getWindow().setStatusBarColor(Color.BLACK);
+
+        }
       //  logoIV = findViewById(R.id.splash_logo);
 
-        Boolean isLocaleSet;
+        boolean isLocaleSet;
 
         try {
             isLocaleSet = Utility.getSharedPreferencesBoolean(getApplicationContext(), "isLocaleSet");
@@ -51,58 +61,38 @@ public class SplashActivity extends AppCompatActivity {
     private void splash() {
         new Handler().postDelayed(new Runnable() {
             public void run() {
-                Boolean isLoggegIn;
-                Boolean isUrlTaken;
+                boolean isLoggegIn;
+                boolean isUrlTaken;
 
                 try {
                     isLoggegIn = Utility.getSharedPreferencesBoolean(getApplicationContext(), Constants.isLoggegIn);
                     isUrlTaken = Utility.getSharedPreferencesBoolean(getApplicationContext(), "isUrlTaken");
-                    Log.d("TAG123", "run: " + isUrlTaken.toString());
+                    Log.d("TAG123", "run: " + isUrlTaken);
                 } catch (NullPointerException NPE) {
                     isLoggegIn = false;
                     isUrlTaken = false;
                 }
 
-                Log.e("loggeg", isLoggegIn.toString());
-                Log.e("isUrlTaken", isUrlTaken.toString());
+                Log.e("loggeg", Boolean.toString(isLoggegIn));
+                Log.e("isUrlTaken", Boolean.toString(isUrlTaken));
 
                 if (Constants.askUrlFromUser) {
-                    if (isLoggegIn) {
-                        Intent i = new Intent(getApplicationContext(), StudentDashboard.class);
-                        startActivity(i);
-                        finish();
-                    } else {
-                        Intent i = new Intent(getApplicationContext(), Login.class);
-                        startActivity(i);
-                        finish();
+                    Intent i;
+                    if(isLoggegIn){
+                        i = new Intent(getApplicationContext(), StudentDashboard.class);
+                    }else {
+                        i = new Intent(getApplicationContext(), Login.class);
                     }
-//                    if(isUrlTaken) {
-//                        if(isLoggegIn){
-//                            Intent i = new Intent(getApplicationContext(), StudentDashboard.class);
-//                            startActivity(i);
-//                            finish();
-//                        }else {
-//                            Intent i = new Intent(getApplicationContext(), Login.class);
-//                            startActivity(i);
-//                            finish();
-//                        }
-//                    } else {
-//                        Intent asd = new Intent(getApplicationContext(), TakeUrl.class);
-//                        startActivity(asd);
-//                        finish();
-//                    }
-                } else {
-                    if (isLoggegIn) {
-                        Intent i = new Intent(getApplicationContext(), StudentDashboard.class);
-                        startActivity(i);
-                        finish();
-                    } else {
-                        Intent i = new Intent(getApplicationContext(), Login.class);
-                        startActivity(i);
-                        finish();
-                    }
+                    startActivity(i);
+                    finish();
                 }
-            }
+                /*else {
+                        Intent asd = new Intent(getApplicationContext(), TakeUrl.class);
+                        startActivity(asd);
+                        finish();
+                    }*/
+                    }
+
         }, SPLASH_TIME_OUT);
     }
 

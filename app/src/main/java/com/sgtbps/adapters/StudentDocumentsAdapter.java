@@ -33,7 +33,6 @@ public class StudentDocumentsAdapter extends RecyclerView.Adapter<StudentDocumen
 
     long downloadID;
 
-
     public StudentDocumentsAdapter(StudentDocuments studentDocuments, ArrayList<String> docTitleList, ArrayList<String> docUrlList) {
         this.context = studentDocuments;
         this.docTitleList = docTitleList;
@@ -88,7 +87,6 @@ public class StudentDocumentsAdapter extends RecyclerView.Adapter<StudentDocumen
                 context.startActivity(intent);
             }
         });
-
     }
 
     public BroadcastReceiver onDownloadComplete = new BroadcastReceiver() {
@@ -99,12 +97,10 @@ public class StudentDocumentsAdapter extends RecyclerView.Adapter<StudentDocumen
             //Checking if the received broadcast is for our enqueued download by matching download id
             if (downloadID == id) {
 
-                NotificationCompat.Builder mBuilder =
-                        new NotificationCompat.Builder(context)
+                NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(context)
                                 .setSmallIcon(R.drawable.notification)
                                 .setContentTitle(context.getApplicationContext().getString(R.string.app_name))
                                 .setContentText("All Download completed");
-
 
                 NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
                 notificationManager.notify(455, mBuilder.build());

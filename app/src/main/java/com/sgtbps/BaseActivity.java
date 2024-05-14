@@ -135,9 +135,6 @@ public class BaseActivity extends AppCompatActivity {
                             logout.putExtra("EXIT", true);
                             startActivity(logout);
                             finish();
-                        } else {
-//                            Intent intent=new Intent(BaseActivity.this,TakeUrl.class);
-//                            startActivity(intent);
                         }
                     } catch (JSONException e) {
                         e.printStackTrace();
@@ -233,7 +230,7 @@ public class BaseActivity extends AppCompatActivity {
                                             params.put("deviceToken", device_token);
                                             JSONObject obj=new JSONObject(params);
                                             Log.e("params ", obj.toString());
-                                            System.out.println("Logout Details=="+obj.toString());
+                                            System.out.println("Logout Details=="+ obj);
                                             logoutApi(obj.toString());
 
                                         } else {

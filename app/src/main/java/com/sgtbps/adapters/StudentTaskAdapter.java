@@ -67,7 +67,6 @@ public class StudentTaskAdapter extends RecyclerView.Adapter<StudentTaskAdapter.
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
-
         TextView taskTV, taskDateTV;
         CheckBox taskCheckbox;
         RelativeLayout header;
@@ -78,7 +77,6 @@ public class StudentTaskAdapter extends RecyclerView.Adapter<StudentTaskAdapter.
             taskCheckbox = view.findViewById(R.id.adapter_student_task_checkbox);
             header = view.findViewById(R.id.adapter_student_task_header);
             taskDateTV = view.findViewById(R.id.adapter_student_task_TaskDateTV);
-
         }
     }
 
@@ -219,7 +217,7 @@ public class StudentTaskAdapter extends RecyclerView.Adapter<StudentTaskAdapter.
             }
 
             @Override
-            public byte[] getBody() throws AuthFailureError {
+            public byte[] getBody() {
                 try {
                     return requestBody == null ? null : requestBody.getBytes("utf-8");
                 } catch (UnsupportedEncodingException uee) {

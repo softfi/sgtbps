@@ -2008,10 +2008,8 @@ int id nav_home 0x7f090291
 int id nav_homework 0x7f090292
 int id nav_hostel 0x7f090293
 int id nav_library 0x7f090294
-int id nav_livegmeetclass 0x7f090295
 int id nav_logout 0x7f090296
 int id nav_noticeBoard 0x7f090297
-int id nav_online_course 0x7f090298
 int id nav_onlineexam 0x7f090299
 int id nav_profile 0x7f09029a
 int id nav_syllabus 0x7f09029b
@@ -2021,7 +2019,6 @@ int id nav_timeLine 0x7f09029e
 int id nav_timetable 0x7f09029f
 int id nav_transportRoute 0x7f0902a0
 int id nav_view 0x7f0902a1
-int id nav_zoomliveclasses 0x7f0902a2
 int id navigation 0x7f0902a3
 int id navigation_fees 0x7f0902a4
 int id navigation_header_container 0x7f0902a5

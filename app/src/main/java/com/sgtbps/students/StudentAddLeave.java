@@ -72,8 +72,6 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 import okhttp3.ResponseBody;
-
-
 public class StudentAddLeave extends AppCompatActivity {
     public ImageView backBtn;
     public String defaultDateFormat, currency,startweek;
@@ -102,10 +100,10 @@ public class StudentAddLeave extends AppCompatActivity {
     EditText title;
     TextView textView;
 
-    public TextView titleTV,buttonSelectImage;
+    public TextView titleTV;
     Button buttonUploadImage;
     private static final String TAG = "StudentAddLeave";
-    TextView todateTV, apply_dateTV, fromdateTV;
+    TextView todateTV, apply_dateTV, fromdateTV,buttonSelectImage;
     public static Boolean camera = false;
     public static Boolean gallery = false;
     boolean isKitKat = false;
@@ -145,8 +143,6 @@ public class StudentAddLeave extends AppCompatActivity {
         reason = findViewById(R.id.reason);
         imageView =  findViewById(R.id.imageView);
         textView =  findViewById(R.id.textview);
-        title =  findViewById(R.id.title);
-        buttonUploadImage =  findViewById(R.id.buttonUploadImage);
         buttonSelectImage = findViewById(R.id.buttonSelectImage);
         submit = findViewById(R.id.addLeave_dialog_submitBtn);
 

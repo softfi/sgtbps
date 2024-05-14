@@ -21,7 +21,7 @@
             android:icon="@drawable/ic_nav_fees"
             android:title="@string/fees"/>
 
-        <item
+       <!-- <item
             android:id="@+id/nav_online_course"
             android:icon="@drawable/ic_onlinecourse"
             android:title="@string/online_course" />
@@ -34,7 +34,7 @@
         <item
             android:id="@+id/nav_livegmeetclass"
             android:icon="@drawable/ic_videocam"
-            android:title="@string/livegmeetclasses"/>
+            android:title="@string/livegmeetclasses"/>-->
 
         <item
             android:id="@+id/nav_timetable"

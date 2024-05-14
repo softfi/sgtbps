@@ -148,7 +148,7 @@ public class StudentGmeetLiveClassesAdapter extends RecyclerView.Adapter<Student
                     try {
                         Log.e(" Result", result);
                         JSONObject obj = new JSONObject(result);
-                        Toast.makeText(context, ""+obj.getString("msg"), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(context, obj.getString("msg"), Toast.LENGTH_SHORT).show();
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }

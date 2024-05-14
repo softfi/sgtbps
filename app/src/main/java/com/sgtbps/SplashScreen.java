@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.Resources;
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.DisplayMetrics;
@@ -26,8 +28,17 @@ public class SplashScreen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+      //  requestWindowFeature(Window.FEATURE_NO_TITLE);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            getWindow().setStatusBarColor(Color.WHITE);
+
+        } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            getWindow().setStatusBarColor(Color.BLACK);
+
+        }
+       getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_splash_screen);
 
         logoIV = findViewById(R.id.splash_logo);
@@ -50,20 +61,20 @@ public class SplashScreen extends AppCompatActivity {
 
         new Handler().postDelayed(new Runnable() {
             public void run() {
-                Boolean isLoggegIn;
-                Boolean isUrlTaken;
+                boolean isLoggegIn;
+                boolean isUrlTaken;
 
                 try {
                     isLoggegIn = Utility.getSharedPreferencesBoolean(getApplicationContext(), Constants.isLoggegIn);
                     isUrlTaken = Utility.getSharedPreferencesBoolean(getApplicationContext(), "isUrlTaken");
-                    Log.d("TAG123", "run: "+ isUrlTaken.toString());
+                    Log.d("TAG123", "run: "+ Boolean.toString(isUrlTaken));
                 } catch (NullPointerException NPE) {
                     isLoggegIn = false;
                     isUrlTaken = false;
                 }
 
-                Log.e("loggeg", isLoggegIn.toString());
-                Log.e("isUrlTaken", isUrlTaken.toString());
+                Log.e("loggeg", Boolean.toString(isLoggegIn));
+                Log.e("isUrlTaken", Boolean.toString(isUrlTaken));
 
                 if(Constants.askUrlFromUser) {
                     Intent i;

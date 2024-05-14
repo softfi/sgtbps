@@ -89,6 +89,7 @@ public class StudentOnlineExam extends BaseActivity {
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(adapter);
+        nodata_layout.setVisibility(View.VISIBLE);
 
         pullToRefresh = findViewById(R.id.pullToRefresh);
         pullToRefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
@@ -135,15 +136,18 @@ public class StudentOnlineExam extends BaseActivity {
         final String requestBody = bodyParams;
         String url = Utility.getSharedPreferences(getApplicationContext(), "apiUrl")+Constants.getOnlineExamUrl;
         Log.e("URL", url);
+        Log.d("TAG", requestBody+"getDataFromApi: "+url);
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
 
             public void onResponse(String result) {
                 pullToRefresh.setRefreshing(false);
                 if (result != null) {
+                    nodata_layout.setVisibility(View.GONE);
                     pd.dismiss();
                     try {
                         Log.e("Result", result);
+                        Log.d("TAG", "onResponsed: "+result);
                         JSONObject obj = new JSONObject(result);
                         JSONArray dataArray = obj.getJSONArray("onlineexam");
                         examList.clear();
@@ -183,14 +187,14 @@ public class StudentOnlineExam extends BaseActivity {
                         } else {
                             pullToRefresh.setVisibility(View.GONE);
                             nodata_layout.setVisibility(View.VISIBLE);
-                            //Toast.makeText(getApplicationContext(), getApplicationContext().getString(R.string.noData), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), getApplicationContext().getString(R.string.noData), Toast.LENGTH_SHORT).show();
                         }
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
                 } else {
                     pd.dismiss();
-
+                    nodata_layout.setVisibility(View.VISIBLE);
                 }
             }
         }, new Response.ErrorListener() {

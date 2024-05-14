@@ -9,13 +9,10 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.graphics.Color;
-import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
-import android.provider.Settings;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -27,7 +24,6 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -39,7 +35,6 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -63,11 +58,9 @@ import com.sgtbps.utils.DatabaseHelper;
 import com.sgtbps.utils.DrawerArrowDrawable;
 import com.sgtbps.utils.Utility;
 import com.squareup.picasso.Picasso;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.io.UnsupportedEncodingException;
 import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;
@@ -79,7 +72,6 @@ import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.Map;
 import java.util.Random;
-
 import javax.crypto.BadPaddingException;
 import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
@@ -104,13 +96,13 @@ public class StudentDashboard extends AppCompatActivity {
     private TextView classTV, nameTV, childDetailsTV;
     private ImageView profileImageIV;
     private LinearLayout switchChildBtn;
-    ArrayList<String> moduleCodeList = new ArrayList<String>();
-    ArrayList<String> moduleStatusList = new ArrayList<String>();
+   /* ArrayList<String> moduleCodeList = new ArrayList<String>();
+    ArrayList<String> moduleStatusList = new ArrayList<String>();*/
     public Map<String, String> headers = new HashMap<String, String>();
     FrameLayout viewContainer;
-    LayoutInflater inflater;
+  //  LayoutInflater inflater;
     FrameLayout chatBtn, notification_alert;
-    View contentView;
+    //View contentView;
     boolean doubleBackToExitPressedOnce = false;
     ArrayList<String> childIdList = new ArrayList<String>();
     ArrayList<String> childNameList = new ArrayList<String>();
@@ -139,7 +131,7 @@ public class StudentDashboard extends AppCompatActivity {
         setUpDrawer();
         decorate();
         setUpPermission();
-        device_token = FirebaseInstanceId.getInstance().getToken() + "";
+        device_token = FirebaseInstanceId.getInstance().getToken();
         Log.e(" logout DEVICE TOKEN", device_token);
         DatabaseHelper db = new DatabaseHelper(StudentDashboard.this);
         int profile_counts = db.getProfilesCount();
@@ -183,7 +175,6 @@ public class StudentDashboard extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
 
         viewContainer = findViewById(R.id.studentDashboard_frame);
         bottomNavigation = (BottomNavigationView) findViewById(R.id.navigation);
@@ -295,8 +286,6 @@ public class StudentDashboard extends AppCompatActivity {
         pd.show();
         Log.d("bodyParams", "getStudentsListFromApi: "+bodyParams.toString());
         final String requestBody = bodyParams;
-
-
 
         String url = Utility.getSharedPreferences(getApplicationContext(), "apiUrl") + Constants.parent_getStudentList;
         Log.d("URL",url+"RequestBody"+requestBody);
@@ -592,7 +581,7 @@ public class StudentDashboard extends AppCompatActivity {
                         drawer.closeDrawer(GravityCompat.START);
                         break;
 
-                    case R.id.nav_online_course:
+                   /* case R.id.nav_online_course:
                         aparams.put("site_url", Utility.getSharedPreferences(getApplicationContext(), Constants.imagesUrl));
                         aparams.put("addontype", "ssoclc");
                         JSONObject ocobj = new JSONObject(aparams);
@@ -617,7 +606,7 @@ public class StudentDashboard extends AppCompatActivity {
                         Log.e("CheckAddon params", gobj.toString());
                         CheckAddon(gobj.toString(), "ssglc");
                         drawer.closeDrawer(GravityCompat.START);
-                        break;
+                        break;*/
 
                     case R.id.nav_timetable:
                         Intent classTimeTable = new Intent(StudentDashboard.this, com.sgtbps.students.StudentClassTimetable.class);
@@ -771,7 +760,7 @@ public class StudentDashboard extends AppCompatActivity {
         });
     }
 
-    private void setMenu(final Menu navMenu, Menu bottomNavMenu) {
+  /*  private void setMenu(final Menu navMenu, Menu bottomNavMenu) {
 
         if (moduleCodeList.contains("live_classes")) {
             System.out.println("live CLasses Integration");
@@ -863,7 +852,7 @@ public class StudentDashboard extends AppCompatActivity {
                 navMenu.findItem(R.id.nav_online_course).setVisible(false);
             }
         }
-    }
+    }*/
 
     private void loadFragment(Fragment fragment) {
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
@@ -1049,7 +1038,7 @@ public class StudentDashboard extends AppCompatActivity {
             }
 
             @Override
-            public byte[] getBody() throws AuthFailureError {
+            public byte[] getBody() {
                 try {
                     return requestBody == null ? null : requestBody.getBytes("utf-8");
                 } catch (UnsupportedEncodingException uee) {
@@ -1178,7 +1167,7 @@ public class StudentDashboard extends AppCompatActivity {
                         try {
                             JSONObject object = new JSONObject(result);
                             if (object.getString("status").equals("0")) {
-                                android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder(StudentDashboard.this);
+                                AlertDialog.Builder builder = new AlertDialog.Builder(StudentDashboard.this);
                                 builder.setCancelable(false);
                                 builder.setMessage(R.string.verificationMessage);
                                 //builder.setMessage(object.getString("msg"));
@@ -1189,21 +1178,25 @@ public class StudentDashboard extends AppCompatActivity {
                                     }
                                 });
 
-                                android.app.AlertDialog alert = builder.create();
+                                AlertDialog alert = builder.create();
                                 alert.show();
                             } else {
-                                if (type.equals("sszlc")) {
-                                    Intent liveclasses = new Intent(StudentDashboard.this, StudentLiveClasses.class);
-                                    startActivity(liveclasses);
-                                    overridePendingTransition(R.anim.slide_leftright, R.anim.no_animation);
-                                } else if (type.equals("ssoclc")) {
-                                    Intent online_course = new Intent(StudentDashboard.this, StudentOnlineCourse.class);
-                                    startActivity(online_course);
-                                    overridePendingTransition(R.anim.slide_leftright, R.anim.no_animation);
-                                } else if (type.equals("ssglc")) {
-                                    Intent gmeetliveclasses = new Intent(StudentDashboard.this, StudentGmeetLiveClasses.class);
-                                    startActivity(gmeetliveclasses);
-                                    overridePendingTransition(R.anim.slide_leftright, R.anim.no_animation);
+                                switch (type) {
+                                    case "sszlc":
+                                        Intent liveClasses = new Intent(StudentDashboard.this, StudentLiveClasses.class);
+                                        startActivity(liveClasses);
+                                        overridePendingTransition(R.anim.slide_leftright, R.anim.no_animation);
+                                        break;
+                                    case "ssoclc":
+                                        Intent online_course = new Intent(StudentDashboard.this, StudentOnlineCourse.class);
+                                        startActivity(online_course);
+                                        overridePendingTransition(R.anim.slide_leftright, R.anim.no_animation);
+                                        break;
+                                    case "ssglc":
+                                        Intent gMeetLiveClasses = new Intent(StudentDashboard.this, StudentGmeetLiveClasses.class);
+                                        startActivity(gMeetLiveClasses);
+                                        overridePendingTransition(R.anim.slide_leftright, R.anim.no_animation);
+                                        break;
                                 }
                             }
                         } catch (JSONException e) {
@@ -1237,7 +1230,7 @@ public class StudentDashboard extends AppCompatActivity {
                 }
 
                 @Override
-                public byte[] getBody() throws AuthFailureError {
+                public byte[] getBody() {
                     try {
                         return requestBody == null ? null : requestBody.getBytes("utf-8");
                     } catch (UnsupportedEncodingException uee) {

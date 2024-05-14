@@ -17,4 +17,21 @@ public class MyApp extends Application {
     public static MyApp getContext() {
         return mContext;
     }
+
+    public static String isNullEmpty(String str) {
+
+        // check if string is null
+        if (str == null) {
+            return "NULL";
+        }
+
+        // check if string is empty
+        else if(str.isEmpty()){
+            return "EMPTY";
+        }
+
+        else {
+            return "neither NULL nor EMPTY";
+        }
+    }
 }

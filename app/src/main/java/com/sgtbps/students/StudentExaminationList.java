@@ -81,13 +81,13 @@ public class StudentExaminationList extends BaseActivity {
             @Override
             public void onRefresh() {
                 pullToRefresh.setRefreshing(true);
-                loaddata();
+                loadData();
             }
         });
-        loaddata();
+        loadData();
     }
 
-    public  void  loaddata(){
+    public  void loadData(){
         if(Utility.isConnectingToInternet(getApplicationContext())){
             params.put("student_id", Utility.getSharedPreferences(getApplicationContext(), Constants.studentId));
             JSONObject obj=new JSONObject(params);

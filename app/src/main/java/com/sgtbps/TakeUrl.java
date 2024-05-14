@@ -55,7 +55,7 @@ public class TakeUrl extends Activity {
             public void onClick(View view) {
                 String appDomain = urlET.getText().toString();
                 if(Utility.isConnectingToInternet(TakeUrl.this)){
-                    getDataFromApi(appDomain);
+                  //  getDataFromApi(appDomain);
                 }else{
                     makeText(getApplicationContext(),R.string.noInternetMsg, Toast.LENGTH_SHORT).show();
                 }
@@ -93,7 +93,7 @@ public class TakeUrl extends Activity {
              domain += "/";
          }
 
-         final String url = domain+"app";
+         final String url = "https://sgtbps.in/app";
          Log.d("url", "getDataFromApi: "+url.toString());
 
          StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
