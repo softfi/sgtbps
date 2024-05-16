@@ -844,6 +844,10 @@
         "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_description.png"
     },
     {
+        "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\debug\\drawable_sgtbp_logo.png.flat",
+        "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\src\\main\\res\\drawable\\sgtbp_logo.png"
+    },
+    {
         "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_attach_file_black.png.flat",
         "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_attach_file_black.png"
     },

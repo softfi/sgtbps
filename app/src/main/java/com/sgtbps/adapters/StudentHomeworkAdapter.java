@@ -163,9 +163,10 @@ public class StudentHomeworkAdapter extends RecyclerView.Adapter<StudentHomework
             holder.evaluationDateHeadTV.setVisibility(View.VISIBLE);
             holder.evaluatedByHeadTV.setVisibility(View.VISIBLE);
             int status=Integer.parseInt(homeworkStatusList.get(position));
-            Log.d("TAG", "onBindViewHolder: "+status);
+            Log.d("TAG", "onBindViewHolder: "+status+1);
             //STATUS
             if(status>0) {
+                Log.d("TAG", "onBindViewHolders: "+status);
                 holder.statusTV.setVisibility(View.VISIBLE);
                 holder.statusTV.setText("Complete");
                 holder.uploadBtn.setVisibility(View.GONE);
@@ -177,8 +178,10 @@ public class StudentHomeworkAdapter extends RecyclerView.Adapter<StudentHomework
                 Calendar c = Calendar.getInstance();
                 final SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
                 final String getCurrentDate = sdf.format(c.getTime());
-                final String submissiondate = homeworkSubmissionDateList.get(position);
-                if (submissiondate.compareTo(getCurrentDate) > 0 || submissiondate.compareTo(getCurrentDate) == 0){
+                final String submissionDate = homeworkSubmissionDateList.get(position);
+                Log.d("TAG", "onBindViewHolders: "+submissionDate);
+                if (submissionDate.compareTo(getCurrentDate) > 0 || submissionDate.compareTo(getCurrentDate) == 0){
+                    Log.d("TAG", "onBindViewHolders: "+submissionDate);
                     holder.uploadBtn.setVisibility(View.VISIBLE);
                     holder.uploadBtn.setOnClickListener(new View.OnClickListener() {
                         @Override

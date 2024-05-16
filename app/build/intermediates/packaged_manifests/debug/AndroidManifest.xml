@@ -39,7 +39,7 @@
         android:name="com.sgtbps.utils.MyApp"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
-        android:icon="@drawable/splash"
+        android:icon="@drawable/sgtbp_logo"
         android:label="@string/app_name"
         android:launchMode="singleInstance"
         android:requestLegacyExternalStorage="true"

@@ -185,7 +185,7 @@ MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\lenovo\.gradle
 	android:roundIcon
 		ADDED from D:\AndroidProject\sgtbps (1)\sgtbps\app\src\main\AndroidManifest.xml:35:9-45
 	android:icon
-		ADDED from D:\AndroidProject\sgtbps (1)\sgtbps\app\src\main\AndroidManifest.xml:31:9-40
+		ADDED from D:\AndroidProject\sgtbps (1)\sgtbps\app\src\main\AndroidManifest.xml:31:9-44
 	android:theme
 		ADDED from D:\AndroidProject\sgtbps (1)\sgtbps\app\src\main\AndroidManifest.xml:37:9-40
 	android:usesCleartextTraffic

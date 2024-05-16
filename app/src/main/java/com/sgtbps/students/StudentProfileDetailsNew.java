@@ -110,13 +110,14 @@ public class StudentProfileDetailsNew extends BaseActivity {
 
         final String requestBody = bodyParams;
         String url = Utility.getSharedPreferences(getApplicationContext(), "apiUrl")+Constants.getStudentProfileUrl;
+        Log.d("TAG", url+"getDataFromApi: "+requestBody);
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String result) {
                 if (result != null) {
                     pd.dismiss();
                     try {
-                        Log.e("StudentProfileResult", result);
+                        Log.d("TAG", "getDataFromApi: "+result);
                         JSONObject object = new JSONObject(result);
 
                             JSONObject dataArray = object.getJSONObject("student_result");

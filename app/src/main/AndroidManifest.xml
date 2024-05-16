@@ -28,7 +28,7 @@
 
     <application
         android:name=".utils.MyApp"
-        android:icon="@drawable/splash"
+        android:icon="@drawable/sgtbp_logo"
         android:label="@string/app_name"
         android:launchMode="singleInstance"
         android:requestLegacyExternalStorage="true"

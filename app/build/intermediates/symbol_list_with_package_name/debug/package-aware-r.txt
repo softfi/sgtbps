@@ -1332,6 +1332,7 @@ drawable round_grey
 drawable rounded_rect
 drawable rounded_square
 drawable selected_file
+drawable sgtbp_logo
 drawable sp1
 drawable splash
 drawable style_button

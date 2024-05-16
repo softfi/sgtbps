@@ -7,7 +7,7 @@
     android:background="#f7f7f7"
     tools:context=".SplashScreen">
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/splash_logo"
         android:layout_width="243dp"
         android:layout_height="220dp"

@@ -77,8 +77,8 @@
 40        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 40-->[androidx.core:core:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\1d65dc1f9ea2a7ce820d3defbbd32291\transformed\core-1.0.0\AndroidManifest.xml:22:18-86
 41        android:debuggable="true"
-42        android:icon="@drawable/splash"
-42-->D:\AndroidProject\sgtbps (1)\sgtbps\app\src\main\AndroidManifest.xml:31:9-40
+42        android:icon="@drawable/sgtbp_logo"
+42-->D:\AndroidProject\sgtbps (1)\sgtbps\app\src\main\AndroidManifest.xml:31:9-44
 43        android:label="@string/app_name"
 43-->D:\AndroidProject\sgtbps (1)\sgtbps\app\src\main\AndroidManifest.xml:32:9-41
 44        android:launchMode="singleInstance"

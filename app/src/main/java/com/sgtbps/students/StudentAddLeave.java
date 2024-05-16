@@ -103,7 +103,7 @@ public class StudentAddLeave extends AppCompatActivity {
     public TextView titleTV;
     Button buttonUploadImage;
     private static final String TAG = "StudentAddLeave";
-    TextView todateTV, apply_dateTV, fromdateTV,buttonSelectImage;
+    TextView toDateTV, apply_dateTV, fromDateTV,buttonSelectImage;
     public static Boolean camera = false;
     public static Boolean gallery = false;
     boolean isKitKat = false;
@@ -119,7 +119,6 @@ public class StudentAddLeave extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_leave);
         backBtn = findViewById(R.id.actionBar_backBtn);
-        mDrawerLayout = findViewById(R.id.container);
         actionBar = findViewById(R.id.actionBarSecondary);
         titleTV = findViewById(R.id.actionBar_title);
 
@@ -138,8 +137,8 @@ public class StudentAddLeave extends AppCompatActivity {
         });
         titleTV.setText(getApplicationContext().getString(R.string.applyleave));
         apply_dateTV = findViewById(R.id.addLeave_dialog_apply_dateTV);
-        fromdateTV = findViewById(R.id.addLeave_dialog_fromdateTV);
-        todateTV = findViewById(R.id.addLeave_dialog_todateTV);
+        fromDateTV = findViewById(R.id.addLeave_dialog_fromdateTV);
+        toDateTV = findViewById(R.id.addLeave_dialog_todateTV);
         reason = findViewById(R.id.reason);
         imageView =  findViewById(R.id.imageView);
         textView =  findViewById(R.id.textview);
@@ -211,13 +210,13 @@ public class StudentAddLeave extends AppCompatActivity {
             }
         });
 
-        fromdateTV.setOnClickListener(new View.OnClickListener() {
+        fromDateTV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Calendar mcurrentDate = Calendar.getInstance();
-                int mDay   = mcurrentDate.get(Calendar.DAY_OF_MONTH);
+                int mDay = mcurrentDate.get(Calendar.DAY_OF_MONTH);
                 int mMonth = mcurrentDate.get(Calendar.MONTH);
-                int mYear  = mcurrentDate.get(Calendar.YEAR);
+                int mYear = mcurrentDate.get(Calendar.YEAR);
                 DatePickerDialog datePickerDialog = new DatePickerDialog(StudentAddLeave.this, new DatePickerDialog.OnDateSetListener() {
                     @Override
                     public void onDateSet(DatePicker datepicker, int selectedyear, int selectedmonth, int selectedday) {
@@ -225,38 +224,49 @@ public class StudentAddLeave extends AppCompatActivity {
                         Calendar newDate = Calendar.getInstance();
                         newDate.set(selectedyear, selectedmonth, selectedday);
                         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-                        fromdate=sdf.format(newDate.getTime());
+                        fromdate = sdf.format(newDate.getTime());
                         SimpleDateFormat sdfdate = new SimpleDateFormat("dd-MM-yyyy");
-                        fromdateTV.setText(sdfdate.format(newDate.getTime()));
-                        isfromDateSelected=true;
+                        fromDateTV.setText(sdfdate.format(newDate.getTime()));
+                        isfromDateSelected = true;
                     }
                 }, mYear, mMonth, mDay);
-                if(startweek.equals("Monday")){
-                    datePickerDialog.getDatePicker().setFirstDayOfWeek(Calendar.MONDAY);
-                }else if(startweek.equals("Tuesday")){
-                    datePickerDialog.getDatePicker().setFirstDayOfWeek(Calendar.TUESDAY);
-                }else if(startweek.equals("Wednesday")){
-                    datePickerDialog.getDatePicker().setFirstDayOfWeek(Calendar.WEDNESDAY);
-                }else if(startweek.equals("Thursday")){
-                    datePickerDialog.getDatePicker().setFirstDayOfWeek(Calendar.THURSDAY);
-                }else if(startweek.equals("Friday")){
-                    datePickerDialog.getDatePicker().setFirstDayOfWeek(Calendar.FRIDAY);
-                }else if(startweek.equals("Saturday")){
-                    datePickerDialog.getDatePicker().setFirstDayOfWeek(Calendar.SATURDAY);
-                }else if(startweek.equals("Sunday")){
-                    datePickerDialog.getDatePicker().setFirstDayOfWeek(Calendar.SUNDAY);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    switch (startweek) {
+                        case "Monday":
+                            datePickerDialog.getDatePicker().setFirstDayOfWeek(Calendar.MONDAY);
+                            break;
+                        case "Tuesday":
+                            datePickerDialog.getDatePicker().setFirstDayOfWeek(Calendar.TUESDAY);
+                            break;
+                        case "Wednesday":
+                            datePickerDialog.getDatePicker().setFirstDayOfWeek(Calendar.WEDNESDAY);
+                            break;
+                        case "Thursday":
+                            datePickerDialog.getDatePicker().setFirstDayOfWeek(Calendar.THURSDAY);
+                            break;
+                        case "Friday":
+                            datePickerDialog.getDatePicker().setFirstDayOfWeek(Calendar.FRIDAY);
+                            break;
+                        case "Saturday":
+                            datePickerDialog.getDatePicker().setFirstDayOfWeek(Calendar.SATURDAY);
+                            break;
+                        case "Sunday":
+                            datePickerDialog.getDatePicker().setFirstDayOfWeek(Calendar.SUNDAY);
+                            break;
+                    }
+                    datePickerDialog.show();
                 }
-                datePickerDialog.show();
             }
         });
 
-        todateTV.setOnClickListener(new View.OnClickListener() {
+
+        toDateTV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Calendar mcurrentDate = Calendar.getInstance();
-                int mDay   = mcurrentDate.get(Calendar.DAY_OF_MONTH);
+                int mDay = mcurrentDate.get(Calendar.DAY_OF_MONTH);
                 int mMonth = mcurrentDate.get(Calendar.MONTH);
-                int mYear  = mcurrentDate.get(Calendar.YEAR);
+                int mYear = mcurrentDate.get(Calendar.YEAR);
                 DatePickerDialog datePickerDialog = new DatePickerDialog(StudentAddLeave.this, new DatePickerDialog.OnDateSetListener() {
                     @Override
                     public void onDateSet(DatePicker datepicker, int selectedyear, int selectedmonth, int selectedday) {
@@ -264,28 +274,38 @@ public class StudentAddLeave extends AppCompatActivity {
                         Calendar newDate = Calendar.getInstance();
                         newDate.set(selectedyear, selectedmonth, selectedday);
                         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-                        todate=sdf.format(newDate.getTime());
-                        SimpleDateFormat sdfdate = new SimpleDateFormat("dd-MM-yyyy");
-                        todateTV.setText(sdfdate.format(newDate.getTime()));
-                        istoDateSelected=true;
+                        todate = sdf.format(newDate.getTime());
+                        SimpleDateFormat sdfDate = new SimpleDateFormat("dd-MM-yyyy");
+                        toDateTV.setText(sdfDate.format(newDate.getTime()));
+                        istoDateSelected = true;
                     }
                 }, mYear, mMonth, mDay);
-                if(startweek.equals("Monday")){
-                    datePickerDialog.getDatePicker().setFirstDayOfWeek(Calendar.MONDAY);
-                }else if(startweek.equals("Tuesday")){
-                    datePickerDialog.getDatePicker().setFirstDayOfWeek(Calendar.TUESDAY);
-                }else if(startweek.equals("Wednesday")){
-                    datePickerDialog.getDatePicker().setFirstDayOfWeek(Calendar.WEDNESDAY);
-                }else if(startweek.equals("Thursday")){
-                    datePickerDialog.getDatePicker().setFirstDayOfWeek(Calendar.THURSDAY);
-                }else if(startweek.equals("Friday")){
-                    datePickerDialog.getDatePicker().setFirstDayOfWeek(Calendar.FRIDAY);
-                }else if(startweek.equals("Saturday")){
-                    datePickerDialog.getDatePicker().setFirstDayOfWeek(Calendar.SATURDAY);
-                }else if(startweek.equals("Sunday")){
-                    datePickerDialog.getDatePicker().setFirstDayOfWeek(Calendar.SUNDAY);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    switch (startweek) {
+                        case "Monday":
+                            datePickerDialog.getDatePicker().setFirstDayOfWeek(Calendar.MONDAY);
+                            break;
+                        case "Tuesday":
+                            datePickerDialog.getDatePicker().setFirstDayOfWeek(Calendar.TUESDAY);
+                            break;
+                        case "Wednesday":
+                            datePickerDialog.getDatePicker().setFirstDayOfWeek(Calendar.WEDNESDAY);
+                            break;
+                        case "Thursday":
+                            datePickerDialog.getDatePicker().setFirstDayOfWeek(Calendar.THURSDAY);
+                            break;
+                        case "Friday":
+                            datePickerDialog.getDatePicker().setFirstDayOfWeek(Calendar.FRIDAY);
+                            break;
+                        case "Saturday":
+                            datePickerDialog.getDatePicker().setFirstDayOfWeek(Calendar.SATURDAY);
+                            break;
+                        case "Sunday":
+                            datePickerDialog.getDatePicker().setFirstDayOfWeek(Calendar.SUNDAY);
+                            break;
+                    }
+                    datePickerDialog.show();
                 }
-                datePickerDialog.show();
             }
         });
 

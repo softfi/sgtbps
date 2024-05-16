@@ -199,6 +199,7 @@ public class StudentHomework extends BaseActivity {
                 headers.put("User-ID", Utility.getSharedPreferences(getApplicationContext(), "userId"));
                 headers.put("Authorization", Utility.getSharedPreferences(getApplicationContext(), "accessToken"));
                 Log.e("Headers", headers.toString());
+               // Log.d(TAG, "getHeaders: "+headers);
                 return headers;
             }
 

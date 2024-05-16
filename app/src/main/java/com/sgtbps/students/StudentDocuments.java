@@ -65,8 +65,10 @@ public class StudentDocuments extends BaseActivity {
         addDocumentBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Intent intent=new Intent(getApplicationContext(), StudentUploadDocument.class);
                 startActivity(intent);
+
             }
         });
 
@@ -77,19 +79,19 @@ public class StudentDocuments extends BaseActivity {
         documentListView.setLayoutManager(mLayoutManager);
         documentListView.setItemAnimator(new DefaultItemAnimator());
         documentListView.setAdapter(adapter);
-        loaddata();
+        loadData();
 
         pullToRefresh = findViewById(R.id.pullToRefresh);
         pullToRefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
                 pullToRefresh.setRefreshing(true);
-                loaddata();
+                loadData();
             }
         });
     }
 
-    public  void  loaddata(){
+    public  void loadData(){
         if (Utility.isConnectingToInternet(getApplicationContext())) {
             params.put("student_id", Utility.getSharedPreferences(getApplicationContext(), Constants.studentId));
             JSONObject obj=new JSONObject(params);
@@ -103,7 +105,7 @@ public class StudentDocuments extends BaseActivity {
     @Override
     public void onRestart() {
         super.onRestart();
-        loaddata();
+        loadData();
     }
 
     private void getDataFromApi (String bodyParams) {
@@ -116,15 +118,17 @@ public class StudentDocuments extends BaseActivity {
         final String requestBody = bodyParams;
 
         String url = Utility.getSharedPreferences(getApplicationContext(), "apiUrl")+Constants.getDocumentUrl;
-        Log.e("URL", url);
+        Log.d("TAG", url+"getDataFromApi: "+requestBody);
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String result) {
+
                 pullToRefresh.setRefreshing(false);
                 if (result != null) {
                     pd.dismiss();
                     try {
-                        Log.e("Result", result);
+
+                        Log.d("TAG", "getDataFromApi: "+result);
                         JSONArray dataArray = new JSONArray(result);
                         docTitleList.clear();
                         docUrlList.clear();
