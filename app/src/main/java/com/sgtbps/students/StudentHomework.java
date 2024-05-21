@@ -40,7 +40,6 @@ import java.util.Hashtable;
 import java.util.Map;
 
 public class StudentHomework extends BaseActivity {
-
     RecyclerView homeworkListView;
     ArrayList<String> homeworkIdList = new ArrayList<String>();
     ArrayList<String> homeworkTitleList = new ArrayList<String>();
@@ -111,7 +110,7 @@ public class StudentHomework extends BaseActivity {
         final String requestBody = bodyParams;
 
         String url = Utility.getSharedPreferences(getApplicationContext(), "apiUrl") + Constants.getHomeworkUrl;
-        Log.d("TAG", requestBody+"getDataFromApi: "+url);
+        Log.d("TAG", requestBody + "getDataFromApi: " + url);
         Log.e("URL", url);
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
@@ -199,7 +198,7 @@ public class StudentHomework extends BaseActivity {
                 headers.put("User-ID", Utility.getSharedPreferences(getApplicationContext(), "userId"));
                 headers.put("Authorization", Utility.getSharedPreferences(getApplicationContext(), "accessToken"));
                 Log.e("Headers", headers.toString());
-               // Log.d(TAG, "getHeaders: "+headers);
+                // Log.d(TAG, "getHeaders: "+headers);
                 return headers;
             }
 

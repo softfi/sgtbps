@@ -92,7 +92,6 @@ public class StudentLibraryBookIssued extends BaseActivity {
                 loaddata();
             }
         });
-
     }
     public  void  loaddata(){
         if(Utility.isConnectingToInternet(getApplicationContext())){
@@ -124,10 +123,15 @@ public class StudentLibraryBookIssued extends BaseActivity {
                 if (result != null) {
                     pd.dismiss();
                     try {
-                        Log.e("Result", result);
+                        Log.d("TAG", "getDataFromApi: "+result);
+                        JSONObject object = new JSONObject(result);
+                        Log.d("TAG", "getDataFromApisrdc: "+object);
+                        String status = object.getString("success");
+                        Log.d("TAG", "getDataFromApisrd: "+status);
+                        if (status.equals("0") ){
+                            nodata.setVisibility(View.VISIBLE);
+                        }
                         JSONArray dataArray = new JSONArray(result);
-                        System.out.println("Result==="+result);
-
                         bookNameList.clear();
                         authorNameList.clear();
                         bookNoList.clear();

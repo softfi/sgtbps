@@ -29,6 +29,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1.5"
                     android:paddingEnd="5dp"
+                    android:layout_gravity="center"
                     android:gravity="center_vertical"
                     >
 
@@ -137,12 +138,14 @@
                     android:id="@+id/contact_layout"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
+                    android:layout_gravity="center"
                     android:layout_weight="1">
 
                     <ImageView
                         android:id="@+id/studentSubjectAdapter_teacherContactIconIV"
                         android:layout_width="30dp"
                         android:layout_height="20dp"
+                        android:layout_gravity="center"
                         android:layout_marginStart="5dp"
                         android:src="@drawable/ic_phone" />
 
@@ -153,6 +156,7 @@
                         android:layout_marginStart="5dp"
                         android:gravity="center_vertical"
                         android:textStyle="bold"
+                        android:layout_gravity="center"
                         android:textSize="@dimen/secondaryText"
                         android:textColor="@color/hyperLink" />
 
@@ -162,12 +166,14 @@
                         android:id="@+id/email_layout"
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
+                        android:layout_gravity="center"
                         android:layout_weight="1">
 
                         <ImageView
                             android:id="@+id/studentSubjectAdapter_teacherMailIconIV"
                             android:layout_width="30dp"
                             android:layout_height="20dp"
+                            android:layout_gravity="center"
                             android:layout_marginStart="5dp"
                             android:src="@drawable/ic_email" />
 
@@ -178,6 +184,7 @@
                             android:layout_marginStart="5dp"
                             android:gravity="center_vertical"
                             android:textStyle="bold"
+                            android:layout_gravity="center"
                             android:textSize="@dimen/secondaryText"
                             android:textColor="@color/textHeading" />
 

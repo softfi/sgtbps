@@ -210,7 +210,7 @@ public class StudentTasks extends BaseActivity implements DatePickerDialog.OnDat
 
         String url = Utility.getSharedPreferences(getApplicationContext(), "apiUrl")+Constants.getTaskUrl;
         Log.e("URL", url);
-        Log.d("TAG", "getDataFromApi: "+url);
+        Log.d("TAG", url+"getDataFromApi: "+url);
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String result) {

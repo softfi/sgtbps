@@ -1,8 +1,5 @@
 apply plugin: 'com.android.application'
-/*
-keylias password=> 123465789
-keyalisname=>mkscms
-keystorepassword=>123465789 */
+
 android {
     compileSdkVersion 32
     defaultConfig {
@@ -26,7 +23,13 @@ android {
         abortOnError false
     }
     compileOptions {
+
         targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    java {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
     }
 }
 

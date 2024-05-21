@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import androidx.recyclerview.widget.DefaultItemAnimator;
@@ -54,6 +55,8 @@ public class StudentLibraryBook extends BaseActivity {
     public Map<String, String> params = new Hashtable<String, String>();
     public Map<String, String>  headers = new HashMap<String, String>();
 
+    LinearLayout noData;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,6 +67,7 @@ public class StudentLibraryBook extends BaseActivity {
         titleTV.setText(getApplicationContext().getString(R.string.libraryBookIssued));
 
         bookListView = (RecyclerView) findViewById(R.id.student_libraryBook_listview);
+        noData = (LinearLayout) findViewById(R.id.nodata_layout);
         if(Utility.isConnectingToInternet(getApplicationContext())){
             getDataFromApi();
         }else{
@@ -109,7 +113,13 @@ public class StudentLibraryBook extends BaseActivity {
                     try {
                         Log.e("Result", result);
                         JSONObject object = new JSONObject(result);
-                        System.out.println("Result==="+result);
+                        Log.d("TAG", "getDataFromApi: "+result);
+                        Log.d("TAG", "getDataFromApis: "+object);
+                        String status = object.getString("success");
+                        Log.d("TAG", "getDataFromApisr: "+status);
+                        if (status.equals("0") ){
+                            noData.setVisibility(View.VISIBLE);
+                        }
 
                         bookidList.clear();
                         bookNameList.clear();
@@ -124,6 +134,7 @@ public class StudentLibraryBook extends BaseActivity {
                             JSONArray dataArray = object.getJSONArray("data");
 
                             for(int i = 0; i < dataArray.length(); i++) {
+
                                 bookidList.add(dataArray.getJSONObject(i).getString("id"));
                                 bookNameList.add(dataArray.getJSONObject(i).getString("book_title"));
                                 authorNameList.add(dataArray.getJSONObject(i).getString("author"));

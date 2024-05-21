@@ -244,6 +244,7 @@ public class DashboardFragment extends Fragment {
         }) {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
+
                 headers.put("Client-Service", Constants.clientService);
                 headers.put("Auth-Key", Constants.authKey);
                 headers.put("Content-Type", Constants.contentType);
@@ -251,6 +252,7 @@ public class DashboardFragment extends Fragment {
                 headers.put("Authorization", Utility.getSharedPreferences(getActivity().getApplicationContext(), "accessToken"));
                Log.e("tasdffsaf",headers.toString());
                 return headers;
+
             }
 
             @Override

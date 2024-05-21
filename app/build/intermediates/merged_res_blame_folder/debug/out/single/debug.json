@@ -836,16 +836,16 @@
         "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\src\\main\\res\\layout\\question_wise_layout_new.xml"
     },
     {
+        "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\debug\\drawable_sgtbp_logo.png.flat",
+        "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\src\\main\\res\\drawable\\sgtbp_logo.png"
+    },
+    {
         "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\debug\\drawable_eye_black.png.flat",
         "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\src\\main\\res\\drawable\\eye_black.png"
     },
     {
         "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxxhdpi_ic_description.png.flat",
         "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_description.png"
-    },
-    {
-        "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\debug\\drawable_sgtbp_logo.png.flat",
-        "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\src\\main\\res\\drawable\\sgtbp_logo.png"
     },
     {
         "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_attach_file_black.png.flat",
