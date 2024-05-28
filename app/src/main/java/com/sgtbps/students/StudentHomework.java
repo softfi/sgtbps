@@ -52,6 +52,7 @@ public class StudentHomework extends BaseActivity {
     ArrayList<String> homeworkDocumentList = new ArrayList<String>();
     ArrayList<String> homeworkClassList = new ArrayList<String>();
     ArrayList<String> homeworkStatusList = new ArrayList<String>();
+    ArrayList<String> subStatus = new ArrayList<String>();
     StudentHomeworkAdapter adapter;
     LinearLayout nodata_layout;
     SwipeRefreshLayout pullToRefresh;
@@ -70,7 +71,7 @@ public class StudentHomework extends BaseActivity {
         nodata_layout = (LinearLayout) findViewById(R.id.nodata_layout);
         adapter = new StudentHomeworkAdapter(StudentHomework.this, homeworkIdList, homeworkTitleList, homeworkSubjectNameList,
                 homeworkHomeworkDateList, homeworkSubmissionDateList, homeworkEvaluationDateList, homeworkEvaluationByList,
-                homeworkCreatedByList, homeworkDocumentList, homeworkClassList, homeworkStatusList);
+                homeworkCreatedByList, homeworkDocumentList, homeworkClassList, homeworkStatusList,subStatus);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
         homeworkListView.setLayoutManager(mLayoutManager);
         homeworkListView.setItemAnimator(new DefaultItemAnimator());
@@ -98,6 +99,12 @@ public class StudentHomework extends BaseActivity {
             makeText(getApplicationContext(), R.string.noInternetMsg, Toast.LENGTH_SHORT).show();
         }
 
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        loadData();
     }
 
     private void getDataFromApi(String bodyParams) {
@@ -136,6 +143,7 @@ public class StudentHomework extends BaseActivity {
                         homeworkClassList.clear();
                         homeworkEvaluationDateList.clear();
                         homeworkStatusList.clear();
+                        subStatus.clear();
 
                         if (dataArray.length() != 0) {
                             nodata_layout.setVisibility(View.GONE);
@@ -152,6 +160,7 @@ public class StudentHomework extends BaseActivity {
                                 homeworkEvaluationByList.add(dataArray.getJSONObject(i).getString("staff_evaluated"));
                                 String fileName = "";
 
+                                subStatus.add(dataArray.getJSONObject(i).getString("status"));
                                 if (!dataArray.getJSONObject(i).getString("document").equals("null") && !dataArray.getJSONObject(i).getString("document").isEmpty()) {
                                     String filePath = dataArray.getJSONObject(i).getString("document");
                                     String extension = filePath.substring(filePath.lastIndexOf("."));

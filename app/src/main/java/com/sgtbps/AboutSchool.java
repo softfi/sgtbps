@@ -60,7 +60,6 @@ public class AboutSchool extends BaseActivity {
         } else {
             makeText(getApplicationContext(),R.string.noInternetMsg, Toast.LENGTH_SHORT).show();
         }
-
     }
 
     private void getDataFromApi () {

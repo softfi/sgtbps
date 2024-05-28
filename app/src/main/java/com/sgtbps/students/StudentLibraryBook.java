@@ -107,6 +107,7 @@ public class StudentLibraryBook extends BaseActivity {
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String result) {
+
                 pullToRefresh.setRefreshing(false);
                 if (result != null) {
                     pd.dismiss();
@@ -156,6 +157,7 @@ public class StudentLibraryBook extends BaseActivity {
                         e.printStackTrace();
                     }
                 } else {
+
                     pd.dismiss();
                     pullToRefresh.setVisibility(View.GONE);
 
@@ -188,5 +190,4 @@ public class StudentLibraryBook extends BaseActivity {
         //Adding request to the queue
         requestQueue.add(stringRequest);
     }
-
 }

@@ -81,7 +81,6 @@ public class DashboardFragment extends Fragment {
         pendingValue = view.findViewById(R.id.pendin_value);
         nameText.setText("Hi, "+Utility.getSharedPreferences(getContext(), Constants.userName));
 
-
         Picasso.with(getContext()).load(Utility.getSharedPreferences(getContext(), "userImage")).placeholder(R.drawable.user).into(profileImage);
 
         attendanceLayout.setOnClickListener(new View.OnClickListener() {
@@ -189,6 +188,11 @@ public class DashboardFragment extends Fragment {
         }
     }
 
+    @Override
+    public void onStart() {
+        super.onStart();
+        loadData();
+    }
 
     private void getDataFromApi(String bodyParams) {
 

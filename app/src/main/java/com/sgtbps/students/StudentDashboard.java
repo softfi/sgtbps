@@ -177,6 +177,7 @@ public class StudentDashboard extends AppCompatActivity {
         });
 
         viewContainer = findViewById(R.id.studentDashboard_frame);
+
         bottomNavigation = (BottomNavigationView) findViewById(R.id.navigation);
         bottomNavigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override

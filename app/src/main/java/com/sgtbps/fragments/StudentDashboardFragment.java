@@ -96,10 +96,7 @@ public class StudentDashboardFragment extends Fragment {
         homeworkValue = mainView.findViewById(R.id.student_dashboard_fragment_homework_value);
         pendingTaskValue = mainView.findViewById(R.id.student_dashboard_fragment_pendingTask_value);
 
-
-
         loadData();
-
 
         attendanceCard.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -161,10 +158,6 @@ public class StudentDashboardFragment extends Fragment {
                 getActivity().startActivity(asd);
             }
         });
-
-
-
-
 
         Log.e("STATUS", "onCreateView");
         return mainView;
@@ -338,4 +331,5 @@ public class StudentDashboardFragment extends Fragment {
         SimpleDateFormat dateFormatter = new SimpleDateFormat("yyyy-MM-dd");
         return dateFormatter.format(cal.getTime());
     }
+
 }

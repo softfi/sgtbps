@@ -55,6 +55,7 @@ public class StudentDashboardHomeWork extends Fragment {
     ArrayList<String> homeworkDocumentList = new ArrayList<String>();
     ArrayList<String> homeworkClassList = new ArrayList<String>();
     ArrayList<String> homeworkStatusList = new ArrayList<String>();
+    ArrayList<String> subStatus = new ArrayList<String>();
     public String defaultDateFormat, currency;
     SwipeRefreshLayout pullToRefresh;
     StudentHomeworkAdapter adapter;
@@ -72,11 +73,17 @@ public class StudentDashboardHomeWork extends Fragment {
 
     }
 
+    @Override
+    public void onStart() {
+        super.onStart();
+        loadData();
+    }
+
     private void loadData() {
 
         adapter = new StudentHomeworkAdapter(getActivity(), homeworkIdList, homeworkTitleList, homeworkSubjectNameList,
                 homeworkHomeworkDateList, homeworkSubmissionDateList, homeworkEvaluationDateList, homeworkEvaluationByList,
-                homeworkCreatedByList, homeworkDocumentList, homeworkClassList, homeworkStatusList);
+                homeworkCreatedByList, homeworkDocumentList, homeworkClassList, homeworkStatusList,subStatus);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getActivity().getApplicationContext());
         homeworkListView.setLayoutManager(mLayoutManager);
         homeworkListView.setItemAnimator(new DefaultItemAnimator());

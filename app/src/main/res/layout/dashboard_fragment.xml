@@ -143,7 +143,7 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/img"
+                    android:id="@+id/imgr"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
@@ -192,7 +192,7 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/img"
+                    android:id="@+id/imgs"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
@@ -232,6 +232,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="5dp"
             android:background="#cae8fc"
+            android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/linear_layout" />
@@ -243,7 +244,7 @@
             android:text="Related"
             android:textSize="20dp"
             android:textColor="@color/textHeading"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="15dp"
             android:layout_marginTop="15dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/divider"/>
@@ -255,6 +256,7 @@
             android:layout_marginTop="10dp"
             android:horizontalSpacing="10dp"
             android:numColumns="3"
+            android:layout_margin="12dp"
             android:verticalSpacing="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

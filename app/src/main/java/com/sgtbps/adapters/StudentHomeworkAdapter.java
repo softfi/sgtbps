@@ -48,6 +48,8 @@ public class StudentHomeworkAdapter extends RecyclerView.Adapter<StudentHomework
     private ArrayList<String> homeworkDocumentList;
     private ArrayList<String> homeworkClasssList;
     private ArrayList<String> homeworkStatusList;
+    private ArrayList<String> submitStatusList;
+
     long downloadID;
     Boolean your_date_is_outdated;
 
@@ -56,7 +58,7 @@ public class StudentHomeworkAdapter extends RecyclerView.Adapter<StudentHomework
                                   ArrayList<String> homeworkHomeworkDateList, ArrayList<String> homeworkSubmissionDateList,
                                   ArrayList<String> homeworkEvaluationDateList, ArrayList<String> homeworkEvaluationByList,
                                   ArrayList<String> homeworkCreatedByList, ArrayList<String> homeworkDocumentList,
-                                  ArrayList<String> homeworkClasssList, ArrayList<String> homeworkStatusList) {
+                                  ArrayList<String> homeworkClasssList, ArrayList<String> homeworkStatusList,ArrayList<String> submitStatusList) {
 
         this.context = studentHomework;
         this.homeworkIdList = homeworkIdList;
@@ -70,6 +72,7 @@ public class StudentHomeworkAdapter extends RecyclerView.Adapter<StudentHomework
         this.homeworkDocumentList = homeworkDocumentList;
         this.homeworkClasssList = homeworkClasssList;
         this.homeworkStatusList = homeworkStatusList;
+        this.submitStatusList = submitStatusList;
 
     }
     public class MyViewHolder extends RecyclerView.ViewHolder {
@@ -171,7 +174,14 @@ public class StudentHomeworkAdapter extends RecyclerView.Adapter<StudentHomework
                 holder.statusTV.setText("Complete");
                 holder.uploadBtn.setVisibility(View.GONE);
                 holder.statusTV.setBackgroundResource(R.drawable.green_border);
-            } else if(homeworkStatusList.get(position).equals("0")) {
+            } else if(submitStatusList.get(position).equals("submitted")) {
+                Log.d("TAG", "onBindViewHolderffgs: " + submitStatusList.get(position).equals("submitted"));
+                holder.statusTV.setVisibility(View.VISIBLE);
+                holder.statusTV.setText("Submitted");
+                holder.uploadBtn.setVisibility(View.GONE);
+                holder.statusTV.setBackgroundResource(R.drawable.green_border);
+            }
+            else if(homeworkStatusList.get(position).equals("0") && submitStatusList.get(position).equals(""))  {
                 holder.statusTV.setVisibility(View.VISIBLE);
                 holder.statusTV.setText("Incomplete");
                 holder.statusTV.setBackgroundResource(R.drawable.red_border);
@@ -179,16 +189,16 @@ public class StudentHomeworkAdapter extends RecyclerView.Adapter<StudentHomework
                 final SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
                 final String getCurrentDate = sdf.format(c.getTime());
                 final String submissionDate = homeworkSubmissionDateList.get(position);
-                Log.d("TAG", "onBindViewHolders: "+submissionDate);
                 if (submissionDate.compareTo(getCurrentDate) > 0 || submissionDate.compareTo(getCurrentDate) == 0){
-                    Log.d("TAG", "onBindViewHolders: "+submissionDate);
                     holder.uploadBtn.setVisibility(View.VISIBLE);
                     holder.uploadBtn.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
+                            Log.d("TAG", "onClick: ");
                             Intent intent=new Intent(context.getApplicationContext(), StudentUploadHomework.class);
                             intent.putExtra("Homework_ID",homeworkIdList.get(position));
                             context.startActivity(intent);
+                            Log.d("TAG", "onClick: "+intent);
                         }
                     });
                 }else{

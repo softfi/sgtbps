@@ -1902,6 +1902,8 @@ id imageView
 id image_layout
 id imageview
 id img
+id imgr
+id imgs
 id incomplete
 id info
 id invisible

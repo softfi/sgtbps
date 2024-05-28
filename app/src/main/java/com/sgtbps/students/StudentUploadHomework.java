@@ -108,7 +108,6 @@ public class StudentUploadHomework extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.upload_homework_new);
         backBtn = findViewById(R.id.actionBar_backBtn);
-        mDrawerLayout = findViewById(R.id.container);
         actionBar = findViewById(R.id.actionBarSecondary);
         titleTV = findViewById(R.id.actionBar_title);
 
@@ -131,9 +130,7 @@ public class StudentUploadHomework extends AppCompatActivity {
         imageView =  findViewById(R.id.imageView);
         textView =  findViewById(R.id.textview);
         reason = findViewById(R.id.reason);
-        buttonUploadImage =  findViewById(R.id.buttonUploadImage);
         buttonSelectImage = findViewById(R.id.buttonSelectImage);
-        image = (ImageView) findViewById(R.id.image);
 
         if (!checkWriteExternalPermission() || checkWriteExternalPermission1()) {
             permission();
