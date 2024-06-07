@@ -62,12 +62,6 @@ public class StudentAppyLeave extends AppCompatActivity {
     SwipeRefreshLayout pullToRefresh;
     public TextView titleTV;
     protected FrameLayout mDrawerLayout, actionBar;
-    String applydate="";
-    String fromdate="";
-    String todate="";
-    private boolean isapplyDateSelected = false;
-    private boolean isfromDateSelected = false;
-    private boolean istoDateSelected = false;
     ArrayList<String> nameList = new ArrayList<String>();
     ArrayList<String> fromList = new ArrayList<String>();
     ArrayList<String> toList = new ArrayList<String>();

@@ -204,6 +204,7 @@ public class DashboardFragment extends Fragment {
 
         final String requestBody = bodyParams;
         String url = Utility.getSharedPreferences(getActivity().getApplicationContext(), "apiUrl") + Constants.getDashboardUrl;
+        Log.d("TAG", "onResponsedghr: ");
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String result) {

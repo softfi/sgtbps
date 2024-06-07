@@ -27,6 +27,7 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.sgtbps.R;
 import com.sgtbps.adapters.StudentHomeworkAdapter;
+import com.sgtbps.students.StudentHomework;
 import com.sgtbps.utils.Constants;
 import com.sgtbps.utils.Utility;
 
@@ -125,7 +126,7 @@ public class StudentDashboardHomeWork extends Fragment {
 
     }
 
-    private void getDataFromApi (String bodyParams) {
+    private void getDataFromApi(String bodyParams) {
 
         final ProgressDialog pd = new ProgressDialog(getActivity());
         pd.setMessage("Loading");
@@ -134,18 +135,22 @@ public class StudentDashboardHomeWork extends Fragment {
 
         final String requestBody = bodyParams;
 
-        String url = Utility.getSharedPreferences(getActivity().getApplicationContext(), "apiUrl")+Constants.getHomeworkUrl;
+        String url = Utility.getSharedPreferences(getActivity(), "apiUrl") + Constants.getHomeworkUrl;
+        Log.d("TAG", requestBody + "getDataFromApi: " + url);
+        Log.e("URL", url);
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String result) {
                 pullToRefresh.setRefreshing(false);
                 if (result != null) {
                     pd.dismiss();
-
                     try {
-                        Log.e("Result", result);
+
+                        Log.d("TAG", "Resultszx: " + result);
                         JSONObject obj = new JSONObject(result);
                         JSONArray dataArray = obj.getJSONArray("homeworklist");
+                        Log.d("TAG", "onResponse: " + dataArray);
+
                         homeworkIdList.clear();
                         homeworkTitleList.clear();
                         homeworkSubjectNameList.clear();
@@ -157,10 +162,14 @@ public class StudentDashboardHomeWork extends Fragment {
                         homeworkClassList.clear();
                         homeworkEvaluationDateList.clear();
                         homeworkStatusList.clear();
-                        if(dataArray.length() != 0) {
+                        subStatus.clear();
+
+                        if (dataArray.length() != 0) {
                             nodata_layout.setVisibility(View.GONE);
                             homeworkListView.setVisibility(View.VISIBLE);
-                            for(int i = 0; i < dataArray.length(); i++) {
+
+                            for (int i = 0; i < dataArray.length(); i++) {
+                                Log.d("Error", "fjrhjggry" + dataArray.getJSONObject(i).getString("id"));
                                 homeworkIdList.add(dataArray.getJSONObject(i).getString("id"));
                                 homeworkTitleList.add(dataArray.getJSONObject(i).getString("description"));
                                 homeworkSubjectNameList.add(dataArray.getJSONObject(i).getString("name"));
@@ -169,23 +178,25 @@ public class StudentDashboardHomeWork extends Fragment {
                                 homeworkCreatedByList.add(dataArray.getJSONObject(i).getString("staff_created"));
                                 homeworkEvaluationByList.add(dataArray.getJSONObject(i).getString("staff_evaluated"));
                                 String fileName = "";
-                                if(!dataArray.getJSONObject(i).getString("document").equals("null") && !dataArray.getJSONObject(i).getString("document").isEmpty()) {
+
+                                subStatus.add(dataArray.getJSONObject(i).getString("status"));
+                                if (!dataArray.getJSONObject(i).getString("document").equals("null") && !dataArray.getJSONObject(i).getString("document").isEmpty()) {
                                     String filePath = dataArray.getJSONObject(i).getString("document");
                                     String extension = filePath.substring(filePath.lastIndexOf("."));
                                     fileName = dataArray.getJSONObject(i).getString("id") + extension;
+
                                 }
                                 homeworkDocumentList.add(fileName);
+                                homeworkClassList.add(dataArray.getJSONObject(i).getString("class") + " " + dataArray.getJSONObject(i).getString("section"));
 
-                                if(dataArray.getJSONObject(i).getString("evaluation_date").equals("0000-00-00")){
+                                if (dataArray.getJSONObject(i).getString("evaluation_date").equals("0000-00-00")) {
                                     homeworkEvaluationDateList.add("");
-                                }else{
-                                    homeworkEvaluationDateList.add( Utility.parseDate("yyyy-MM-dd", defaultDateFormat,dataArray.getJSONObject(i).getString("evaluation_date")));
+                                } else {
+                                    homeworkEvaluationDateList.add(Utility.parseDate("yyyy-MM-dd", defaultDateFormat, dataArray.getJSONObject(i).getString("evaluation_date")));
                                 }
-                                homeworkClassList.add(dataArray.getJSONObject(i).getString("class") + " " + dataArray.getJSONObject(i).getString("section") );
                                 homeworkStatusList.add(dataArray.getJSONObject(i).getString("homework_evaluation_id"));
                             }
                             adapter.notifyDataSetChanged();
-
                         } else {
                             nodata_layout.setVisibility(View.VISIBLE);
                             homeworkListView.setVisibility(View.GONE);
@@ -198,25 +209,24 @@ public class StudentDashboardHomeWork extends Fragment {
                     pullToRefresh.setVisibility(View.GONE);
                 }
             }
-        },
-                new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError volleyError) {
-                        pd.dismiss();
-                        Log.e("Volley Error", volleyError.toString());
-                        Toast.makeText(getActivity().getApplicationContext(), R.string.apiErrorMsg, Toast.LENGTH_LONG).show();
-                    }
-                }) {
-
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError volleyError) {
+                pd.dismiss();
+                Log.e("Volley Error", volleyError.toString());
+               // Toast.makeText(StudentHomework.this, R.string.apiErrorMsg, Toast.LENGTH_LONG).show();
+            }
+        }) {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
-
+                //
                 headers.put("Client-Service", Constants.clientService);
                 headers.put("Auth-Key", Constants.authKey);
                 headers.put("Content-Type", Constants.contentType);
-                headers.put("User-ID", Utility.getSharedPreferences(getActivity().getApplicationContext(), "userId"));
-                headers.put("Authorization", Utility.getSharedPreferences(getActivity().getApplicationContext(), "accessToken"));
+                headers.put("User-ID", Utility.getSharedPreferences(getActivity(), "userId"));
+                headers.put("Authorization", Utility.getSharedPreferences(getActivity(), "accessToken"));
                 Log.e("Headers", headers.toString());
+                // Log.d(TAG, "getHeaders: "+headers);
                 return headers;
             }
 
@@ -235,11 +245,7 @@ public class StudentDashboardHomeWork extends Fragment {
                 }
             }
         };
-        //Creating a Request Queue
-        RequestQueue requestQueue = Volley.newRequestQueue(getActivity().getApplicationContext());
-
-        //Adding request to the queue
-        requestQueue.add(stringRequest);
+        RequestQueue requestQueue = Volley.newRequestQueue(getActivity()); //Creating a Request Queue
+        requestQueue.add(stringRequest);//Adding request to the queue
     }
-
 }

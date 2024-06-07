@@ -153,6 +153,8 @@ public class StudentHomeworkAdapter extends RecyclerView.Adapter<StudentHomework
             }
         });
 
+
+
         if(homeworkEvaluationByList.get(position).equals("null")) {
             holder.statusTV.setVisibility(View.GONE);
             holder.evaluatedByTV.setVisibility(View.GONE);
@@ -167,6 +169,10 @@ public class StudentHomeworkAdapter extends RecyclerView.Adapter<StudentHomework
             holder.evaluatedByHeadTV.setVisibility(View.VISIBLE);
             int status=Integer.parseInt(homeworkStatusList.get(position));
             Log.d("TAG", "onBindViewHolder: "+status+1);
+
+            String subStatus = submitStatusList.get(position);
+            Log.d("TAG", "subStatus: "+subStatus);
+
             //STATUS
             if(status>0) {
                 Log.d("TAG", "onBindViewHolders: "+status);
@@ -174,14 +180,14 @@ public class StudentHomeworkAdapter extends RecyclerView.Adapter<StudentHomework
                 holder.statusTV.setText("Complete");
                 holder.uploadBtn.setVisibility(View.GONE);
                 holder.statusTV.setBackgroundResource(R.drawable.green_border);
-            } else if(submitStatusList.get(position).equals("submitted")) {
+            } else if(subStatus.equals("submitted")) {
                 Log.d("TAG", "onBindViewHolderffgs: " + submitStatusList.get(position).equals("submitted"));
                 holder.statusTV.setVisibility(View.VISIBLE);
                 holder.statusTV.setText("Submitted");
                 holder.uploadBtn.setVisibility(View.GONE);
                 holder.statusTV.setBackgroundResource(R.drawable.green_border);
             }
-            else if(homeworkStatusList.get(position).equals("0") && submitStatusList.get(position).equals(""))  {
+            else if(homeworkStatusList.get(position).equals("0") && subStatus.isEmpty())  {
                 holder.statusTV.setVisibility(View.VISIBLE);
                 holder.statusTV.setText("Incomplete");
                 holder.statusTV.setBackgroundResource(R.drawable.red_border);

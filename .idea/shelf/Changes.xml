@@ -1,0 +1,994 @@
+<changelist name="Changes" date="1716969878939" recycled="false">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/shelved.patch" />
+  <option name="DESCRIPTION" value="Changes" />
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/AboutSchool$1.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/AboutSchool$1.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/AboutSchool$1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/AboutSchool$1.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/AboutSchool$1.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/AboutSchool$1.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/AboutSchool$2.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/AboutSchool$2.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/AboutSchool$2.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/AboutSchool$2.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/AboutSchool$2.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/AboutSchool$2.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/AboutSchool$3.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/AboutSchool$3.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/AboutSchool$3.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/AboutSchool$3.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/AboutSchool$3.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/AboutSchool$3.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/AboutSchool.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/AboutSchool.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/AboutSchool.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/AboutSchool.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/AboutSchool.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/AboutSchool.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" />
+    <option name="AFTER_PATH" value="app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/androidResources" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/release/app.aab" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/outputs/apk/debug/app-debug.apk" />
+    <option name="AFTER_PATH" value="app/build/outputs/apk/debug/app-debug.apk" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/app-debug.apk" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/release/app-release.aab" />
+    <option name="AFTER_PATH" value="app/release/app-release.aab" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/app-release.aab" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/module_bundle/release/base.zip" />
+    <option name="AFTER_PATH" value="app/build/intermediates/module_bundle/release/base.zip" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/base.zip" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/debug/classes/com/sgtbps/BuildConfig.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/debug/classes/com/sgtbps/BuildConfig.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/BuildConfig.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/BuildConfig.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/BuildConfig.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/BuildConfig1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/tmp/compileReleaseJavaWithJavac/compileTransaction/stash-dir/BuildConfig.class.uniqueId0" />
+    <option name="AFTER_PATH" value="app/build/tmp/compileReleaseJavaWithJavac/compileTransaction/stash-dir/BuildConfig.class.uniqueId0" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/BuildConfig.class.uniqueId0" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/BuildConfig.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/BuildConfig.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/BuildConfig.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/BuildConfig.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/BuildConfig.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/BuildConfig1.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".gradle/buildOutputCleanup/buildOutputCleanup.lock" />
+    <option name="AFTER_PATH" value=".gradle/buildOutputCleanup/buildOutputCleanup.lock" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/buildOutputCleanup.lock" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/linked_res_for_bundle/release/bundled-res.ap_" />
+    <option name="AFTER_PATH" value="app/build/intermediates/linked_res_for_bundle/release/bundled-res.ap_" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/bundled-res.ap_" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".gradle/7.6/checksums/checksums.lock" />
+    <option name="AFTER_PATH" value=".gradle/7.6/checksums/checksums.lock" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/checksums.lock" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/dex/debug/mergeProjectDexDebug/6/classes.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/dex/debug/mergeProjectDexDebug/6/classes.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/classes.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/dex/debug/mergeProjectDexDebug/8/classes.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/dex/debug/mergeProjectDexDebug/8/classes.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/classes1.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/dex/debug/mergeProjectDexDebug/14/classes.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/dex/debug/mergeProjectDexDebug/14/classes.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/classes2.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/dex/release/mergeDexRelease/classes.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/dex/release/mergeDexRelease/classes.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/classes3.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/debug/classes/com/sgtbps/fragments/DashboardFragment$1.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/debug/classes/com/sgtbps/fragments/DashboardFragment$1.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/DashboardFragment$1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/fragments/DashboardFragment$1.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/fragments/DashboardFragment$1.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/DashboardFragment$11.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/DashboardFragment$1.class.uniqueId5" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/fragments/DashboardFragment$1.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/fragments/DashboardFragment$1.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/DashboardFragment$1.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/fragments/DashboardFragment$1.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/fragments/DashboardFragment$1.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/DashboardFragment$11.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/debug/classes/com/sgtbps/fragments/DashboardFragment$2.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/debug/classes/com/sgtbps/fragments/DashboardFragment$2.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/DashboardFragment$2.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/fragments/DashboardFragment$2.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/fragments/DashboardFragment$2.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/DashboardFragment$21.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/DashboardFragment$2.class.uniqueId20" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/fragments/DashboardFragment$2.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/fragments/DashboardFragment$2.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/DashboardFragment$2.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/fragments/DashboardFragment$2.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/fragments/DashboardFragment$2.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/DashboardFragment$21.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/debug/classes/com/sgtbps/fragments/DashboardFragment$3.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/debug/classes/com/sgtbps/fragments/DashboardFragment$3.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/DashboardFragment$3.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/fragments/DashboardFragment$3.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/fragments/DashboardFragment$3.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/DashboardFragment$31.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/DashboardFragment$3.class.uniqueId28" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/fragments/DashboardFragment$3.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/fragments/DashboardFragment$3.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/DashboardFragment$3.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/fragments/DashboardFragment$3.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/fragments/DashboardFragment$3.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/DashboardFragment$31.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/debug/classes/com/sgtbps/fragments/DashboardFragment$4.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/debug/classes/com/sgtbps/fragments/DashboardFragment$4.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/DashboardFragment$4.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/fragments/DashboardFragment$4.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/fragments/DashboardFragment$4.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/DashboardFragment$41.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/DashboardFragment$4.class.uniqueId4" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/fragments/DashboardFragment$4.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/fragments/DashboardFragment$4.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/DashboardFragment$4.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/fragments/DashboardFragment$4.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/fragments/DashboardFragment$4.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/DashboardFragment$41.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/debug/classes/com/sgtbps/fragments/DashboardFragment$5.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/debug/classes/com/sgtbps/fragments/DashboardFragment$5.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/DashboardFragment$5.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/fragments/DashboardFragment$5.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/fragments/DashboardFragment$5.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/DashboardFragment$51.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/DashboardFragment$5.class.uniqueId26" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/fragments/DashboardFragment$5.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/fragments/DashboardFragment$5.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/DashboardFragment$5.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/fragments/DashboardFragment$5.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/fragments/DashboardFragment$5.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/DashboardFragment$51.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/debug/classes/com/sgtbps/fragments/DashboardFragment$6.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/debug/classes/com/sgtbps/fragments/DashboardFragment$6.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/DashboardFragment$6.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/fragments/DashboardFragment$6.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/fragments/DashboardFragment$6.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/DashboardFragment$61.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/DashboardFragment$6.class.uniqueId0" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/fragments/DashboardFragment$6.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/fragments/DashboardFragment$6.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/DashboardFragment$6.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/fragments/DashboardFragment$6.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/fragments/DashboardFragment$6.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/DashboardFragment$61.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/debug/classes/com/sgtbps/fragments/DashboardFragment.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/debug/classes/com/sgtbps/fragments/DashboardFragment.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/DashboardFragment.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/fragments/DashboardFragment.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/fragments/DashboardFragment.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/DashboardFragment1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/DashboardFragment.class.uniqueId19" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/fragments/DashboardFragment.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/fragments/DashboardFragment.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/DashboardFragment.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/fragments/DashboardFragment.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/fragments/DashboardFragment.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/DashboardFragment1.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".gradle/7.6/executionHistory/executionHistory.bin" />
+    <option name="AFTER_PATH" value=".gradle/7.6/executionHistory/executionHistory.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/executionHistory.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".gradle/7.6/executionHistory/executionHistory.lock" />
+    <option name="AFTER_PATH" value=".gradle/7.6/executionHistory/executionHistory.lock" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/executionHistory.lock" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".gradle/file-system.probe" />
+    <option name="AFTER_PATH" value=".gradle/file-system.probe" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/file-system.probe" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".gradle/7.6/fileHashes/fileHashes.bin" />
+    <option name="AFTER_PATH" value=".gradle/7.6/fileHashes/fileHashes.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/fileHashes.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".gradle/7.6/fileHashes/fileHashes.lock" />
+    <option name="AFTER_PATH" value=".gradle/7.6/fileHashes/fileHashes.lock" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/fileHashes.lock" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/desugar_graph/release/out/currentProject/dirs_bucket_0/graph.bin" />
+    <option name="AFTER_PATH" value="app/build/intermediates/desugar_graph/release/out/currentProject/dirs_bucket_0/graph.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/graph.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/desugar_graph/release/out/currentProject/dirs_bucket_1/graph.bin" />
+    <option name="AFTER_PATH" value="app/build/intermediates/desugar_graph/release/out/currentProject/dirs_bucket_1/graph.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/graph1.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/intermediary_bundle/release/intermediary-bundle.aab" />
+    <option name="AFTER_PATH" value="app/build/intermediates/intermediary_bundle/release/intermediary-bundle.aab" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/intermediary-bundle.aab" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".gradle/7.6/checksums/md5-checksums.bin" />
+    <option name="AFTER_PATH" value=".gradle/7.6/checksums/md5-checksums.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/md5-checksums.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".gradle/buildOutputCleanup/outputFiles.bin" />
+    <option name="AFTER_PATH" value=".gradle/buildOutputCleanup/outputFiles.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/outputFiles.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin" />
+    <option name="AFTER_PATH" value="app/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/previous-compilation-data.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/tmp/compileReleaseJavaWithJavac/previous-compilation-data.bin" />
+    <option name="AFTER_PATH" value="app/build/tmp/compileReleaseJavaWithJavac/previous-compilation-data.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/previous-compilation-data1.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".gradle/7.6/fileHashes/resourceHashesCache.bin" />
+    <option name="AFTER_PATH" value=".gradle/7.6/fileHashes/resourceHashesCache.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/resourceHashesCache.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/processed_res/debug/out/resources-debug.ap_" />
+    <option name="AFTER_PATH" value="app/build/intermediates/processed_res/debug/out/resources-debug.ap_" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/resources-debug.ap_" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/processed_res/release/out/resources-release.ap_" />
+    <option name="AFTER_PATH" value="app/build/intermediates/processed_res/release/out/resources-release.ap_" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/resources-release.ap_" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".gradle/7.6/checksums/sha1-checksums.bin" />
+    <option name="AFTER_PATH" value=".gradle/7.6/checksums/sha1-checksums.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/sha1-checksums.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$1.class.uniqueId14" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$2.class.uniqueId35" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$3.class.uniqueId11" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$4.class.uniqueId6" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$5.class.uniqueId22" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$6.class.uniqueId18" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$7.class.uniqueId33" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$8.class.uniqueId7" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$9.class.uniqueId8" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$10$1.class.uniqueId17" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$10$2.class.uniqueId31" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$10.class.uniqueId12" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$11.class.uniqueId32" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$12.class.uniqueId10" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$13.class.uniqueId25" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$14.class.uniqueId3" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$15.class.uniqueId16" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$16.class.uniqueId1" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$17.class.uniqueId24" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$18.class.uniqueId9" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$19$1.class.uniqueId27" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$19.class.uniqueId36" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$20.class.uniqueId13" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$21.class.uniqueId29" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard.class.uniqueId23" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/fragments/StudentDashboardFragment$9.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/fragments/StudentDashboardFragment$9.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentDashboardFragment$9.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/fragments/StudentDashboardFragment$9.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/fragments/StudentDashboardFragment$9.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentDashboardFragment$9.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/fragments/StudentDashboardFragment$10.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/fragments/StudentDashboardFragment$10.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentDashboardFragment$10.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/fragments/StudentDashboardFragment$10.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/fragments/StudentDashboardFragment$10.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentDashboardFragment$10.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/fragments/StudentDashboardFragment$11.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/fragments/StudentDashboardFragment$11.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentDashboardFragment$11.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/fragments/StudentDashboardFragment$11.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/fragments/StudentDashboardFragment$11.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentDashboardFragment$11.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/fragments/StudentDashboardFragment.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/fragments/StudentDashboardFragment.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentDashboardFragment.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/fragments/StudentDashboardFragment.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/fragments/StudentDashboardFragment.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentDashboardFragment.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/debug/classes/com/sgtbps/fragments/StudentDashboardHomeWork$1.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/debug/classes/com/sgtbps/fragments/StudentDashboardHomeWork$1.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentDashboardHomeWork$1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/fragments/StudentDashboardHomeWork$1.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/fragments/StudentDashboardHomeWork$1.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentDashboardHomeWork$11.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboardHomeWork$1.class.uniqueId30" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/fragments/StudentDashboardHomeWork$1.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/fragments/StudentDashboardHomeWork$1.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentDashboardHomeWork$1.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/fragments/StudentDashboardHomeWork$1.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/fragments/StudentDashboardHomeWork$1.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentDashboardHomeWork$11.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/debug/classes/com/sgtbps/fragments/StudentDashboardHomeWork$2.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/debug/classes/com/sgtbps/fragments/StudentDashboardHomeWork$2.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentDashboardHomeWork$2.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/fragments/StudentDashboardHomeWork$2.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/fragments/StudentDashboardHomeWork$2.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentDashboardHomeWork$21.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboardHomeWork$2.class.uniqueId15" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/fragments/StudentDashboardHomeWork$2.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/fragments/StudentDashboardHomeWork$2.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentDashboardHomeWork$2.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/fragments/StudentDashboardHomeWork$2.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/fragments/StudentDashboardHomeWork$2.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentDashboardHomeWork$21.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/debug/classes/com/sgtbps/fragments/StudentDashboardHomeWork$3.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/debug/classes/com/sgtbps/fragments/StudentDashboardHomeWork$3.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentDashboardHomeWork$3.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/fragments/StudentDashboardHomeWork$3.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/fragments/StudentDashboardHomeWork$3.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentDashboardHomeWork$31.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboardHomeWork$3.class.uniqueId2" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/fragments/StudentDashboardHomeWork$3.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/fragments/StudentDashboardHomeWork$3.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentDashboardHomeWork$3.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/fragments/StudentDashboardHomeWork$3.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/fragments/StudentDashboardHomeWork$3.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentDashboardHomeWork$31.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/debug/classes/com/sgtbps/fragments/StudentDashboardHomeWork$4.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/debug/classes/com/sgtbps/fragments/StudentDashboardHomeWork$4.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentDashboardHomeWork$4.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/fragments/StudentDashboardHomeWork$4.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/fragments/StudentDashboardHomeWork$4.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentDashboardHomeWork$41.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboardHomeWork$4.class.uniqueId21" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/fragments/StudentDashboardHomeWork$4.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/fragments/StudentDashboardHomeWork$4.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentDashboardHomeWork$4.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/fragments/StudentDashboardHomeWork$4.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/fragments/StudentDashboardHomeWork$4.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentDashboardHomeWork$41.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/debug/classes/com/sgtbps/fragments/StudentDashboardHomeWork.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/debug/classes/com/sgtbps/fragments/StudentDashboardHomeWork.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentDashboardHomeWork.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/fragments/StudentDashboardHomeWork.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/fragments/StudentDashboardHomeWork.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentDashboardHomeWork1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboardHomeWork.class.uniqueId34" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/fragments/StudentDashboardHomeWork.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/fragments/StudentDashboardHomeWork.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentDashboardHomeWork.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/fragments/StudentDashboardHomeWork.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/fragments/StudentDashboardHomeWork.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentDashboardHomeWork1.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/students/StudentHomework$1.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/students/StudentHomework$1.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentHomework$1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/students/StudentHomework$1.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/students/StudentHomework$1.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentHomework$1.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/students/StudentHomework$2.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/students/StudentHomework$2.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentHomework$2.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/students/StudentHomework$2.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/students/StudentHomework$2.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentHomework$2.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/students/StudentHomework$3.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/students/StudentHomework$3.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentHomework$3.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/students/StudentHomework$3.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/students/StudentHomework$3.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentHomework$3.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/students/StudentHomework$4.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/students/StudentHomework$4.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentHomework$4.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/students/StudentHomework$4.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/students/StudentHomework$4.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentHomework$4.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/students/StudentHomework.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/students/StudentHomework.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentHomework.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/students/StudentHomework.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/students/StudentHomework.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentHomework.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/adapters/StudentHomeworkAdapter$1.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/adapters/StudentHomeworkAdapter$1.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentHomeworkAdapter$1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/adapters/StudentHomeworkAdapter$1.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/adapters/StudentHomeworkAdapter$1.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentHomeworkAdapter$1.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/adapters/StudentHomeworkAdapter$2.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/adapters/StudentHomeworkAdapter$2.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentHomeworkAdapter$2.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/adapters/StudentHomeworkAdapter$2.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/adapters/StudentHomeworkAdapter$2.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentHomeworkAdapter$2.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/adapters/StudentHomeworkAdapter$3$1.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/adapters/StudentHomeworkAdapter$3$1.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentHomeworkAdapter$3$1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/adapters/StudentHomeworkAdapter$3$1.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/adapters/StudentHomeworkAdapter$3$1.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentHomeworkAdapter$3$1.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/adapters/StudentHomeworkAdapter$3.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/adapters/StudentHomeworkAdapter$3.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentHomeworkAdapter$3.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/adapters/StudentHomeworkAdapter$3.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/adapters/StudentHomeworkAdapter$3.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentHomeworkAdapter$3.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/adapters/StudentHomeworkAdapter$4.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/adapters/StudentHomeworkAdapter$4.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentHomeworkAdapter$4.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/adapters/StudentHomeworkAdapter$4.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/adapters/StudentHomeworkAdapter$4.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentHomeworkAdapter$4.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/adapters/StudentHomeworkAdapter$MyViewHolder.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/adapters/StudentHomeworkAdapter$MyViewHolder.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentHomeworkAdapter$MyViewHolder.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/adapters/StudentHomeworkAdapter$MyViewHolder.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/adapters/StudentHomeworkAdapter$MyViewHolder.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentHomeworkAdapter$MyViewHolder.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/adapters/StudentHomeworkAdapter.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/adapters/StudentHomeworkAdapter.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentHomeworkAdapter.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/adapters/StudentHomeworkAdapter.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/adapters/StudentHomeworkAdapter.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentHomeworkAdapter.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/students/StudentUploadHomework$1.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/students/StudentUploadHomework$1.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentUploadHomework$1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/students/StudentUploadHomework$1.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/students/StudentUploadHomework$1.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentUploadHomework$1.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/students/StudentUploadHomework$2.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/students/StudentUploadHomework$2.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentUploadHomework$2.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/students/StudentUploadHomework$2.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/students/StudentUploadHomework$2.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentUploadHomework$2.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/students/StudentUploadHomework$3.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/students/StudentUploadHomework$3.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentUploadHomework$3.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/students/StudentUploadHomework$3.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/students/StudentUploadHomework$3.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentUploadHomework$3.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/students/StudentUploadHomework$4.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/students/StudentUploadHomework$4.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentUploadHomework$4.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/students/StudentUploadHomework$4.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/students/StudentUploadHomework$4.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentUploadHomework$4.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/students/StudentUploadHomework$5.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/students/StudentUploadHomework$5.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentUploadHomework$5.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/students/StudentUploadHomework$5.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/students/StudentUploadHomework$5.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentUploadHomework$5.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/students/StudentUploadHomework$6.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/students/StudentUploadHomework$6.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentUploadHomework$6.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/students/StudentUploadHomework$6.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/students/StudentUploadHomework$6.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentUploadHomework$6.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/debug/classes/com/sgtbps/students/StudentUploadHomework$7$1.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/debug/classes/com/sgtbps/students/StudentUploadHomework$7$1.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentUploadHomework$7$1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/students/StudentUploadHomework$7$1.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/students/StudentUploadHomework$7$1.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentUploadHomework$7$11.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/students/StudentUploadHomework$7$1.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/students/StudentUploadHomework$7$1.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentUploadHomework$7$1.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/students/StudentUploadHomework$7$1.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/students/StudentUploadHomework$7$1.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentUploadHomework$7$11.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/debug/classes/com/sgtbps/students/StudentUploadHomework$7$2.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/debug/classes/com/sgtbps/students/StudentUploadHomework$7$2.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentUploadHomework$7$2.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/students/StudentUploadHomework$7$2.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/students/StudentUploadHomework$7$2.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentUploadHomework$7$21.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/students/StudentUploadHomework$7$2.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/students/StudentUploadHomework$7$2.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentUploadHomework$7$2.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/students/StudentUploadHomework$7$2.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/students/StudentUploadHomework$7$2.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentUploadHomework$7$21.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/debug/classes/com/sgtbps/students/StudentUploadHomework$7.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/debug/classes/com/sgtbps/students/StudentUploadHomework$7.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentUploadHomework$7.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/students/StudentUploadHomework$7.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/students/StudentUploadHomework$7.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentUploadHomework$71.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/students/StudentUploadHomework$7.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/students/StudentUploadHomework$7.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentUploadHomework$7.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/students/StudentUploadHomework$7.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/students/StudentUploadHomework$7.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentUploadHomework$71.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/debug/classes/com/sgtbps/students/StudentUploadHomework$8$1.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/debug/classes/com/sgtbps/students/StudentUploadHomework$8$1.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentUploadHomework$8$1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/students/StudentUploadHomework$8$1.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/students/StudentUploadHomework$8$1.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentUploadHomework$8$11.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/students/StudentUploadHomework$8$1.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/students/StudentUploadHomework$8$1.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentUploadHomework$8$1.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/students/StudentUploadHomework$8$1.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/students/StudentUploadHomework$8$1.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentUploadHomework$8$11.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/debug/classes/com/sgtbps/students/StudentUploadHomework$8$2.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/debug/classes/com/sgtbps/students/StudentUploadHomework$8$2.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentUploadHomework$8$2.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/students/StudentUploadHomework$8$2.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/students/StudentUploadHomework$8$2.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentUploadHomework$8$21.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/students/StudentUploadHomework$8$2.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/students/StudentUploadHomework$8$2.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentUploadHomework$8$2.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/students/StudentUploadHomework$8$2.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/students/StudentUploadHomework$8$2.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentUploadHomework$8$21.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/debug/classes/com/sgtbps/students/StudentUploadHomework$8.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/debug/classes/com/sgtbps/students/StudentUploadHomework$8.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentUploadHomework$8.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/students/StudentUploadHomework$8.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/students/StudentUploadHomework$8.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentUploadHomework$81.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/students/StudentUploadHomework$8.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/students/StudentUploadHomework$8.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentUploadHomework$8.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/students/StudentUploadHomework$8.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/students/StudentUploadHomework$8.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentUploadHomework$81.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/debug/classes/com/sgtbps/students/StudentUploadHomework.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/debug/classes/com/sgtbps/students/StudentUploadHomework.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentUploadHomework.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/students/StudentUploadHomework.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/students/StudentUploadHomework.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentUploadHomework1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/students/StudentUploadHomework.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/students/StudentUploadHomework.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentUploadHomework.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/students/StudentUploadHomework.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/release/out/com/sgtbps/students/StudentUploadHomework.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/StudentUploadHomework1.dex" />
+  </binary>
+</changelist>

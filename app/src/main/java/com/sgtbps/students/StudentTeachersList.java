@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import androidx.recyclerview.widget.DefaultItemAnimator;
@@ -53,6 +54,9 @@ public class StudentTeachersList extends BaseActivity implements  SwipeRefreshLa
     ArrayList<String> ratingList = new ArrayList<>();
     StudentTeacherNewAdapter adapter;
     SwipeRefreshLayout pullToRefresh;
+    LinearLayout no_data_layout;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,6 +68,7 @@ public class StudentTeachersList extends BaseActivity implements  SwipeRefreshLa
         recyclerview = findViewById(R.id.recyclerview);
         loadData();
         pullToRefresh =findViewById(R.id.pullToRefresh);
+        no_data_layout = (LinearLayout) findViewById(R.id.nodata_layout);
         pullToRefresh.setOnRefreshListener(this);
 
         pullToRefresh.post(new Runnable() {
@@ -117,6 +122,8 @@ public class StudentTeachersList extends BaseActivity implements  SwipeRefreshLa
         final String requestBody = bodyParams;
 
         String url = Utility.getSharedPreferences(getApplicationContext(), "apiUrl")+Constants.getTeacherListUrl;
+
+        Log.d("TAG", requestBody+"getDataFromApi: "+url);
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String result) {
@@ -124,11 +131,13 @@ public class StudentTeachersList extends BaseActivity implements  SwipeRefreshLa
                 if (result != null) {
 
                     try {
-                        Log.e("Result", result);
-
+                        Log.d("TAG", "getDataFromApi: "+result);
                         JSONObject object = new JSONObject(result);
                         JSONObject dataObject = object.getJSONObject("result_list");
                         System.out.println("DATAOBJECT length- "+dataObject.length());
+                        if (dataObject.equals("")) {
+                            no_data_layout.setVisibility(View.VISIBLE);
+                        }
                         teacherNameList.clear();
                         teacherContactList.clear();
                         staff_idList.clear();

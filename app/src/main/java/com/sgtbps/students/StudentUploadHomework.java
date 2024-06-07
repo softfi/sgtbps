@@ -49,6 +49,7 @@ import org.json.JSONObject;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.URLConnection;
 import java.util.Collections;
@@ -56,6 +57,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Hashtable;
 import java.util.Map;
+import java.util.Objects;
 import java.util.Set;
 import java.util.regex.Pattern;
 
@@ -138,22 +140,10 @@ public class StudentUploadHomework extends AppCompatActivity {
         buttonSelectImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if ((ContextCompat.checkSelfPermission(getApplicationContext(),
-                        Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) && (ContextCompat.checkSelfPermission(getApplicationContext(),
-                        Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED)) {
-                    if ((ActivityCompat.shouldShowRequestPermissionRationale(StudentUploadHomework.this,
-                            Manifest.permission.WRITE_EXTERNAL_STORAGE)) && (ActivityCompat.shouldShowRequestPermissionRationale(StudentUploadHomework.this,
-                            Manifest.permission.READ_EXTERNAL_STORAGE))) {
 
-                    } else {
-                        ActivityCompat.requestPermissions(StudentUploadHomework.this,
-                                new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE},
-                                REQUEST_PERMISSIONS);
-                    }
-                } else {
                     Log.e("Else", "Else");
                     showFileChooser();
-                }
+
             }
         });
 
@@ -185,7 +175,6 @@ public class StudentUploadHomework extends AppCompatActivity {
             }
         }
     }
-
 
     private void showFileChooser() {
         final Dialog dialog = new Dialog(StudentUploadHomework.this);
@@ -343,8 +332,8 @@ public class StudentUploadHomework extends AppCompatActivity {
     }
 
 
-    @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+   // @Override
+  /*  public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         if(requestCode==100 && (grantResults[0]==PackageManager.PERMISSION_GRANTED)){
 
         }else{
@@ -354,7 +343,7 @@ public class StudentUploadHomework extends AppCompatActivity {
         }
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
     }
-
+*/
     @TargetApi(19)
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -513,8 +502,9 @@ public class StudentUploadHomework extends AppCompatActivity {
             } catch (Exception e) {
                 e.printStackTrace();
             }
-        }else if (requestCode == CAMERA_REQUEST) {
-            Bitmap bitmap = (Bitmap) data.getExtras().get("data");
+        }else
+            if (requestCode == CAMERA_REQUEST) {
+            Bitmap bitmap = (Bitmap) Objects.requireNonNull(data.getExtras()).get("data");
             if (bitmap != null) {
                 progress = new ProgressDialog(StudentUploadHomework.this);
                 progress.setTitle("uploading");
@@ -522,8 +512,8 @@ public class StudentUploadHomework extends AppCompatActivity {
                 progress.show();
                 imageView.setVisibility(View.VISIBLE);
                 imageView.setImageBitmap(bitmap);
-                Uri tempUri = getImageUri(getApplicationContext(), bitmap);
-                filePath = getRealPathFromURI(tempUri);
+                //Uri tempUri = getImageUri(getApplicationContext(), bitmap);
+                filePath = saveBitmap(bitmap);
                 System.out.println("pathasd" + filePath);
                 File f = new File(filePath);
                 String mimeType = URLConnection.guessContentTypeFromName(f.getName());
@@ -532,6 +522,28 @@ public class StudentUploadHomework extends AppCompatActivity {
                 progress.dismiss();
             }
         }
+    }
+
+    public static String saveBitmap(Bitmap bitmap) {
+        String filePath = null;
+        File file = null;
+        try {
+            File directory = new File(Environment.getExternalStoragePublicDirectory(
+                    Environment.DIRECTORY_PICTURES), "MyApp");
+            if (!directory.exists()) {
+                directory.mkdirs();
+            }
+            file = new File(directory, "image_" + System.currentTimeMillis() + ".jpg");
+            FileOutputStream fos = new FileOutputStream(file);
+            bitmap.compress(Bitmap.CompressFormat.JPEG, 100, fos);
+            fos.flush();
+            fos.close();
+
+            filePath = file.getAbsolutePath();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return filePath;
     }
     private void uploadBitmap() throws IOException{
         final String url = Utility.getSharedPreferences(getApplicationContext(), "apiUrl") + Constants.uploadHomeworkUrl;
@@ -635,6 +647,7 @@ public class StudentUploadHomework extends AppCompatActivity {
                             try {
                                 final JSONObject Jobject = new JSONObject(jsonData);
                                 String Jarray = Jobject.getString("status");
+
 
                                 if(Jarray.equals("1")){
                                     runOnUiThread(new Runnable(){

@@ -44,12 +44,12 @@
         "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\src\\main\\res\\drawable\\attendence.png"
     },
     {
-        "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\drawable_ic_publisher.png.flat",
-        "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\src\\main\\res\\drawable\\ic_publisher.png"
-    },
-    {
         "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\drawable-anydpi-v21_ic_arrow_up.xml.flat",
         "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\generated\\res\\pngs\\release\\drawable-anydpi-v21\\ic_arrow_up.xml"
+    },
+    {
+        "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\drawable_ic_publisher.png.flat",
+        "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\src\\main\\res\\drawable\\ic_publisher.png"
     },
     {
         "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\drawable-xhdpi_ic_add_black.png.flat",
@@ -64,12 +64,12 @@
         "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\generated\\res\\pngs\\release\\drawable-xxxhdpi\\ic_add_black.png"
     },
     {
-        "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\drawable_edit.png.flat",
-        "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\src\\main\\res\\drawable\\edit.png"
-    },
-    {
         "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\drawable-xxhdpi_ic_launcher_background.png.flat",
         "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\generated\\res\\pngs\\release\\drawable-xxhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\drawable_edit.png.flat",
+        "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\src\\main\\res\\drawable\\edit.png"
     },
     {
         "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\layout_activity_student_live_classes.xml.flat",
@@ -88,12 +88,12 @@
         "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\src\\main\\res\\layout\\add_leave_dialoug.xml"
     },
     {
-        "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\layout_activity_student_syllabus_status.xml.flat",
-        "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\src\\main\\res\\layout\\activity_student_syllabus_status.xml"
-    },
-    {
         "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\layout_roboto_calendar_month_layout.xml.flat",
         "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\src\\main\\res\\layout\\roboto_calendar_month_layout.xml"
+    },
+    {
+        "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\layout_activity_student_syllabus_status.xml.flat",
+        "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\src\\main\\res\\layout\\activity_student_syllabus_status.xml"
     },
     {
         "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\drawable_homework.png.flat",
@@ -132,12 +132,12 @@
         "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\src\\main\\res\\layout\\activity_student_online_exam.xml"
     },
     {
-        "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\drawable_ic_clock.jpg.flat",
-        "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\src\\main\\res\\drawable\\ic_clock.jpg"
-    },
-    {
         "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\layout_student_library_book_activity.xml.flat",
         "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\src\\main\\res\\layout\\student_library_book_activity.xml"
+    },
+    {
+        "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\drawable_ic_clock.jpg.flat",
+        "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\src\\main\\res\\drawable\\ic_clock.jpg"
     },
     {
         "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\drawable-hdpi_ic_attach_file_black.png.flat",
@@ -152,12 +152,12 @@
         "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\generated\\res\\pngs\\release\\drawable-mdpi\\ic_add_alert.png"
     },
     {
-        "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\drawable_edittext_stlye.xml.flat",
-        "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\src\\main\\res\\drawable\\edittext_stlye.xml"
-    },
-    {
         "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\drawable_grey_button.xml.flat",
         "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\src\\main\\res\\drawable\\grey_button.xml"
+    },
+    {
+        "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\drawable_edittext_stlye.xml.flat",
+        "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\src\\main\\res\\drawable\\edittext_stlye.xml"
     },
     {
         "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\drawable_pink_border.xml.flat",
@@ -184,12 +184,12 @@
         "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\src\\main\\res\\layout\\login_page.xml"
     },
     {
-        "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\drawable-hdpi_ic_edit.png.flat",
-        "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\generated\\res\\pngs\\release\\drawable-hdpi\\ic_edit.png"
-    },
-    {
         "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\drawable_ic_nav_subject.png.flat",
         "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\src\\main\\res\\drawable\\ic_nav_subject.png"
+    },
+    {
+        "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\drawable-hdpi_ic_edit.png.flat",
+        "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\generated\\res\\pngs\\release\\drawable-hdpi\\ic_edit.png"
     },
     {
         "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\mipmap-anydpi-v26_ic_launcher.xml.flat",
@@ -236,12 +236,12 @@
         "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\src\\main\\res\\drawable\\img_login_background.jpg"
     },
     {
-        "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\drawable_ic_nav_reportcard.png.flat",
-        "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\src\\main\\res\\drawable\\ic_nav_reportcard.png"
-    },
-    {
         "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\drawable_ic_info.png.flat",
         "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\src\\main\\res\\drawable\\ic_info.png"
+    },
+    {
+        "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\drawable_ic_nav_reportcard.png.flat",
+        "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\src\\main\\res\\drawable\\ic_nav_reportcard.png"
     },
     {
         "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\layout_question_wise_layout_new.xml.flat",
@@ -252,12 +252,12 @@
         "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\generated\\res\\pngs\\release\\drawable-xxxhdpi\\ic_videocam.png"
     },
     {
-        "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\drawable_pdf_file.png.flat",
-        "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\src\\main\\res\\drawable\\pdf_file.png"
-    },
-    {
         "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\drawable_ic_up_arrow_blue.png.flat",
         "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\src\\main\\res\\drawable\\ic_up_arrow_blue.png"
+    },
+    {
+        "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\drawable_pdf_file.png.flat",
+        "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\src\\main\\res\\drawable\\pdf_file.png"
     },
     {
         "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\drawable-anydpi-v21_ic_access_time_black_24dp.xml.flat",
@@ -272,12 +272,12 @@
         "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\generated\\res\\pngs\\release\\drawable-hdpi\\ic_navigate_next.png"
     },
     {
-        "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
-    },
-    {
         "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\drawable_ic_briefcase.png.flat",
         "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\src\\main\\res\\drawable\\ic_briefcase.png"
+    },
+    {
+        "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
         "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\drawable-xxxhdpi_ic_access_time_black_24dp.png.flat",
@@ -420,16 +420,16 @@
         "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\generated\\res\\pngs\\release\\drawable-mdpi\\ic_online_exams.png"
     },
     {
-        "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\drawable-mdpi_ic_photo_library.png.flat",
-        "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\generated\\res\\pngs\\release\\drawable-mdpi\\ic_photo_library.png"
+        "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\drawable-hdpi_ic_arrow_down.png.flat",
+        "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\generated\\res\\pngs\\release\\drawable-hdpi\\ic_arrow_down.png"
     },
     {
         "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\drawable-anydpi-v21_ic_videocam.xml.flat",
         "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\generated\\res\\pngs\\release\\drawable-anydpi-v21\\ic_videocam.xml"
     },
     {
-        "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\drawable-hdpi_ic_arrow_down.png.flat",
-        "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\generated\\res\\pngs\\release\\drawable-hdpi\\ic_arrow_down.png"
+        "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\drawable-mdpi_ic_photo_library.png.flat",
+        "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\generated\\res\\pngs\\release\\drawable-mdpi\\ic_photo_library.png"
     },
     {
         "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\layout_adapter_student_examlist.xml.flat",
@@ -532,16 +532,16 @@
         "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\src\\main\\res\\layout\\student_tasks_activity.xml"
     },
     {
-        "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\layout_student_library_book_issued_activity.xml.flat",
-        "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\src\\main\\res\\layout\\student_library_book_issued_activity.xml"
+        "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\layout_adapter_onlineexam_questions.xml.flat",
+        "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\src\\main\\res\\layout\\adapter_onlineexam_questions.xml"
     },
     {
         "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\layout_adapter_dashboard_bottomsheet.xml.flat",
         "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\src\\main\\res\\layout\\adapter_dashboard_bottomsheet.xml"
     },
     {
-        "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\layout_adapter_onlineexam_questions.xml.flat",
-        "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\src\\main\\res\\layout\\adapter_onlineexam_questions.xml"
+        "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\layout_student_library_book_issued_activity.xml.flat",
+        "source": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\src\\main\\res\\layout\\student_library_book_issued_activity.xml"
     },
     {
         "merged": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\merged_res\\release\\drawable-ldpi_ic_navigate_previous.png.flat",

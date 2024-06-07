@@ -46,6 +46,7 @@ import org.json.JSONObject;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.URLConnection;
 import java.util.Collections;
@@ -93,7 +94,6 @@ public class StudentUploadDocument extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_file_save);
         backBtn = findViewById(R.id.actionBar_backBtn);
-        mDrawerLayout = findViewById(R.id.container);
         actionBar = findViewById(R.id.actionBarSecondary);
         titleTV = findViewById(R.id.actionBar_title);
 
@@ -120,7 +120,8 @@ public class StudentUploadDocument extends AppCompatActivity {
         buttonSelectImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if ((ContextCompat.checkSelfPermission(getApplicationContext(),
+
+                /*if ((ContextCompat.checkSelfPermission(getApplicationContext(),
                         Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) && (ContextCompat.checkSelfPermission(getApplicationContext(),
                         Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED)) {
                     if ((ActivityCompat.shouldShowRequestPermissionRationale(StudentUploadDocument.this,
@@ -132,10 +133,10 @@ public class StudentUploadDocument extends AppCompatActivity {
                                 new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE},
                                 REQUEST_PERMISSIONS);
                     }
-                } else {
+                } else {*/
                     Log.e("Else", "Else");
                     showFileChooser();
-                }
+
             }
         });
         buttonUploadImage.setBackgroundColor(Color.parseColor(Utility.getSharedPreferences(getApplicationContext(), Constants.primaryColour)));
@@ -417,8 +418,8 @@ public class StudentUploadDocument extends AppCompatActivity {
                 progress.show();
                 imageView.setVisibility(View.VISIBLE);
                 imageView.setImageBitmap(bitmap);
-                Uri tempUri = getImageUri(getApplicationContext(), bitmap);
-                filePath = getRealPathFromURI(tempUri);
+              //  Uri tempUri = getImageUri(getApplicationContext(), bitmap);
+                filePath = saveBitmap(bitmap);
                 System.out.println("pathasd" + filePath);
                 File f = new File(filePath);
                 String mimeType = URLConnection.guessContentTypeFromName(f.getName());
@@ -428,7 +429,27 @@ public class StudentUploadDocument extends AppCompatActivity {
             }
         }
     }
+    public static String saveBitmap(Bitmap bitmap) {
+        String filePath = null;
+        File file = null;
+        try {
+            File directory = new File(Environment.getExternalStoragePublicDirectory(
+                    Environment.DIRECTORY_PICTURES), "MyApp");
+            if (!directory.exists()) {
+                directory.mkdirs();
+            }
+            file = new File(directory, "image_" + System.currentTimeMillis() + ".jpg");
+            FileOutputStream fos = new FileOutputStream(file);
+            bitmap.compress(Bitmap.CompressFormat.JPEG, 100, fos);
+            fos.flush();
+            fos.close();
 
+            filePath = file.getAbsolutePath();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return filePath;
+    }
     public Uri getImageUri(Context inContext, Bitmap inImage) {
         ByteArrayOutputStream bytes = new ByteArrayOutputStream();
         inImage.compress(Bitmap.CompressFormat.JPEG, 100, bytes);

@@ -50,6 +50,7 @@ import org.json.JSONObject;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.URLConnection;
 import java.text.SimpleDateFormat;
@@ -148,22 +149,9 @@ public class StudentAddLeave extends AppCompatActivity {
         buttonSelectImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if ((ContextCompat.checkSelfPermission(getApplicationContext(),
-                        Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) && (ContextCompat.checkSelfPermission(getApplicationContext(),
-                        Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED)) {
-                    if ((ActivityCompat.shouldShowRequestPermissionRationale(StudentAddLeave.this,
-                            Manifest.permission.WRITE_EXTERNAL_STORAGE)) && (ActivityCompat.shouldShowRequestPermissionRationale(StudentAddLeave.this,
-                            Manifest.permission.READ_EXTERNAL_STORAGE))) {
-
-                    } else {
-                        ActivityCompat.requestPermissions(StudentAddLeave.this,
-                                new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE},
-                                REQUEST_PERMISSIONS);
-                    }
-                } else {
                     Log.e("Else", "Else");
                     showFileChooser();
-                }
+
             }
         });
 
@@ -604,7 +592,7 @@ public class StudentAddLeave extends AppCompatActivity {
                 imageView.setVisibility(View.VISIBLE);
                 imageView.setImageBitmap(bitmap);
                 Uri tempUri = getImageUri(getApplicationContext(), bitmap);
-                filePath = getRealPathFromURI(tempUri);
+                filePath = saveBitmap(bitmap);
                 System.out.println("pathasd" + filePath);
                 File f = new File(filePath);
                 String mimeType = URLConnection.guessContentTypeFromName(f.getName());
@@ -613,6 +601,28 @@ public class StudentAddLeave extends AppCompatActivity {
                 progress.dismiss();
             }
         }
+    }
+
+    public static String saveBitmap(Bitmap bitmap) {
+        String filePath = null;
+        File file = null;
+        try {
+            File directory = new File(Environment.getExternalStoragePublicDirectory(
+                    Environment.DIRECTORY_PICTURES), "MyApp");
+            if (!directory.exists()) {
+                directory.mkdirs();
+            }
+            file = new File(directory, "image_" + System.currentTimeMillis() + ".jpg");
+            FileOutputStream fos = new FileOutputStream(file);
+            bitmap.compress(Bitmap.CompressFormat.JPEG, 100, fos);
+            fos.flush();
+            fos.close();
+
+            filePath = file.getAbsolutePath();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return filePath;
     }
     private void uploadBitmap() throws IOException{
         url = Utility.getSharedPreferences(getApplicationContext(), "apiUrl") + Constants.addleaveUrl;
