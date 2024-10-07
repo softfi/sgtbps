@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\AndroidProject\\sgtbps (1)\\sgtbps\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-xlarge-v4\\values-xlarge-v4.xml",
+            "outputFile": "com.sgtbps.app-mergeReleaseResources-19:/values-xlarge-v4/values-xlarge-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-3\\1f23606f1b7e02ac0876a17e2164a5f7\\transformed\\appcompat-1.0.0\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
+                    "source": "/home/alok/.gradle/caches/transforms-3/dc076089ed44740f8aca16f291ca3b76/transformed/appcompat-1.0.0/res/values-xlarge-v4/values-xlarge-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",
