@@ -1,9 +1,10 @@
 apply plugin: 'com.android.application'
 
 android {
+    namespace 'com.sgtbps.school'
     compileSdkVersion 34
     defaultConfig {
-        applicationId "com.sgtbps"
+        applicationId "com.sgtbps.school"
         minSdkVersion 24
         targetSdkVersion 34
         versionCode 7

@@ -48,8 +48,6 @@
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/release/app.aab" />
-    <option name="AFTER_PATH" />
-    <option name="SHELVED_PATH" />
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/outputs/apk/debug/app-debug.apk" />
@@ -138,8 +136,6 @@
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/DashboardFragment$1.class.uniqueId5" />
-    <option name="AFTER_PATH" />
-    <option name="SHELVED_PATH" />
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/fragments/DashboardFragment$1.dex" />
@@ -163,8 +159,6 @@
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/DashboardFragment$2.class.uniqueId20" />
-    <option name="AFTER_PATH" />
-    <option name="SHELVED_PATH" />
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/fragments/DashboardFragment$2.dex" />
@@ -188,8 +182,6 @@
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/DashboardFragment$3.class.uniqueId28" />
-    <option name="AFTER_PATH" />
-    <option name="SHELVED_PATH" />
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/fragments/DashboardFragment$3.dex" />
@@ -213,8 +205,6 @@
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/DashboardFragment$4.class.uniqueId4" />
-    <option name="AFTER_PATH" />
-    <option name="SHELVED_PATH" />
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/fragments/DashboardFragment$4.dex" />
@@ -238,8 +228,6 @@
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/DashboardFragment$5.class.uniqueId26" />
-    <option name="AFTER_PATH" />
-    <option name="SHELVED_PATH" />
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/fragments/DashboardFragment$5.dex" />
@@ -263,8 +251,6 @@
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/DashboardFragment$6.class.uniqueId0" />
-    <option name="AFTER_PATH" />
-    <option name="SHELVED_PATH" />
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/fragments/DashboardFragment$6.dex" />
@@ -288,8 +274,6 @@
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/DashboardFragment.class.uniqueId19" />
-    <option name="AFTER_PATH" />
-    <option name="SHELVED_PATH" />
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/fragments/DashboardFragment.dex" />
@@ -383,128 +367,78 @@
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$1.class.uniqueId14" />
-    <option name="AFTER_PATH" />
-    <option name="SHELVED_PATH" />
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$2.class.uniqueId35" />
-    <option name="AFTER_PATH" />
-    <option name="SHELVED_PATH" />
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$3.class.uniqueId11" />
-    <option name="AFTER_PATH" />
-    <option name="SHELVED_PATH" />
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$4.class.uniqueId6" />
-    <option name="AFTER_PATH" />
-    <option name="SHELVED_PATH" />
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$5.class.uniqueId22" />
-    <option name="AFTER_PATH" />
-    <option name="SHELVED_PATH" />
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$6.class.uniqueId18" />
-    <option name="AFTER_PATH" />
-    <option name="SHELVED_PATH" />
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$7.class.uniqueId33" />
-    <option name="AFTER_PATH" />
-    <option name="SHELVED_PATH" />
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$8.class.uniqueId7" />
-    <option name="AFTER_PATH" />
-    <option name="SHELVED_PATH" />
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$9.class.uniqueId8" />
-    <option name="AFTER_PATH" />
-    <option name="SHELVED_PATH" />
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$10$1.class.uniqueId17" />
-    <option name="AFTER_PATH" />
-    <option name="SHELVED_PATH" />
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$10$2.class.uniqueId31" />
-    <option name="AFTER_PATH" />
-    <option name="SHELVED_PATH" />
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$10.class.uniqueId12" />
-    <option name="AFTER_PATH" />
-    <option name="SHELVED_PATH" />
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$11.class.uniqueId32" />
-    <option name="AFTER_PATH" />
-    <option name="SHELVED_PATH" />
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$12.class.uniqueId10" />
-    <option name="AFTER_PATH" />
-    <option name="SHELVED_PATH" />
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$13.class.uniqueId25" />
-    <option name="AFTER_PATH" />
-    <option name="SHELVED_PATH" />
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$14.class.uniqueId3" />
-    <option name="AFTER_PATH" />
-    <option name="SHELVED_PATH" />
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$15.class.uniqueId16" />
-    <option name="AFTER_PATH" />
-    <option name="SHELVED_PATH" />
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$16.class.uniqueId1" />
-    <option name="AFTER_PATH" />
-    <option name="SHELVED_PATH" />
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$17.class.uniqueId24" />
-    <option name="AFTER_PATH" />
-    <option name="SHELVED_PATH" />
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$18.class.uniqueId9" />
-    <option name="AFTER_PATH" />
-    <option name="SHELVED_PATH" />
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$19$1.class.uniqueId27" />
-    <option name="AFTER_PATH" />
-    <option name="SHELVED_PATH" />
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$19.class.uniqueId36" />
-    <option name="AFTER_PATH" />
-    <option name="SHELVED_PATH" />
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$20.class.uniqueId13" />
-    <option name="AFTER_PATH" />
-    <option name="SHELVED_PATH" />
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard$21.class.uniqueId29" />
-    <option name="AFTER_PATH" />
-    <option name="SHELVED_PATH" />
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboard.class.uniqueId23" />
-    <option name="AFTER_PATH" />
-    <option name="SHELVED_PATH" />
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/intermediates/javac/release/classes/com/sgtbps/fragments/StudentDashboardFragment$9.class" />
@@ -558,8 +492,6 @@
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboardHomeWork$1.class.uniqueId30" />
-    <option name="AFTER_PATH" />
-    <option name="SHELVED_PATH" />
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/fragments/StudentDashboardHomeWork$1.dex" />
@@ -583,8 +515,6 @@
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboardHomeWork$2.class.uniqueId15" />
-    <option name="AFTER_PATH" />
-    <option name="SHELVED_PATH" />
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/fragments/StudentDashboardHomeWork$2.dex" />
@@ -608,8 +538,6 @@
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboardHomeWork$3.class.uniqueId2" />
-    <option name="AFTER_PATH" />
-    <option name="SHELVED_PATH" />
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/fragments/StudentDashboardHomeWork$3.dex" />
@@ -633,8 +561,6 @@
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboardHomeWork$4.class.uniqueId21" />
-    <option name="AFTER_PATH" />
-    <option name="SHELVED_PATH" />
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/fragments/StudentDashboardHomeWork$4.dex" />
@@ -658,8 +584,6 @@
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/StudentDashboardHomeWork.class.uniqueId34" />
-    <option name="AFTER_PATH" />
-    <option name="SHELVED_PATH" />
   </binary>
   <binary>
     <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/sgtbps/fragments/StudentDashboardHomeWork.dex" />
