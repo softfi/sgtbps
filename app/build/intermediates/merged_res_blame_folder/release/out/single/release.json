@@ -1,0 +1,1454 @@
+[
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_take_url_activity.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/take_url_activity.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/menu_options_menu.xml.flat",
+        "source": "com.sgtbps.app-main-22:/menu/options_menu.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_fragment_other_list.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/fragment_other_list.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_student_documents.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_student_documents.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_circle_blue.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/circle_blue.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_open_book.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_open_book.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/anim_slide_out.xml.flat",
+        "source": "com.sgtbps.app-main-22:/anim/slide_out.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_student_teacher_activity.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/student_teacher_activity.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_nav_hostel.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_nav_hostel.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.sgtbps.app-main-22:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/anim_up_from_bottom.xml.flat",
+        "source": "com.sgtbps.app-main-22:/anim/up_from_bottom.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable-v24_baseline_done.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable-v24/baseline_done.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_nav_attendance.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_nav_attendance.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_student_exam_schedule_exam_list.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_student_exam_schedule_exam_list.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_rb_login_selected_style.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/rb_login_selected_style.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_arrow_up.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_arrow_up.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_home_black_24dp.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_home_black_24dp.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_teacher_detail_dialog.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/teacher_detail_dialog.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_file.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_file.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_course_curriculum.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_course_curriculum.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_file.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/file.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_lesson_description.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/lesson_description.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/anim_slide_leftright.xml.flat",
+        "source": "com.sgtbps.app-main-22:/anim/slide_leftright.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_activity_student_syllabus_status.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/activity_student_syllabus_status.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_examination.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/examination.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_student_exam_list.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_student_exam_list.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_eye_grey.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/eye_grey.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_grey_button.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/grey_button.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/anim_down_from_top.xml.flat",
+        "source": "com.sgtbps.app-main-22:/anim/down_from_top.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.sgtbps.app-main-22:/mipmap-xxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_login_activity.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/login_activity.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_online_exam.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/online_exam.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_pdf_file.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/pdf_file.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_student_documents_activity.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/student_documents_activity.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_nav_teachers.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_nav_teachers.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_profile_plus.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_profile_plus.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_nav_timeline.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_nav_timeline.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_courseperformance.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/courseperformance.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_student_tasks.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_student_tasks.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_activity_student_course_detail.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/activity_student_course_detail.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_email_filled.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_email_filled.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.sgtbps.app-main-22:/mipmap-xxxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.sgtbps.app-main-22:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_edittext_stlye.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/edittext_stlye.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_nav_examination.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_nav_examination.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_fragment_homework_bottom_sheet.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/fragment_homework_bottom_sheet.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/font_font.xml.flat",
+        "source": "com.sgtbps.app-main-22:/font/font.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_consolidate_detail_dialog.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/consolidate_detail_dialog.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_up_arrow_blue.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_up_arrow_blue.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_play_icon.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_play_icon.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_fullscreen_open.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_fullscreen_open.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.sgtbps.app-main-22:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.sgtbps.app-main-22:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_nav_subject.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_nav_subject.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_student_timeline.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_student_timeline.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_rounded_rect.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/rounded_rect.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_attendence.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/attendence.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_relation.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_relation.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_fragment_student_profile_parents.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/fragment_student_profile_parents.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_list_row.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/list_row.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_student_hostel_activity.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/student_hostel_activity.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_student_class_timetable_activity.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/student_class_timetable_activity.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_bg12.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/bg12.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_student_class_subjectlist_activity.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/student_class_subjectlist_activity.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_check_mark.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/check_mark.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_info.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_info.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_delete.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_delete.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_style_button_background.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/style_button_background.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.sgtbps.app-main-22:/mipmap-xhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/anim_slide_in.xml.flat",
+        "source": "com.sgtbps.app-main-22:/anim/slide_in.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_round_grey.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/round_grey.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_add_student_leave.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/add_student_leave.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_fragment_dashboard_bottom_sheet.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/fragment_dashboard_bottom_sheet.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_fees.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/fees.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_events.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_events.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_nav_logout.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_nav_logout.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_checkbox_background.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/checkbox_background.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_cart_list_item.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/cart_list_item.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_folder_shared.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_folder_shared.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_youtube_icon.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/youtube_icon.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_drawer_selector.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/drawer_selector.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_onlinecourse.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_onlinecourse.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_choose_file.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/choose_file.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_lock_filled.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_lock_filled.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_student_subjectlistnew.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_student_subjectlistnew.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_download_accent.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_download_accent.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_grid_view_layout.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/grid_view_layout.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_reset.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_reset.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_student_courselist.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_student_courselist.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_nav_switch.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_nav_switch.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_student_notification.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_student_notification.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_check_black.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_check_black.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_start_lesson.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_start_lesson.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_about_school_activity.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/about_school_activity.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_student_consolidate_detail.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_student_consolidate_detail.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/menu_navigation.xml.flat",
+        "source": "com.sgtbps.app-main-22:/menu/navigation.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_sylllabuslist.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_sylllabuslist.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_arrow_down.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_arrow_down.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_student_tasks_activity.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/student_tasks_activity.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_student_profile_activity.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/student_profile_activity.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_fragment_student_profile_parents_new.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/fragment_student_profile_parents_new.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_fragment_dashboard_calender.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/fragment_dashboard_calender.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_nav_about.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_nav_about.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_student_notice_board_activity.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/student_notice_board_activity.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_red_border.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/red_border.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_report_card_exam_result.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_report_card_exam_result.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_upload_homework.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/upload_homework.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_subtract_black.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_subtract_black.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_sp1.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/sp1.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_fragment_notification_bottom_sheet.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/fragment_notification_bottom_sheet.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_login_page.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/login_page.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_selected_file.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/selected_file.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_green_outline.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/green_outline.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_questions.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/questions.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_fragment_transport_route_bottom_sheet.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/fragment_transport_route_bottom_sheet.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_student_profile.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_student_profile.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_student_homework.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_student_homework.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_fragment_student_download_assignment.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/fragment_student_download_assignment.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_student_library_book.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_student_library_book.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_student_homework_details_activity.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/student_homework_details_activity.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_roboto_calendar_day_of_the_month_layout.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/roboto_calendar_day_of_the_month_layout.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_play_button.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/play_button.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_upload_homework_new.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/upload_homework_new.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_add_leave.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/add_leave.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_activity_student_online_course.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/activity_student_online_course.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_minus_black.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_minus_black.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_access_time_black_24dp.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_access_time_black_24dp.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_report_card_exam_list.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_report_card_exam_list.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_app_bar_gradient.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/app_bar_gradient.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_student_lesson.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_student_lesson.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.sgtbps.app-main-22:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_red_button.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/red_button.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_notice.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/notice.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_close.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_close.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_documents_certificate.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_documents_certificate.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_green_border.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/green_border.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_dashboard_homework.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_dashboard_homework.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_phone.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_phone.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_fragment_list.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/fragment_list.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_subject_type.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_subject_type.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_sgtbp_logo.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/sgtbp_logo.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_nav_fees.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_nav_fees.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_courseperformance_data.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/courseperformance_data.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "com.sgtbps.app-main-22:/mipmap-hdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_teacher.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_teacher.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_navigate_next.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_navigate_next.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_radiobutton_black.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/radiobutton_black.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_default_image.jpg.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/default_image.jpg"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_add_black.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_add_black.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_test.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_test.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_activity_splash.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_rb_login_default_style.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/rb_login_default_style.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_fragment_login_bottom_sheet.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/fragment_login_bottom_sheet.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_photo_camera.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_photo_camera.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_fragment_dashboard_noticeboard.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/fragment_dashboard_noticeboard.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_student_subject_activity_new.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/student_subject_activity_new.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_corner.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/corner.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_edit.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_edit.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_green_button.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/green_button.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_navigate_previous.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_navigate_previous.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_nav_download.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_nav_download.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_img_background_main.jpg.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/img_background_main.jpg"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_student_downloads_activity.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/student_downloads_activity.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_student_hostel_detail.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_student_hostel_detail.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_nav_library.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_nav_library.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_student_subject_detail.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_student_subject_detail.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_student_lessonplan.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_student_lessonplan.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_attach_file_black.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_attach_file_black.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_activity_splash_screen.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/activity_splash_screen.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_button_style_grey.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/button_style_grey.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_roboto_calendar_picker_layout.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/roboto_calendar_picker_layout.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_calender_time.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_calender_time.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_base_activity.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/base_activity.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_add_leave.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/add_leave.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_student_exam_schedule_activity.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/student_exam_schedule_activity.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_student_chat_activity.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/student_chat_activity.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_web_yellow.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_web_yellow.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_logo_small.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/logo_small.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.sgtbps.app-main-22:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_button_text_color.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/button_text_color.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/menu_base_activity_drawer.xml.flat",
+        "source": "com.sgtbps.app-main-22:/menu/base_activity_drawer.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_add_rating_dialog.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/add_rating_dialog.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_student_transport_vehicle.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_student_transport_vehicle.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_gradient_bg.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/gradient_bg.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_eye_black.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/eye_black.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_dashboard_bottomsheet.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_dashboard_bottomsheet.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_activity_notification_list.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/activity_notification_list.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_student_syllabs_status.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_student_syllabs_status.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_notices.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/notices.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_student_teacher_activity_new.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/student_teacher_activity_new.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_check.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_check.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_payment_activity.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/payment_activity.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_file_upload.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_file_upload.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_student_library_book_activity.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/student_library_book_activity.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_question_wise_layout_new.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/question_wise_layout_new.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_back.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_back.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_fragment_student_profile.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/fragment_student_profile.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_wrong_mark.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/wrong_mark.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_student_subject.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_student_subject.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_badge_background.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/badge_background.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_closed_book.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_closed_book.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_fee.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/fee.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_student_exam_schedule.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_student_exam_schedule.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_students_subject_activity.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/students_subject_activity.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_radio_button.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/radio_button.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_nav_reportcard.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_nav_reportcard.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_corner2.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/corner2.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_lesson.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/lesson.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_activity_student_profile_new.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/activity_student_profile_new.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_base_menu_items.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/base_menu_items.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/anim_slide_rightleft.xml.flat",
+        "source": "com.sgtbps.app-main-22:/anim/slide_rightleft.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_style_button.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/style_button.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_videocam.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_videocam.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_dashboard_fragment.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/dashboard_fragment.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_hostel.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_hostel.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_student_library_book_issued_activity.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/student_library_book_issued_activity.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.sgtbps.app-main-22:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_activity_student_live_classes.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/activity_student_live_classes.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_student_dashboard_fragment.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/student_dashboard_fragment.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_location.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_location.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_rounded_square.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/rounded_square.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_liveclasses_activity.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/liveclasses_activity.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_down_arrow_blue.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_down_arrow_blue.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_subject.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_subject.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_forgot_password_activity.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/forgot_password_activity.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_activity_file_save.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/activity_file_save.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_student_report_card_exam_result_activity.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/student_report_card_exam_result_activity.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_app_icon.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/app_icon.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_home.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/home.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_student_classtimetable.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_student_classtimetable.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_fragment_studentdownload.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_fragment_studentdownload.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_activity_student_online_quiz_result.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/activity_student_online_quiz_result.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_work.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/work.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_online_exams.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_online_exams.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_student_fees_detail.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_student_fees_detail.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_student_timeline_activity.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/student_timeline_activity.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_students_fees_activity.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/students_fees_activity.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_no_data.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/no_data.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_briefcase.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_briefcase.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_activity_student_online_exam.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/activity_student_online_exam.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_activity_student_online_exam_result.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/activity_student_online_exam_result.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_down_arrow.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_down_arrow.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ring.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ring.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_student_liveclass.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_student_liveclass.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_presentation_sheet.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/presentation_sheet.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_student_dashboard_activity.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/student_dashboard_activity.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_parent_student_list.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_parent_student_list.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_user.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_user.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_nav_header.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/nav_header.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_phone_filled.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_phone_filled.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_yellow_border.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/yellow_border.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_activity_student_apply_leave.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/activity_student_apply_leave.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_calender.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_calender.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_room.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_room.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_uploadfile.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/uploadfile.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_notification.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/notification.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_user.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/user.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.sgtbps.app-main-22:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_student_examschedule_examlist_activity.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/student_examschedule_examlist_activity.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "com.sgtbps.app-main-22:/mipmap-mdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_calender_cross.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_calender_cross.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_photo_library.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_photo_library.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_file_download.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_file_download.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_activity_listview.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/activity_listview.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_publisher.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_publisher.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_student_attendance_activity.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/student_attendance_activity.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_plus_white.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_plus_white.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_activity_student_online_exam_questions.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/activity_student_online_exam_questions.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_student_homework_activity.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/student_homework_activity.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_exam1.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/exam1.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_empty_divider.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/empty_divider.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_start_section.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_start_section.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_custom_tab.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/custom_tab.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_student_hostel.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_student_hostel.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_email.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_email.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_arrow_right.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_arrow_right.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_clock.jpg.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_clock.jpg"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_student_gmeetliveclass.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_student_gmeetliveclass.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_timetb.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/timetb.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_student_syllabus_timetable_activity.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/student_syllabus_timetable_activity.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_activity_student_syllabus.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/activity_student_syllabus.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_student_teacher.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_student_teacher.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_add_task_dialog.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/add_task_dialog.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/color_textview_color.xml.flat",
+        "source": "com.sgtbps.app-main-22:/color/textview_color.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_bg1.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/bg1.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_student_exam_result.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_student_exam_result.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_student_syllabs_lesson.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_student_syllabs_lesson.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_student_teacher_detail.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_student_teacher_detail.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_clipboard_filled.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_clipboard_filled.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_nav_footer.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/nav_footer.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_student_transport.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_student_transport.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_activity_start_lesson.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/activity_start_lesson.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_activity_student_gmeet_live_classes.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/activity_student_gmeet_live_classes.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_student_reportcard_activity.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/student_reportcard_activity.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_fees22.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/fees22.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_dashboard_attendance.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_dashboard_attendance.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.sgtbps.app-main-22:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_activity_student_start_lesson.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/activity_student_start_lesson.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_student_lesson_topics.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_student_lesson_topics.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_fragment_hostel_bottom_sheet.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/fragment_hostel_bottom_sheet.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/anim_no_animation.xml.flat",
+        "source": "com.sgtbps.app-main-22:/anim/no_animation.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_baseline_receipt.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/baseline_receipt.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_student_subject_atten.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_student_subject_atten.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_button_style_accent.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/button_style_accent.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_activity_open_pdf.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/activity_open_pdf.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_pink_border.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/pink_border.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_student_fees.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_student_fees.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_test_activity.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/test_activity.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_bus.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_bus.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_report_card_exam_gparesult.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_report_card_exam_gparesult.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_roboto_calendar_month_layout.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/roboto_calendar_month_layout.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.sgtbps.app-main-22:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_message.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/message.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_dashboard_pandingtask.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_dashboard_pandingtask.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_wrong.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_wrong.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_quiz_questions.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/quiz_questions.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_quiz_layout.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/quiz_layout.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_student_applyleavet.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_student_applyleavet.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_online_exam_question.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/online_exam_question.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.sgtbps.app-main-22:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_course_curriculum_lesson.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_course_curriculum_lesson.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_syllabus.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_syllabus.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_student_chat.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_student_chat.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_student_personal_new.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_student_personal_new.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_placeholder_user.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/placeholder_user.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_view.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_view.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_syllabus.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/syllabus.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_examin.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/examin.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_student_onlinequiz_result.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_student_onlinequiz_result.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_arrow_left.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_arrow_left.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_img_login_background.jpg.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/img_login_background.jpg"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_img_takeurl_background.jpg.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/img_takeurl_background.jpg"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_roboto_calendar_week_layout.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/roboto_calendar_week_layout.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_pendin.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/pendin.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_library.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/library.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_student_library_book_issued.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_student_library_book_issued.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_activity_student_course_performance.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/activity_student_course_performance.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_add_leave_dialoug.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/add_leave_dialoug.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_description.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_description.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_lesson_topic_dialoug.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/lesson_topic_dialoug.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_edit.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/edit.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.sgtbps.app-main-22:/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_grey_outline.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/grey_outline.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_fragment_student_classtimetable.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/fragment_student_classtimetable.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_demo2.jpg.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/demo2.jpg"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_quiz.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_quiz.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_student_transport_routes_activity.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/student_transport_routes_activity.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_activity_student_syllabus_lesson.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/activity_student_syllabus_lesson.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_homework.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/homework.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_nav_transport.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_nav_transport.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_splash.jpg.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/splash.jpg"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_onlineexam_questions.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_onlineexam_questions.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_student_examlist.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_student_examlist.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_bottom_navigation_background.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/bottom_navigation_background.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_student_report_card_exam_list_activity.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/student_report_card_exam_list_activity.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_subject_detail_dialog.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/subject_detail_dialog.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_ic_add_alert.xml.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/ic_add_alert.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_adapter_student_teacher_new.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/adapter_student_teacher_new.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_fragment_fees_bottom_sheet.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/fragment_fees_bottom_sheet.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/drawable_whatsapp.png.flat",
+        "source": "com.sgtbps.app-main-22:/drawable/whatsapp.png"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_uploadfile.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/uploadfile.xml"
+    },
+    {
+        "merged": "com.sgtbps.app-merged_res-21:/layout_videoplay_activity.xml.flat",
+        "source": "com.sgtbps.app-main-22:/layout/videoplay_activity.xml"
+    }
+]

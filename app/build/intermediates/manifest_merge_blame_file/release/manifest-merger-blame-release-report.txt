@@ -1,0 +1,572 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.sgtbps.school"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+11-->D:\sgtbps\app\src\main\AndroidManifest.xml:4:5-77
+11-->D:\sgtbps\app\src\main\AndroidManifest.xml:4:22-74
+12    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+12-->D:\sgtbps\app\src\main\AndroidManifest.xml:5:5-73
+12-->D:\sgtbps\app\src\main\AndroidManifest.xml:5:22-70
+13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+13-->D:\sgtbps\app\src\main\AndroidManifest.xml:6:5-81
+13-->D:\sgtbps\app\src\main\AndroidManifest.xml:6:22-78
+14    <uses-permission
+14-->D:\sgtbps\app\src\main\AndroidManifest.xml:7:5-94
+15        android:name="android.permission.CALL_PHONE"
+15-->D:\sgtbps\app\src\main\AndroidManifest.xml:7:22-66
+16        android:required="false" />
+16-->D:\sgtbps\app\src\main\AndroidManifest.xml:7:67-91
+17    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+17-->D:\sgtbps\app\src\main\AndroidManifest.xml:8:5-80
+17-->D:\sgtbps\app\src\main\AndroidManifest.xml:8:22-77
+18    <uses-permission android:name="android.permission.INTERNET" />
+18-->D:\sgtbps\app\src\main\AndroidManifest.xml:9:5-67
+18-->D:\sgtbps\app\src\main\AndroidManifest.xml:9:22-64
+19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+19-->D:\sgtbps\app\src\main\AndroidManifest.xml:10:5-79
+19-->D:\sgtbps\app\src\main\AndroidManifest.xml:10:22-76
+20    <uses-permission android:name="android.permission.READ_CALENDAR" />
+20-->D:\sgtbps\app\src\main\AndroidManifest.xml:11:5-72
+20-->D:\sgtbps\app\src\main\AndroidManifest.xml:11:22-69
+21    <uses-permission
+21-->D:\sgtbps\app\src\main\AndroidManifest.xml:12:5-14:36
+22        android:name="android.permission.CAMERA"
+22-->D:\sgtbps\app\src\main\AndroidManifest.xml:13:9-49
+23        android:required="false" />
+23-->D:\sgtbps\app\src\main\AndroidManifest.xml:14:9-33
+24    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+24-->D:\sgtbps\app\src\main\AndroidManifest.xml:15:5-75
+24-->D:\sgtbps\app\src\main\AndroidManifest.xml:15:22-72
+25
+26    <uses-feature
+26-->D:\sgtbps\app\src\main\AndroidManifest.xml:17:5-19:36
+27        android:name="android.hardware.telephony"
+27-->D:\sgtbps\app\src\main\AndroidManifest.xml:18:9-50
+28        android:required="false" />
+28-->D:\sgtbps\app\src\main\AndroidManifest.xml:19:9-33
+29    <uses-feature
+29-->D:\sgtbps\app\src\main\AndroidManifest.xml:20:5-22:36
+30        android:name="android.hardware.camera.autofocus"
+30-->D:\sgtbps\app\src\main\AndroidManifest.xml:21:9-57
+31        android:required="false" />
+31-->D:\sgtbps\app\src\main\AndroidManifest.xml:22:9-33
+32    <uses-feature
+32-->D:\sgtbps\app\src\main\AndroidManifest.xml:23:5-25:36
+33        android:name="android.hardware.camera"
+33-->D:\sgtbps\app\src\main\AndroidManifest.xml:24:9-47
+34        android:required="false" />
+34-->D:\sgtbps\app\src\main\AndroidManifest.xml:25:9-33
+35
+36    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+36-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\NiC\.gradle\caches\transforms-3\63e3077174ff79885f05c9b6538ef1ef\transformed\jetified-firebase-iid-20.0.0\AndroidManifest.xml:24:5-68
+36-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\NiC\.gradle\caches\transforms-3\63e3077174ff79885f05c9b6538ef1ef\transformed\jetified-firebase-iid-20.0.0\AndroidManifest.xml:24:22-65
+37    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+37-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\NiC\.gradle\caches\transforms-3\63e3077174ff79885f05c9b6538ef1ef\transformed\jetified-firebase-iid-20.0.0\AndroidManifest.xml:26:5-82
+37-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\NiC\.gradle\caches\transforms-3\63e3077174ff79885f05c9b6538ef1ef\transformed\jetified-firebase-iid-20.0.0\AndroidManifest.xml:26:22-79
+38
+39    <application
+39-->D:\sgtbps\app\src\main\AndroidManifest.xml:27:5-240:19
+40        android:name="com.sgtbps.utils.MyApp"
+40-->D:\sgtbps\app\src\main\AndroidManifest.xml:28:9-36
+41        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+41-->[androidx.core:core:1.0.0] C:\Users\NiC\.gradle\caches\transforms-3\411fb82b77db41041e906e435d416645\transformed\core-1.0.0\AndroidManifest.xml:22:18-86
+42        android:extractNativeLibs="false"
+43        android:icon="@drawable/sgtbp_logo"
+43-->D:\sgtbps\app\src\main\AndroidManifest.xml:29:9-44
+44        android:label="@string/app_name"
+44-->D:\sgtbps\app\src\main\AndroidManifest.xml:30:9-41
+45        android:launchMode="singleInstance"
+45-->D:\sgtbps\app\src\main\AndroidManifest.xml:31:9-44
+46        android:requestLegacyExternalStorage="true"
+46-->D:\sgtbps\app\src\main\AndroidManifest.xml:32:9-52
+47        android:roundIcon="@drawable/splash"
+47-->D:\sgtbps\app\src\main\AndroidManifest.xml:33:9-45
+48        android:supportsRtl="true"
+48-->D:\sgtbps\app\src\main\AndroidManifest.xml:34:9-35
+49        android:theme="@style/AppTheme"
+49-->D:\sgtbps\app\src\main\AndroidManifest.xml:35:9-40
+50        android:usesCleartextTraffic="true" >
+50-->D:\sgtbps\app\src\main\AndroidManifest.xml:36:9-44
+51
+52        <!-- <activity -->
+53        <!-- android:name=".DemoActivity" -->
+54        <!-- android:exported="false" /> -->
+55        <activity
+55-->D:\sgtbps\app\src\main\AndroidManifest.xml:40:9-42:39
+56            android:name="com.sgtbps.students.StudentCoursePerformance"
+56-->D:\sgtbps\app\src\main\AndroidManifest.xml:41:13-62
+57            android:exported="true" />
+57-->D:\sgtbps\app\src\main\AndroidManifest.xml:42:13-36
+58        <activity
+58-->D:\sgtbps\app\src\main\AndroidManifest.xml:43:9-45:39
+59            android:name="com.sgtbps.students.StudentUploadDocument"
+59-->D:\sgtbps\app\src\main\AndroidManifest.xml:44:13-59
+60            android:exported="true" />
+60-->D:\sgtbps\app\src\main\AndroidManifest.xml:45:13-36
+61        <activity
+61-->D:\sgtbps\app\src\main\AndroidManifest.xml:46:9-49:39
+62            android:name="com.sgtbps.students.StudentCourseDetail"
+62-->D:\sgtbps\app\src\main\AndroidManifest.xml:47:13-57
+63            android:configChanges="orientation|keyboardHidden|screenSize|layoutDirection"
+63-->D:\sgtbps\app\src\main\AndroidManifest.xml:48:13-90
+64            android:exported="true" />
+64-->D:\sgtbps\app\src\main\AndroidManifest.xml:49:13-36
+65        <activity
+65-->D:\sgtbps\app\src\main\AndroidManifest.xml:50:9-52:39
+66            android:name="com.sgtbps.students.StudentOnlineCourse"
+66-->D:\sgtbps\app\src\main\AndroidManifest.xml:51:13-57
+67            android:exported="true" />
+67-->D:\sgtbps\app\src\main\AndroidManifest.xml:52:13-36
+68        <activity
+68-->D:\sgtbps\app\src\main\AndroidManifest.xml:53:9-56:39
+69            android:name="com.sgtbps.students.StudentStartLessonActivity"
+69-->D:\sgtbps\app\src\main\AndroidManifest.xml:54:13-64
+70            android:configChanges="orientation|screenSize"
+70-->D:\sgtbps\app\src\main\AndroidManifest.xml:55:13-59
+71            android:exported="true" />
+71-->D:\sgtbps\app\src\main\AndroidManifest.xml:56:13-36
+72        <activity
+72-->D:\sgtbps\app\src\main\AndroidManifest.xml:57:9-59:39
+73            android:name="com.sgtbps.students.StudentLiveClasses"
+73-->D:\sgtbps\app\src\main\AndroidManifest.xml:58:13-56
+74            android:exported="true" />
+74-->D:\sgtbps\app\src\main\AndroidManifest.xml:59:13-36
+75        <activity
+75-->D:\sgtbps\app\src\main\AndroidManifest.xml:60:9-62:39
+76            android:name="com.sgtbps.students.StudentGmeetLiveClasses"
+76-->D:\sgtbps\app\src\main\AndroidManifest.xml:61:13-61
+77            android:exported="true" />
+77-->D:\sgtbps\app\src\main\AndroidManifest.xml:62:13-36
+78        <activity
+78-->D:\sgtbps\app\src\main\AndroidManifest.xml:63:9-65:39
+79            android:name="com.sgtbps.students.NotificationList"
+79-->D:\sgtbps\app\src\main\AndroidManifest.xml:64:13-54
+80            android:exported="true" />
+80-->D:\sgtbps\app\src\main\AndroidManifest.xml:65:13-36
+81        <activity
+81-->D:\sgtbps\app\src\main\AndroidManifest.xml:66:9-69:39
+82            android:name="com.sgtbps.students.StudentOnlineExamQuestionsNew"
+82-->D:\sgtbps\app\src\main\AndroidManifest.xml:67:13-67
+83            android:configChanges="orientation|screenSize"
+83-->D:\sgtbps\app\src\main\AndroidManifest.xml:68:13-59
+84            android:exported="true" />
+84-->D:\sgtbps\app\src\main\AndroidManifest.xml:69:13-36
+85        <activity
+85-->D:\sgtbps\app\src\main\AndroidManifest.xml:70:9-72:39
+86            android:name="com.sgtbps.students.StudentOnlineExamResult"
+86-->D:\sgtbps\app\src\main\AndroidManifest.xml:71:13-61
+87            android:exported="true" />
+87-->D:\sgtbps\app\src\main\AndroidManifest.xml:72:13-36
+88        <activity
+88-->D:\sgtbps\app\src\main\AndroidManifest.xml:73:9-75:39
+89            android:name="com.sgtbps.students.StudentOnlineExam"
+89-->D:\sgtbps\app\src\main\AndroidManifest.xml:74:13-55
+90            android:exported="true" />
+90-->D:\sgtbps\app\src\main\AndroidManifest.xml:75:13-36
+91        <activity
+91-->D:\sgtbps\app\src\main\AndroidManifest.xml:76:9-78:39
+92            android:name="com.sgtbps.AboutSchool"
+92-->D:\sgtbps\app\src\main\AndroidManifest.xml:77:13-40
+93            android:exported="true" />
+93-->D:\sgtbps\app\src\main\AndroidManifest.xml:78:13-36
+94        <activity
+94-->D:\sgtbps\app\src\main\AndroidManifest.xml:79:9-81:39
+95            android:name="com.sgtbps.students.StudentTimeline"
+95-->D:\sgtbps\app\src\main\AndroidManifest.xml:80:13-53
+96            android:exported="true" />
+96-->D:\sgtbps\app\src\main\AndroidManifest.xml:81:13-36
+97        <activity
+97-->D:\sgtbps\app\src\main\AndroidManifest.xml:82:9-84:39
+98            android:name="com.sgtbps.students.StudentDocuments"
+98-->D:\sgtbps\app\src\main\AndroidManifest.xml:83:13-54
+99            android:exported="true" />
+99-->D:\sgtbps\app\src\main\AndroidManifest.xml:84:13-36
+100        <activity
+100-->D:\sgtbps\app\src\main\AndroidManifest.xml:85:9-93:20
+101            android:name="com.sgtbps.SplashActivity"
+101-->D:\sgtbps\app\src\main\AndroidManifest.xml:86:13-43
+102            android:exported="true" >
+102-->D:\sgtbps\app\src\main\AndroidManifest.xml:87:13-36
+103            <intent-filter>
+103-->D:\sgtbps\app\src\main\AndroidManifest.xml:88:13-92:29
+104                <action android:name="android.intent.action.MAIN" />
+104-->D:\sgtbps\app\src\main\AndroidManifest.xml:89:17-69
+104-->D:\sgtbps\app\src\main\AndroidManifest.xml:89:25-66
+105
+106                <category android:name="android.intent.category.LAUNCHER" />
+106-->D:\sgtbps\app\src\main\AndroidManifest.xml:91:17-77
+106-->D:\sgtbps\app\src\main\AndroidManifest.xml:91:27-74
+107            </intent-filter>
+108        </activity>
+109        <activity
+109-->D:\sgtbps\app\src\main\AndroidManifest.xml:94:9-96:39
+110            android:name="com.sgtbps.Login"
+110-->D:\sgtbps\app\src\main\AndroidManifest.xml:95:13-34
+111            android:exported="true" />
+111-->D:\sgtbps\app\src\main\AndroidManifest.xml:96:13-36
+112        <activity
+112-->D:\sgtbps\app\src\main\AndroidManifest.xml:97:9-99:39
+113            android:name="com.sgtbps.students.StudentProfile"
+113-->D:\sgtbps\app\src\main\AndroidManifest.xml:98:13-52
+114            android:exported="true" />
+114-->D:\sgtbps\app\src\main\AndroidManifest.xml:99:13-36
+115        <activity
+115-->D:\sgtbps\app\src\main\AndroidManifest.xml:100:9-102:39
+116            android:name="com.sgtbps.students.StudentProfileNew"
+116-->D:\sgtbps\app\src\main\AndroidManifest.xml:101:13-55
+117            android:exported="true" />
+117-->D:\sgtbps\app\src\main\AndroidManifest.xml:102:13-36
+118        <activity
+118-->D:\sgtbps\app\src\main\AndroidManifest.xml:103:9-105:39
+119            android:name="com.sgtbps.students.StudentProfileDetailsNew"
+119-->D:\sgtbps\app\src\main\AndroidManifest.xml:104:13-62
+120            android:exported="true" />
+120-->D:\sgtbps\app\src\main\AndroidManifest.xml:105:13-36
+121        <activity
+121-->D:\sgtbps\app\src\main\AndroidManifest.xml:106:9-108:39
+122            android:name="com.sgtbps.students.StudentUploadHomework"
+122-->D:\sgtbps\app\src\main\AndroidManifest.xml:107:13-59
+123            android:exported="true" />
+123-->D:\sgtbps\app\src\main\AndroidManifest.xml:108:13-36
+124        <activity
+124-->D:\sgtbps\app\src\main\AndroidManifest.xml:109:9-111:39
+125            android:name="com.sgtbps.ForgotPassword"
+125-->D:\sgtbps\app\src\main\AndroidManifest.xml:110:13-43
+126            android:exported="true" />
+126-->D:\sgtbps\app\src\main\AndroidManifest.xml:111:13-36
+127        <activity
+127-->D:\sgtbps\app\src\main\AndroidManifest.xml:112:9-114:39
+128            android:name="com.sgtbps.BaseActivity"
+128-->D:\sgtbps\app\src\main\AndroidManifest.xml:113:13-41
+129            android:exported="true" />
+129-->D:\sgtbps\app\src\main\AndroidManifest.xml:114:13-36
+130        <activity
+130-->D:\sgtbps\app\src\main\AndroidManifest.xml:115:9-125:20
+131            android:name="com.sgtbps.students.StudentFees"
+131-->D:\sgtbps\app\src\main\AndroidManifest.xml:116:13-49
+132            android:exported="true" >
+132-->D:\sgtbps\app\src\main\AndroidManifest.xml:117:13-36
+133            <intent-filter>
+133-->D:\sgtbps\app\src\main\AndroidManifest.xml:118:13-124:29
+134                <action android:name="android.intent.action.VIEW" />
+134-->D:\sgtbps\app\src\main\AndroidManifest.xml:119:17-69
+134-->D:\sgtbps\app\src\main\AndroidManifest.xml:119:25-66
+135
+136                <category android:name="android.intent.category.DEFAULT" />
+136-->D:\sgtbps\app\src\main\AndroidManifest.xml:121:17-76
+136-->D:\sgtbps\app\src\main\AndroidManifest.xml:121:27-73
+137
+138                <data android:scheme="student_fees" />
+138-->D:\sgtbps\app\src\main\AndroidManifest.xml:123:17-55
+138-->D:\sgtbps\app\src\main\AndroidManifest.xml:123:23-52
+139            </intent-filter>
+140        </activity>
+141        <activity
+141-->D:\sgtbps\app\src\main\AndroidManifest.xml:126:9-128:39
+142            android:name="com.sgtbps.students.StudentNoticeBoard"
+142-->D:\sgtbps\app\src\main\AndroidManifest.xml:127:13-56
+143            android:exported="true" />
+143-->D:\sgtbps\app\src\main\AndroidManifest.xml:128:13-36
+144        <activity
+144-->D:\sgtbps\app\src\main\AndroidManifest.xml:129:9-131:39
+145            android:name="com.sgtbps.students.StudentExaminationList"
+145-->D:\sgtbps\app\src\main\AndroidManifest.xml:130:13-60
+146            android:exported="true" />
+146-->D:\sgtbps\app\src\main\AndroidManifest.xml:131:13-36
+147        <activity
+147-->D:\sgtbps\app\src\main\AndroidManifest.xml:132:9-134:39
+148            android:name="com.sgtbps.students.StudentReportCard_ExamListResult"
+148-->D:\sgtbps\app\src\main\AndroidManifest.xml:133:13-70
+149            android:exported="true" />
+149-->D:\sgtbps\app\src\main\AndroidManifest.xml:134:13-36
+150        <activity
+150-->D:\sgtbps\app\src\main\AndroidManifest.xml:135:9-137:39
+151            android:name="com.sgtbps.students.StudentSubjectList"
+151-->D:\sgtbps\app\src\main\AndroidManifest.xml:136:13-56
+152            android:exported="true" />
+152-->D:\sgtbps\app\src\main\AndroidManifest.xml:137:13-36
+153        <activity
+153-->D:\sgtbps\app\src\main\AndroidManifest.xml:138:9-140:39
+154            android:name="com.sgtbps.students.StudentTeachersList"
+154-->D:\sgtbps\app\src\main\AndroidManifest.xml:139:13-57
+155            android:exported="true" />
+155-->D:\sgtbps\app\src\main\AndroidManifest.xml:140:13-36
+156        <activity
+156-->D:\sgtbps\app\src\main\AndroidManifest.xml:141:9-143:39
+157            android:name="com.sgtbps.students.StudentTransportRoutes"
+157-->D:\sgtbps\app\src\main\AndroidManifest.xml:142:13-60
+158            android:exported="true" />
+158-->D:\sgtbps\app\src\main\AndroidManifest.xml:143:13-36
+159        <activity
+159-->D:\sgtbps\app\src\main\AndroidManifest.xml:144:9-146:39
+160            android:name="com.sgtbps.students.StudentDownloads"
+160-->D:\sgtbps\app\src\main\AndroidManifest.xml:145:13-54
+161            android:exported="true" />
+161-->D:\sgtbps\app\src\main\AndroidManifest.xml:146:13-36
+162        <activity
+162-->D:\sgtbps\app\src\main\AndroidManifest.xml:147:9-149:39
+163            android:name="com.sgtbps.students.StudentAttendance"
+163-->D:\sgtbps\app\src\main\AndroidManifest.xml:148:13-55
+164            android:exported="true" />
+164-->D:\sgtbps\app\src\main\AndroidManifest.xml:149:13-36
+165        <activity
+165-->D:\sgtbps\app\src\main\AndroidManifest.xml:150:9-152:39
+166            android:name="com.sgtbps.students.StudentReportCard_ExamList"
+166-->D:\sgtbps\app\src\main\AndroidManifest.xml:151:13-64
+167            android:exported="true" />
+167-->D:\sgtbps\app\src\main\AndroidManifest.xml:152:13-36
+168        <activity
+168-->D:\sgtbps\app\src\main\AndroidManifest.xml:153:9-155:39
+169            android:name="com.sgtbps.students.StudentExamSchedule_ExamList"
+169-->D:\sgtbps\app\src\main\AndroidManifest.xml:154:13-66
+170            android:exported="true" />
+170-->D:\sgtbps\app\src\main\AndroidManifest.xml:155:13-36
+171        <activity
+171-->D:\sgtbps\app\src\main\AndroidManifest.xml:156:9-158:39
+172            android:name="com.sgtbps.students.StudentExamSchedule"
+172-->D:\sgtbps\app\src\main\AndroidManifest.xml:157:13-57
+173            android:exported="true" />
+173-->D:\sgtbps\app\src\main\AndroidManifest.xml:158:13-36
+174        <activity
+174-->D:\sgtbps\app\src\main\AndroidManifest.xml:159:9-161:39
+175            android:name="com.sgtbps.students.StudentHostel"
+175-->D:\sgtbps\app\src\main\AndroidManifest.xml:160:13-51
+176            android:exported="true" />
+176-->D:\sgtbps\app\src\main\AndroidManifest.xml:161:13-36
+177        <activity
+177-->D:\sgtbps\app\src\main\AndroidManifest.xml:162:9-164:39
+178            android:name="com.sgtbps.students.StudentLibraryBook"
+178-->D:\sgtbps\app\src\main\AndroidManifest.xml:163:13-56
+179            android:exported="true" />
+179-->D:\sgtbps\app\src\main\AndroidManifest.xml:164:13-36
+180        <activity
+180-->D:\sgtbps\app\src\main\AndroidManifest.xml:165:9-167:39
+181            android:name="com.sgtbps.students.StudentClassTimetable"
+181-->D:\sgtbps\app\src\main\AndroidManifest.xml:166:13-59
+182            android:exported="true" />
+182-->D:\sgtbps\app\src\main\AndroidManifest.xml:167:13-36
+183        <activity
+183-->D:\sgtbps\app\src\main\AndroidManifest.xml:168:9-170:39
+184            android:name="com.sgtbps.students.StudentSyllabusTimetable"
+184-->D:\sgtbps\app\src\main\AndroidManifest.xml:169:13-62
+185            android:exported="true" />
+185-->D:\sgtbps\app\src\main\AndroidManifest.xml:170:13-36
+186        <activity
+186-->D:\sgtbps\app\src\main\AndroidManifest.xml:171:9-173:39
+187            android:name="com.sgtbps.students.StudentSyllabusStatus"
+187-->D:\sgtbps\app\src\main\AndroidManifest.xml:172:13-59
+188            android:exported="true" />
+188-->D:\sgtbps\app\src\main\AndroidManifest.xml:173:13-36
+189        <activity
+189-->D:\sgtbps\app\src\main\AndroidManifest.xml:174:9-176:39
+190            android:name="com.sgtbps.students.StudentHomework"
+190-->D:\sgtbps\app\src\main\AndroidManifest.xml:175:13-53
+191            android:exported="true" />
+191-->D:\sgtbps\app\src\main\AndroidManifest.xml:176:13-36
+192        <activity
+192-->D:\sgtbps\app\src\main\AndroidManifest.xml:177:9-179:39
+193            android:name="com.sgtbps.students.StudentHomeworkDetails"
+193-->D:\sgtbps\app\src\main\AndroidManifest.xml:178:13-60
+194            android:exported="true" />
+194-->D:\sgtbps\app\src\main\AndroidManifest.xml:179:13-36
+195        <activity
+195-->D:\sgtbps\app\src\main\AndroidManifest.xml:180:9-182:39
+196            android:name="com.sgtbps.students.StudentLibraryBookIssued"
+196-->D:\sgtbps\app\src\main\AndroidManifest.xml:181:13-62
+197            android:exported="true" />
+197-->D:\sgtbps\app\src\main\AndroidManifest.xml:182:13-36
+198        <activity
+198-->D:\sgtbps\app\src\main\AndroidManifest.xml:183:9-185:39
+199            android:name="com.sgtbps.students.StudentAppyLeave"
+199-->D:\sgtbps\app\src\main\AndroidManifest.xml:184:13-54
+200            android:exported="true" />
+200-->D:\sgtbps\app\src\main\AndroidManifest.xml:185:13-36
+201        <activity
+201-->D:\sgtbps\app\src\main\AndroidManifest.xml:186:9-188:39
+202            android:name="com.sgtbps.students.StudentAddLeave"
+202-->D:\sgtbps\app\src\main\AndroidManifest.xml:187:13-53
+203            android:exported="true" />
+203-->D:\sgtbps\app\src\main\AndroidManifest.xml:188:13-36
+204        <activity
+204-->D:\sgtbps\app\src\main\AndroidManifest.xml:189:9-191:39
+205            android:name="com.sgtbps.students.StudentEditLeave"
+205-->D:\sgtbps\app\src\main\AndroidManifest.xml:190:13-54
+206            android:exported="true" />
+206-->D:\sgtbps\app\src\main\AndroidManifest.xml:191:13-36
+207        <activity
+207-->D:\sgtbps\app\src\main\AndroidManifest.xml:192:9-194:39
+208            android:name="com.sgtbps.students.StudentSyllabus"
+208-->D:\sgtbps\app\src\main\AndroidManifest.xml:193:13-53
+209            android:exported="true" />
+209-->D:\sgtbps\app\src\main\AndroidManifest.xml:194:13-36
+210        <activity
+210-->D:\sgtbps\app\src\main\AndroidManifest.xml:195:9-197:39
+211            android:name="com.sgtbps.students.StudentOnlineQuizResult"
+211-->D:\sgtbps\app\src\main\AndroidManifest.xml:196:13-61
+212            android:exported="true" />
+212-->D:\sgtbps\app\src\main\AndroidManifest.xml:197:13-36
+213        <activity
+213-->D:\sgtbps\app\src\main\AndroidManifest.xml:198:9-200:39
+214            android:name="com.sgtbps.students.StudentSyllabuslesson"
+214-->D:\sgtbps\app\src\main\AndroidManifest.xml:199:13-59
+215            android:exported="true" />
+215-->D:\sgtbps\app\src\main\AndroidManifest.xml:200:13-36
+216        <activity
+216-->D:\sgtbps\app\src\main\AndroidManifest.xml:201:9-203:39
+217            android:name="com.sgtbps.students.StudentOnlineCourseQuiz"
+217-->D:\sgtbps\app\src\main\AndroidManifest.xml:202:13-61
+218            android:exported="true" />
+218-->D:\sgtbps\app\src\main\AndroidManifest.xml:203:13-36
+219        <activity
+219-->D:\sgtbps\app\src\main\AndroidManifest.xml:204:9-207:39
+220            android:name="com.sgtbps.TakeUrl"
+220-->D:\sgtbps\app\src\main\AndroidManifest.xml:205:13-36
+221            android:configChanges="orientation|screenSize"
+221-->D:\sgtbps\app\src\main\AndroidManifest.xml:206:13-59
+222            android:exported="true" />
+222-->D:\sgtbps\app\src\main\AndroidManifest.xml:207:13-36
+223        <activity
+223-->D:\sgtbps\app\src\main\AndroidManifest.xml:208:9-210:39
+224            android:name="com.sgtbps.OpenPdf"
+224-->D:\sgtbps\app\src\main\AndroidManifest.xml:209:13-36
+225            android:exported="true" />
+225-->D:\sgtbps\app\src\main\AndroidManifest.xml:210:13-36
+226        <activity
+226-->D:\sgtbps\app\src\main\AndroidManifest.xml:211:9-214:39
+227            android:name="com.sgtbps.students.StudentDashboard"
+227-->D:\sgtbps\app\src\main\AndroidManifest.xml:212:13-54
+228            android:configChanges="orientation|keyboardHidden|screenSize"
+228-->D:\sgtbps\app\src\main\AndroidManifest.xml:213:13-74
+229            android:exported="true" />
+229-->D:\sgtbps\app\src\main\AndroidManifest.xml:214:13-36
+230        <activity
+230-->D:\sgtbps\app\src\main\AndroidManifest.xml:215:9-217:39
+231            android:name="com.sgtbps.students.StudentTasks"
+231-->D:\sgtbps\app\src\main\AndroidManifest.xml:216:13-50
+232            android:exported="true" />
+232-->D:\sgtbps\app\src\main\AndroidManifest.xml:217:13-36
+233        <activity
+233-->D:\sgtbps\app\src\main\AndroidManifest.xml:218:9-220:39
+234            android:name="com.sgtbps.students.Payment"
+234-->D:\sgtbps\app\src\main\AndroidManifest.xml:219:13-45
+235            android:exported="true" />
+235-->D:\sgtbps\app\src\main\AndroidManifest.xml:220:13-36
+236        <activity
+236-->D:\sgtbps\app\src\main\AndroidManifest.xml:221:9-223:39
+237            android:name="com.sgtbps.students.CoursePayment"
+237-->D:\sgtbps\app\src\main\AndroidManifest.xml:222:13-51
+238            android:exported="true" />
+238-->D:\sgtbps\app\src\main\AndroidManifest.xml:223:13-36
+239        <activity
+239-->D:\sgtbps\app\src\main\AndroidManifest.xml:224:9-228:53
+240            android:name="com.sgtbps.students.CourseVideoPlay"
+240-->D:\sgtbps\app\src\main\AndroidManifest.xml:225:13-53
+241            android:configChanges="orientation|screenSize"
+241-->D:\sgtbps\app\src\main\AndroidManifest.xml:226:13-59
+242            android:exported="true"
+242-->D:\sgtbps\app\src\main\AndroidManifest.xml:227:13-36
+243            android:screenOrientation="landscape" />
+243-->D:\sgtbps\app\src\main\AndroidManifest.xml:228:13-50
+244        <activity
+244-->D:\sgtbps\app\src\main\AndroidManifest.xml:229:9-231:39
+245            android:name="com.sgtbps.students.LiveClasses"
+245-->D:\sgtbps\app\src\main\AndroidManifest.xml:230:13-49
+246            android:exported="true" />
+246-->D:\sgtbps\app\src\main\AndroidManifest.xml:231:13-36
+247
+248        <service
+248-->D:\sgtbps\app\src\main\AndroidManifest.xml:233:9-239:19
+249            android:name="com.sgtbps.utils.MyFirebaseMessagingService"
+249-->D:\sgtbps\app\src\main\AndroidManifest.xml:234:13-61
+250            android:exported="true" >
+250-->D:\sgtbps\app\src\main\AndroidManifest.xml:235:13-36
+251            <intent-filter>
+251-->D:\sgtbps\app\src\main\AndroidManifest.xml:236:13-238:29
+252                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+252-->D:\sgtbps\app\src\main\AndroidManifest.xml:237:17-78
+252-->D:\sgtbps\app\src\main\AndroidManifest.xml:237:25-75
+253            </intent-filter>
+254        </service>
+255        <!--
+256             FirebaseMessagingService performs security checks at runtime,
+257             but set to not exported to explicitly avoid allowing another app to call it.
+258        -->
+259        <service
+259-->[com.google.firebase:firebase-messaging:20.0.0] C:\Users\NiC\.gradle\caches\transforms-3\670d213e345c63d181895bfbfdae1c9a\transformed\jetified-firebase-messaging-20.0.0\AndroidManifest.xml:28:9-34:19
+260            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+260-->[com.google.firebase:firebase-messaging:20.0.0] C:\Users\NiC\.gradle\caches\transforms-3\670d213e345c63d181895bfbfdae1c9a\transformed\jetified-firebase-messaging-20.0.0\AndroidManifest.xml:29:13-82
+261            android:exported="false" >
+261-->[com.google.firebase:firebase-messaging:20.0.0] C:\Users\NiC\.gradle\caches\transforms-3\670d213e345c63d181895bfbfdae1c9a\transformed\jetified-firebase-messaging-20.0.0\AndroidManifest.xml:30:13-37
+262            <intent-filter android:priority="-500" >
+262-->D:\sgtbps\app\src\main\AndroidManifest.xml:236:13-238:29
+263                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+263-->D:\sgtbps\app\src\main\AndroidManifest.xml:237:17-78
+263-->D:\sgtbps\app\src\main\AndroidManifest.xml:237:25-75
+264            </intent-filter>
+265        </service>
+266        <service
+266-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\NiC\.gradle\caches\transforms-3\63e3077174ff79885f05c9b6538ef1ef\transformed\jetified-firebase-iid-20.0.0\AndroidManifest.xml:29:9-35:19
+267            android:name="com.google.firebase.components.ComponentDiscoveryService"
+267-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\NiC\.gradle\caches\transforms-3\63e3077174ff79885f05c9b6538ef1ef\transformed\jetified-firebase-iid-20.0.0\AndroidManifest.xml:30:13-84
+268            android:exported="false" >
+268-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\NiC\.gradle\caches\transforms-3\63e3077174ff79885f05c9b6538ef1ef\transformed\jetified-firebase-iid-20.0.0\AndroidManifest.xml:31:13-37
+269            <meta-data
+269-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\NiC\.gradle\caches\transforms-3\63e3077174ff79885f05c9b6538ef1ef\transformed\jetified-firebase-iid-20.0.0\AndroidManifest.xml:32:13-34:85
+270                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+270-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\NiC\.gradle\caches\transforms-3\63e3077174ff79885f05c9b6538ef1ef\transformed\jetified-firebase-iid-20.0.0\AndroidManifest.xml:33:17-96
+271                android:value="com.google.firebase.components.ComponentRegistrar" />
+271-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\NiC\.gradle\caches\transforms-3\63e3077174ff79885f05c9b6538ef1ef\transformed\jetified-firebase-iid-20.0.0\AndroidManifest.xml:34:17-82
+272        </service>
+273
+274        <receiver
+274-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\NiC\.gradle\caches\transforms-3\63e3077174ff79885f05c9b6538ef1ef\transformed\jetified-firebase-iid-20.0.0\AndroidManifest.xml:37:9-44:20
+275            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+275-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\NiC\.gradle\caches\transforms-3\63e3077174ff79885f05c9b6538ef1ef\transformed\jetified-firebase-iid-20.0.0\AndroidManifest.xml:38:13-78
+276            android:exported="true"
+276-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\NiC\.gradle\caches\transforms-3\63e3077174ff79885f05c9b6538ef1ef\transformed\jetified-firebase-iid-20.0.0\AndroidManifest.xml:39:13-36
+277            android:permission="com.google.android.c2dm.permission.SEND" >
+277-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\NiC\.gradle\caches\transforms-3\63e3077174ff79885f05c9b6538ef1ef\transformed\jetified-firebase-iid-20.0.0\AndroidManifest.xml:40:13-73
+278            <intent-filter>
+278-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\NiC\.gradle\caches\transforms-3\63e3077174ff79885f05c9b6538ef1ef\transformed\jetified-firebase-iid-20.0.0\AndroidManifest.xml:41:13-43:29
+279                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+279-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\NiC\.gradle\caches\transforms-3\63e3077174ff79885f05c9b6538ef1ef\transformed\jetified-firebase-iid-20.0.0\AndroidManifest.xml:42:17-81
+279-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\NiC\.gradle\caches\transforms-3\63e3077174ff79885f05c9b6538ef1ef\transformed\jetified-firebase-iid-20.0.0\AndroidManifest.xml:42:25-78
+280            </intent-filter>
+281        </receiver>
+282
+283        <provider
+283-->[com.google.firebase:firebase-common:19.0.0] C:\Users\NiC\.gradle\caches\transforms-3\df83723733c8088a22f45bc00482db38\transformed\jetified-firebase-common-19.0.0\AndroidManifest.xml:12:9-16:39
+284            android:name="com.google.firebase.provider.FirebaseInitProvider"
+284-->[com.google.firebase:firebase-common:19.0.0] C:\Users\NiC\.gradle\caches\transforms-3\df83723733c8088a22f45bc00482db38\transformed\jetified-firebase-common-19.0.0\AndroidManifest.xml:13:13-77
+285            android:authorities="com.sgtbps.school.firebaseinitprovider"
+285-->[com.google.firebase:firebase-common:19.0.0] C:\Users\NiC\.gradle\caches\transforms-3\df83723733c8088a22f45bc00482db38\transformed\jetified-firebase-common-19.0.0\AndroidManifest.xml:14:13-72
+286            android:exported="false"
+286-->[com.google.firebase:firebase-common:19.0.0] C:\Users\NiC\.gradle\caches\transforms-3\df83723733c8088a22f45bc00482db38\transformed\jetified-firebase-common-19.0.0\AndroidManifest.xml:15:13-37
+287            android:initOrder="100" />
+287-->[com.google.firebase:firebase-common:19.0.0] C:\Users\NiC\.gradle\caches\transforms-3\df83723733c8088a22f45bc00482db38\transformed\jetified-firebase-common-19.0.0\AndroidManifest.xml:16:13-36
+288
+289        <activity
+289-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\NiC\.gradle\caches\transforms-3\15d3fe445dfc411450530dad6cf3b303\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+290            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+290-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\NiC\.gradle\caches\transforms-3\15d3fe445dfc411450530dad6cf3b303\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+291            android:exported="false"
+291-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\NiC\.gradle\caches\transforms-3\15d3fe445dfc411450530dad6cf3b303\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+292            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+292-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\NiC\.gradle\caches\transforms-3\15d3fe445dfc411450530dad6cf3b303\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+293
+294        <meta-data
+294-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\NiC\.gradle\caches\transforms-3\44fe6cdcb7abd44d9e8f8fdedb60bede\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+295            android:name="com.google.android.gms.version"
+295-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\NiC\.gradle\caches\transforms-3\44fe6cdcb7abd44d9e8f8fdedb60bede\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+296            android:value="@integer/google_play_services_version" />
+296-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\NiC\.gradle\caches\transforms-3\44fe6cdcb7abd44d9e8f8fdedb60bede\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+297    </application>
+298
+299</manifest>

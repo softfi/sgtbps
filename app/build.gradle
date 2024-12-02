@@ -1,5 +1,15 @@
 apply plugin: 'com.android.application'
 
+
+/*
+
+key alias name: sgtbps_alias
+key Store password :123456789
+alias password :123456789
+jks path :app/keystore_sgtbps.jks
+*/
+
+
 android {
     namespace 'com.sgtbps.school'
     compileSdkVersion 34

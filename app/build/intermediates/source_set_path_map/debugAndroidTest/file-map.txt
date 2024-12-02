@@ -1,4 +1,0 @@
-com.sgtbps.test.app-androidTest-0 D:\sgtbps\app\build\generated\res\resValues\androidTest\debug
-com.sgtbps.test.app-mergeDebugAndroidTestResources-1 D:\sgtbps\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
-com.sgtbps.test.app-mergeDebugAndroidTestResources-2 D:\sgtbps\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
-com.sgtbps.test.app-merged_res-3 D:\sgtbps\app\build\intermediates\merged_res\debugAndroidTest
