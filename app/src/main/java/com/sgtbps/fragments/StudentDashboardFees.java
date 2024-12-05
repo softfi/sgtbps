@@ -268,7 +268,7 @@ public class StudentDashboardFees extends Fragment {
                 return "application/json; charset=utf-8";
             }
             @Override
-            public byte[] getBody() throws AuthFailureError {
+            public byte[] getBody() {
                 try {
                     return requestBody == null ? null : requestBody.getBytes("utf-8");
                 } catch (UnsupportedEncodingException uee) {

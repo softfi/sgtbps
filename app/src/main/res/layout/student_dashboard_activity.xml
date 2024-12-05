@@ -115,7 +115,6 @@
         style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:background="#251369"
         android:elevation="5dp"
         app:elevation="5dp"

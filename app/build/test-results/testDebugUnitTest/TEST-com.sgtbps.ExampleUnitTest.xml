@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.sgtbps.ExampleUnitTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-12-02T12:36:55" hostname="DESKTOP-SE8RH6S" time="0.0">
-  <properties/>
-  <testcase name="addition_isCorrect" classname="com.sgtbps.ExampleUnitTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

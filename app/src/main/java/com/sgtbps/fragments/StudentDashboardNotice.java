@@ -60,10 +60,8 @@ public class StudentDashboardNotice extends Fragment {
     }
 
     private void loadData() {
-
         adapter = new StudentNotificationAdapter(getActivity(), noticeTitleId, noticeTitleList, noticeDateList, noticeDescList);
         notificationList.setAdapter(adapter);
-
         if(Utility.isConnectingToInternet(getActivity())){
             params.put("type", Utility.getSharedPreferences(getContext(), Constants.loginType));
             JSONObject obj=new JSONObject(params);
@@ -86,23 +84,23 @@ public class StudentDashboardNotice extends Fragment {
         return mainView;
     }
 
-    private void getDataFromApi (String bodyParams) {
+    private void getDataFromApi(String rawRequestBody) {
         final ProgressDialog pd = new ProgressDialog(getActivity());
         pd.setMessage("Loading");
         pd.setCancelable(false);
         pd.show();
-        final String requestBody = bodyParams;
-        String url = Utility.getSharedPreferences(getActivity(), "apiUrl")+Constants.getNotificationsUrl;
 
-        Log.d("TAG", requestBody+"getDataFromApi: "+url );
+        String url = Utility.getSharedPreferences(getActivity(), "apiUrl") + Constants.getNotificationsUrl;
+
+        Log.d("TAG", "Request Body: " + rawRequestBody + " URL: " + url);
+
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String result) {
                 if (result != null) {
                     pd.dismiss();
-                    Log.d("TAG", "getDataFromApi: "+result );
+                    Log.d("TAG", "Response: " + result);
                     try {
-                        Log.e("Result", result);
                         JSONObject object = new JSONObject(result);
 
                         String success = object.getString("success");
@@ -110,9 +108,9 @@ public class StudentDashboardNotice extends Fragment {
                             notificationList.setVisibility(View.VISIBLE);
                             nodata_layout.setVisibility(View.GONE);
                             JSONArray dataArray = object.getJSONArray("data");
-                            Log.e("length", dataArray.length()+"..");
+                            Log.e("length", dataArray.length() + "..");
 
-                                for(int i = 0; i < dataArray.length(); i++) {
+                            for (int i = 0; i < dataArray.length(); i++) {
                                 noticeTitleId.add(dataArray.getJSONObject(i).getString("id"));
                                 noticeTitleList.add(dataArray.getJSONObject(i).getString("title"));
                                 noticeDateList.add(Utility.parseDate("yyyy-MM-dd", defaultDateFormat, dataArray.getJSONObject(i).getString("date")));
@@ -121,29 +119,26 @@ public class StudentDashboardNotice extends Fragment {
                             adapter.notifyDataSetChanged();
 
                         } else {
-                             notificationList.setVisibility(View.GONE);
-                             nodata_layout.setVisibility(View.VISIBLE);
-                            //Toast.makeText(getActivity(), object.getString("errorMsg"), Toast.LENGTH_SHORT).show();
+                            notificationList.setVisibility(View.GONE);
+                            nodata_layout.setVisibility(View.VISIBLE);
                         }
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
                 } else {
                     pd.dismiss();
-
                 }
             }
         }, new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError volleyError) {
-                        pd.dismiss();
-                        Log.e("Volley Error", volleyError.toString());
-                        Toast.makeText(getActivity(), R.string.apiErrorMsg, Toast.LENGTH_LONG).show();
-                    }
-                }) {
+            @Override
+            public void onErrorResponse(VolleyError volleyError) {
+                pd.dismiss();
+                Log.e("Volley Error", volleyError.toString());
+                Toast.makeText(getActivity(), R.string.apiErrorMsg, Toast.LENGTH_LONG).show();
+            }
+        }) {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
-
                 headers.put("Client-Service", Constants.clientService);
                 headers.put("Auth-Key", Constants.authKey);
                 headers.put("Content-Type", Constants.contentType);
@@ -152,23 +147,25 @@ public class StudentDashboardNotice extends Fragment {
                 Log.e("Headers", headers.toString());
                 return headers;
             }
+
             @Override
             public String getBodyContentType() {
                 return "application/json; charset=utf-8";
             }
+
             @Override
-            public byte[] getBody() throws AuthFailureError {
+            public byte[] getBody() {
                 try {
-                    return requestBody == null ? null : requestBody.getBytes("utf-8");
+                    return rawRequestBody == null ? null : rawRequestBody.getBytes("utf-8");
                 } catch (UnsupportedEncodingException uee) {
-                    VolleyLog.wtf("Unsupported Encoding while trying to get the bytes of %s using %s", requestBody, "utf-8");
+                    VolleyLog.wtf("Unsupported Encoding while trying to get the bytes of %s using %s", rawRequestBody, "utf-8");
                     return null;
                 }
             }
         };
-        //Creating a Request Queue
+
         RequestQueue requestQueue = Volley.newRequestQueue(getActivity());
-        //Adding request to the queue
         requestQueue.add(stringRequest);
     }
+
 }

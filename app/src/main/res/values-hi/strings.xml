@@ -14,8 +14,11 @@
     <string name="userNameHint">उपयोगकर्ता नाम दर्ज करें</string>
     <string name="userPasswordHint">पास वर्ड दर्ज करें</string>
     <string name="forgotPassword">पासवर्ड भूल गए?</string>
+    <string name="rememberMe">Remember me</string>
     <string name="changeUrl">डोमेन बदलें</string>
     <string name="admin">व्यवस्थापक</string>
+    <string name="sgtbps">SGTBPS</string>
+    <string name="welcome">Welcome Back!</string>
     <!--LOGIN PAGE-->
 
     <!--DASHBOARD DETAIL-->
