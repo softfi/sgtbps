@@ -72,7 +72,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class Login extends Activity {
 
     Locale myLocale;
-    //ImageView logoIV;
+
     TextView tv_forgotPass /*privacyTV*/;
     Button btn_login;
 
